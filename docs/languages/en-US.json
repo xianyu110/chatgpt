@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "GPT access channels in China · Web nodes / Official top-up / Codex / API",
+    "description": "A roundup of GPT access channels in China: web mirror nodes, official ChatGPT Plus / GPT Pro top-up, a domestic Codex site, and an API aggregator. Verified on 14 November 2026."
+  },
+  "nav": {
+    "logo": "GPT channel roundup",
+    "meta": "Verified 2026-11-14"
+  },
+  "hero": {
+    "badge": "✨ Pick an entry by scenario",
+    "title": "GPT access channels in China",
+    "titleAccent": "Web nodes · Official top-up · Codex · API",
+    "subtitle": "Opening chatgpt.com is not always straightforward: the network, an overseas phone number, a credit card, and account risk checks can all stall the first step. This page gathers the main channels that still open, so you can pick by scenario instead of hunting for links.",
+    "features": [
+      "🧩 Third-party channels",
+      "🗺️ Six entries confirmed open today",
+      "📌 Follow the live page on the day"
+    ],
+    "cta": {
+      "primary": "✨ Open the new node lobby",
+      "recharge": "💳 Official top-up",
+      "choose": "🧭 See how to choose first",
+      "codex": "💻 Domestic Codex site",
+      "api": "🔌 API aggregator"
+    }
+  },
+  "fable": {
+    "badge": "Daily pick",
+    "title": "Recommended: start chatting in momoAI.New",
+    "description": "If you want to chat in the browser and switch nodes by load, bookmark the new lobby at https://trygpt.asia/list/#/home first. The old site still opens and works as a backup. In the same ecosystem, trygpt is the web node lobby, while momoai focuses on the API and monthly-plan console.",
+    "cta": "Open https://trygpt.asia/"
+  },
+  "choose": {
+    "title": "🧭 How to choose: start with your scenario",
+    "lead": "You don't need all four. Pick the one that matches what you want to do right now.",
+    "cards": [
+      {
+        "title": "💬 Chat on the web right away",
+        "text": "Use the web mirror nodes and switch cards by load. Entry: trygpt.asia (new) / old.trygpt.asia (legacy)."
+      },
+      {
+        "title": "🪪 You want your own official account",
+        "text": "Top up Plus / Pro on your own ChatGPT account and keep using the full official site. Entry: chongzhi.chatgpt-plus.top."
+      },
+      {
+        "title": "💻 Write code and run agents",
+        "text": "Use Codex Desktop / CLI with a relay API key; image generation is also available. Entry: momoai.asia."
+      },
+      {
+        "title": "🔌 Call models from your own project",
+        "text": "One OpenAI-compatible key, many models. Entry: tryallapi.com."
+      }
+    ],
+    "note": "✅ Prefer the new site, keep the old one as backup　✅ Official top-up is a separate path and does not go through the mirror chat page　✅ Prices and model lists follow the console on the day"
+  },
+  "channel": {
+    "entry": "Entry:",
+    "new": {
+      "badge": "Channel 2 · More commonly used",
+      "title": "momoAI.New advanced node lobby",
+      "pain": "This is the newer lobby most people use now, branded momoAI.New. The left sidebar is organized by product: GPT Plus advanced nodes, Gemini Pro, SuperGrok, AI image generation, Claude Pro Max, the top-up site, the domestic Codex site, and more.",
+      "method": "Nodes are shown as cards. You can filter by All / Recommended / Busy and see live load. Prefer a green bar with a lower number; a yellow “Available” bar means you can still get in, but it may be more crowded. If it says your subscription type doesn't match, buy a plan in the site shop or redeem a code first.",
+      "cta": "✨ Open the new lobby",
+      "ctaOld": "🗂️ Legacy lobby (backup)",
+      "imgAlt": "momoAI.New node lobby, filtered by All / Recommended / Busy, with Super or Grok tags and load numbers",
+      "caption": "The momoAI.New node lobby. This screenshot is filtered toward Super / Grok nodes; use the left sidebar to switch back to GPT Plus advanced nodes."
+    },
+    "old": {
+      "badge": "Channel 1 · Backup",
+      "title": "momoAI legacy web nodes (non-downgraded Plus nodes)",
+      "pain": "A “wall of node cards” style legacy lobby. The top bar switches among non-downgraded Plus nodes, SuperGrok, Gemini, Claude Pro Max, the domestic Codex site, and other entries.",
+      "method": "Idle nodes are usually a green bar labeled “Recommended”; busy ones are a yellow bar labeled “Available.” If one slows down, just switch to another card. Web mirrors are good for opening a chat immediately, but they are not the same as having a full official account.",
+      "redirect": "Legacy domain redirect:",
+      "same": "same as above",
+      "cta": "Open the legacy lobby",
+      "imgAlt": "momoAI “non-downgraded Plus nodes” lobby, with idle/busy columns and Recommended or Available labels",
+      "caption": "The momoAI legacy “non-downgraded Plus nodes” lobby, captured on 14 November 2026. The footer identifies the site as momoAI."
+    },
+    "recharge": {
+      "badge": "Channel 3",
+      "title": "Official ChatGPT Plus / GPT Pro top-up",
+      "pain": "If you already have (or can set up) your own ChatGPT account and just cannot pay with an overseas credit card: top up Plus / Pro on your own official account, then keep using the official site.",
+      "method": "The site describes itself as a “24/7 fully automatic, formal iOS channel,” accepts WeChat Pay and Alipay, and says credit usually arrives in 1–2 minutes. Promotional figures (13,000+ customers served, ban rate <0.1%, typical arrival in 1–3 minutes) are the site’s own claims; this page only restates them and has not independently audited them. The trade-off is that you must follow the site’s process and provide account-related credentials, which carries its own risk.",
+      "steps": [
+        "Confirm you are on one of the two domains below, and stay away from look-alike sites of unknown origin.",
+        "Only top up your own account. Do not buy “ready-made accounts” from unknown sources.",
+        "Do not close the page during top-up, and keep your order and support records.",
+        "Site promises (same-day refunds, ban warranties, and so on) follow the rules on that page—read them before you order."
+      ],
+      "backup": "Same-site backup:",
+      "cta": "💳 Open the top-up site",
+      "imgAlt": "GPTPro top-up homepage: ChatGPT Plus / GPT Pro recharge, with WeChat Pay and Alipay",
+      "caption": "The GPTPro top-up homepage. This is for topping up your own official account, not a shared-account pool.",
+      "disclaimer": "⚠️ If you only want a quick chat, a web node is simpler. Choose this path when you want the account to be yours and the features to follow the official site."
+    },
+    "codex": {
+      "badge": "Channel 4",
+      "title": "Domestic Codex site (momoAPICodex)",
+      "pain": "For people who want to write code or run agents with Codex Desktop / CLI, or also generate images with GPTimage2. This is not an official OpenAI subscription, but a third-party relay that can be reached from mainland China.",
+      "method": "Register at momoai.asia, start a usage-based or monthly plan, create an API key in the matching group, then point the official client at the relay address with CC Switch. Plan prices and daily quotas change—follow the live console rules.",
+      "steps": [
+        "Set the Base URL to the relay root, for example https://momoai.asia, not https://api.openai.com.",
+        "The key must come from a group that supports Codex (often a monthly Codex group). The wrong group leads to “model not supported” or no quota.",
+        "Use model IDs from the console list on the day; do not type names from memory that may already have been retired.",
+        "If you previously signed in with an official Codex account, sign out first, then switch to the API key."
+      ],
+      "serviceEntry": "Service entry:",
+      "backup": "Backup domain:",
+      "docsLabel": "Illustrated guide:",
+      "docsLink": "AI Information Gap, “Domestic Codex site” (2026-07-12)",
+      "cta": "💻 Open momoai.asia",
+      "ctaDocs": "📖 Read the guide",
+      "imgAlt": "AI Information Gap “Domestic Codex site” guide, covering the momoAPICodex entry and domestic setup",
+      "caption": "The place to actually create keys and buy a plan is momoai.asia. The old entry codexinstall.asia returned HTTP 451 on the day of checking—do not use it anymore.",
+      "disclaimer": "⚠️ The old domain https://codex.maynor1024.live/ still opens, but it is now a brand-upgrade notice and asks you to move to momoai.asia."
+    },
+    "api": {
+      "badge": "Channel 5",
+      "title": "momoAPIPro / TryAllAPI aggregator",
+      "pain": "If you want to call models from your own project, script, or desktop client, this path is a better fit. One OpenAI-compatible Base URL, many models. It is not a ChatGPT web chat room.",
+      "method": "The homepage is branded momoAPIPro. It promotes “10,000+ developers and 18 months of stable operation”; the actual model list, unit prices, and groups follow the console. Both this site and momoai.asia offer APIs: momoai is closer to Codex, monthly plans, and client relays; TryAllAPI emphasizes multi-model, usage-based access.",
+      "history": "Historical domain redirects:",
+      "cta": "🔌 Open tryallapi.com",
+      "imgAlt": "momoAPIPro / tryallapi.com homepage: AI API aggregator, with a sample Base URL of https://tryallapi.com/v1",
+      "caption": "Replace your-api-key with a console key, and change the model name to an ID that actually exists in the console. Do not put keys in a public repository or in chat logs.",
+      "disclaimer": "⚠️ https://api.maynorai.asia/ also opened on the day of checking, but it is a different Base URL. If you already use tryallapi.com, there is no need to switch; new users should start with the tryallapi.com address verified in this article."
+    }
+  },
+  "compare": {
+    "title": "📊 Comparison and recommendations",
+    "intro": "A practical mix is: use momoAI.New for everyday web chat; use official top-up when you want the official Plus experience; keep coding on momoai.asia + Codex; and use TryAllAPI when a product or script needs many models.",
+    "col": {
+      "item": "Compare",
+      "web": "Web nodes",
+      "recharge": "Official top-up",
+      "codex": "Domestic Codex site",
+      "api": "API aggregator"
+    },
+    "row": {
+      "entry": "Typical entry",
+      "usage": "How you use it",
+      "who": "Best for",
+      "cost": "Main trade-off",
+      "not": "Not a good fit"
+    },
+    "usage": {
+      "web": "Chat at a node in the browser",
+      "recharge": "Top up your own official account",
+      "codex": "Client / CLI + API key",
+      "api": "OpenAI-compatible API"
+    },
+    "who": {
+      "web": "People who want to chat now and switch nodes",
+      "recharge": "People who want full official features and an official identity",
+      "codex": "Coding, agents, and Codex image generation",
+      "api": "Development integrations and multi-model calls"
+    },
+    "cost": {
+      "web": "Features may not match the official site",
+      "recharge": "You must provide account credentials through the site’s process",
+      "codex": "You need to configure the relay and groups",
+      "api": "You have to write the calls or hook up a client yourself"
+    },
+    "not": {
+      "web": "Official-only benefits",
+      "recharge": "A quick trial, or no account of your own",
+      "codex": "Just a casual chat in the browser",
+      "api": "People who do not want to touch an API at all"
+    }
+  },
+  "map": {
+    "title": "🗺️ Channel map (verified 2026-11-14)",
+    "intro": "Checked the same day with public HTTP requests: all six addresses below returned 200 and opened. Both the legacy and new sites are front-end single-page apps; the HTML shell titles only show ChatGPT / gpt. Treat the screenshots in this article as the source of truth for the UI.",
+    "col": {
+      "role": "Role",
+      "addr": "Verified address",
+      "result": "Result"
+    },
+    "old": {
+      "role": "Legacy web nodes",
+      "result": "200. maynorai.top redirects to this page"
+    },
+    "new": {
+      "role": "New node lobby",
+      "result": "200. The root path also leads to /list/"
+    },
+    "recharge": {
+      "role": "Official top-up",
+      "result": "200. Title is GPTPro top-up service"
+    },
+    "codex": {
+      "role": "Domestic Codex site",
+      "result": "200. /home also opens"
+    },
+    "docs": {
+      "role": "Codex guide",
+      "result": "200. Published 2026-07-12"
+    },
+    "api": {
+      "role": "API aggregator",
+      "result": "200. Sample Base URL is /v1"
+    }
+  },
+  "notes": {
+    "title": "💡 Please read this before you start",
+    "group": {
+      "title": "🔑 Check the group and model ID first",
+      "text": "If Codex or the API returns 401, has no quota, or says a model is not supported, it is usually a mismatch between the key’s group or the model name and the console—not that “the whole site is down.”"
+    },
+    "price": {
+      "title": "📌 Prices are only valid on the day",
+      "text": "Do not paste keys or login state into chat or a public repository. For official top-up, double-check the domain. Monthly fees and bonus quotas in old posts or screenshots may be outdated. Please also follow local laws and the platform’s terms."
+    }
+  },
+  "backups": {
+    "title": "🔗 Backup domains and extra entries",
+    "intro": "The addresses below were verified the same day and can serve as backups or supplements; they are not substitutes for the six main entries above. When you need the latest URL, start from a trygpt / momoai / top-up / TryAllAPI address you have already confirmed opens.",
+    "col": {
+      "addr": "Address",
+      "result": "Result that day",
+      "note": "Notes"
+    },
+    "recharge": {
+      "result": "200, title matches the main top-up site",
+      "note": "Backup domain for official top-up"
+    },
+    "codex": {
+      "result": "200, opens momoAPICodex",
+      "note": "Backup domain for Codex / momoai"
+    },
+    "maynor": {
+      "result": "200, redirects to the legacy lobby",
+      "note": "Former domain of the legacy node lobby"
+    },
+    "trymodel": {
+      "result": "200, redirects to /zh",
+      "note": "A same-ecosystem multi-model web chat, not one of the five main channels in this article"
+    },
+    "image": {
+      "note": "A standalone GPT Image site; the new sidebar also links here"
+    },
+    "install": {
+      "note": "Could not be verified as a working entry; use momoai.asia instead"
+    }
+  },
+  "faq": {
+    "title": "❓ FAQ",
+    "chat": {
+      "q": "I just want to open a page and start chatting. Which one should I pick?",
+      "a": "Bookmark the new node lobby at https://trygpt.asia/list/#/home first. The legacy site https://old.trygpt.asia/list/ still opens and can be kept as a backup."
+    },
+    "account": {
+      "q": "What if I want the full official features and my own account?",
+      "a": "Use official top-up: https://chongzhi.chatgpt-plus.top/ , backup https://chongzhi.trygpt.asia/ . Only top up your own account, confirm the domain, and keep your order records."
+    },
+    "codex": {
+      "q": "Where should I go to write code or use Codex?",
+      "a": "Create a key at https://momoai.asia/ , then point the client at the relay address with CC Switch. Do not use codexinstall.asia, which returns 451."
+    },
+    "down": {
+      "q": "What if a domain will not open?",
+      "a": "Try the backup addresses listed in this article, and follow the site’s page on the day. Keeping a verified entry bookmarked matters more than chasing another batch of “latest mirrors” of unknown origin."
+    }
+  },
+  "finalCta": {
+    "title": "🎯 Bookmark one entry that actually opens",
+    "description": "For web chat, go to the node lobby; for an official identity, use official top-up; for coding, use the domestic Codex site; to call models from your own app, use the API aggregator.",
+    "primary": "✨ Open the new node lobby",
+    "recharge": "💳 Official top-up",
+    "codex": "💻 Domestic Codex site",
+    "markdown": "📄 View the Markdown source"
+  },
+  "footer": {
+    "copyright": "© 2026 GPT access channels in China. A third-party directory, not an official OpenAI product. Verified 14 November 2026 (Asia/Shanghai).",
+    "github": "GitHub",
+    "choose": "How to choose",
+    "compare": "Comparison"
+  },
+  "ui": {
+    "languageSelector": "Choose language",
+    "themeToLight": "Switch to light mode",
+    "themeToDark": "Switch to dark mode"
+  }
+}

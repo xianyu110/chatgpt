@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Canales para usar GPT en China · Nodos web / Recarga oficial / Codex / API",
+    "description": "Resumen de canales para usar GPT en China: nodos espejo web, recarga oficial de ChatGPT Plus / GPT Pro, un sitio Codex de acceso nacional y un agregador de API. Verificado el 14 de noviembre de 2026."
+  },
+  "nav": {
+    "logo": "Canales de GPT",
+    "meta": "Verificado el 2026-11-14"
+  },
+  "hero": {
+    "badge": "✨ Elige la entrada según el uso",
+    "title": "Canales para usar GPT en China",
+    "titleAccent": "Nodos web · Recarga oficial · Codex · API",
+    "subtitle": "Abrir chatgpt.com no siempre es sencillo: la red, un número de teléfono extranjero, una tarjeta de crédito y los controles de riesgo de la cuenta pueden frenarte en el primer paso. Aquí reunimos los canales principales que siguen abriendo, para que elijas según el uso en lugar de buscar enlaces por todas partes.",
+    "features": [
+      "🧩 Canales de terceros",
+      "🗺️ Seis entradas confirmadas hoy",
+      "📌 Toma como referencia la página del día"
+    ],
+    "cta": {
+      "primary": "✨ Abrir el nuevo vestíbulo de nodos",
+      "recharge": "💳 Recarga oficial",
+      "choose": "🧭 Ver primero cómo elegir",
+      "codex": "💻 Sitio Codex de acceso nacional",
+      "api": "🔌 Agregador de API"
+    }
+  },
+  "fable": {
+    "badge": "Recomendación diaria",
+    "title": "Recomendado: empieza a chatear en momoAI.New",
+    "description": "Si quieres conversar en el navegador y cambiar de nodo según la carga, guarda primero el nuevo vestíbulo en https://trygpt.asia/list/#/home. El sitio antiguo sigue abriendo y sirve como reserva. En el mismo ecosistema, trygpt es el vestíbulo de nodos web y momoai se centra en la API y la consola de planes mensuales.",
+    "cta": "Abrir https://trygpt.asia/"
+  },
+  "choose": {
+    "title": "🧭 Cómo elegir: empieza por el uso",
+    "lead": "No hace falta abrir los cuatro. Elige el que encaje con lo que quieres hacer ahora.",
+    "cards": [
+      {
+        "title": "💬 Chatear ya en la web",
+        "text": "Usa los nodos espejo web y cambia de tarjeta según la carga. Entrada: trygpt.asia (nuevo) / old.trygpt.asia (antiguo)."
+      },
+      {
+        "title": "🪪 Quieres tu propia cuenta oficial",
+        "text": "Recarga Plus / Pro en tu propia cuenta de ChatGPT y sigue usando el sitio oficial completo. Entrada: chongzhi.chatgpt-plus.top."
+      },
+      {
+        "title": "💻 Escribir código y ejecutar agentes",
+        "text": "Usa Codex Desktop / CLI con una clave API de retransmisión; también puedes generar imágenes. Entrada: momoai.asia."
+      },
+      {
+        "title": "🔌 Llamar modelos desde tu propio proyecto",
+        "text": "Una clave compatible con OpenAI para conectar varios modelos. Entrada: tryallapi.com."
+      }
+    ],
+    "note": "✅ Prioriza el sitio nuevo y deja el antiguo como reserva　✅ La recarga oficial es otra vía y no pasa por la página de chat del espejo　✅ Los precios y la lista de modelos siguen la consola del día"
+  },
+  "channel": {
+    "entry": "Entrada:",
+    "new": {
+      "badge": "Canal 2 · El más usado",
+      "title": "Vestíbulo avanzado de nodos momoAI.New",
+      "pain": "Este es el vestíbulo nuevo que más se usa ahora, con la marca momoAI.New. La barra izquierda se organiza por producto: nodos avanzados de GPT Plus, Gemini Pro, SuperGrok, generación de imágenes, Claude Pro Max, el sitio de recarga, el sitio Codex de acceso nacional y más.",
+      "method": "Los nodos se muestran como tarjetas. Puedes filtrar por Todos / Recomendados / Ocupados y ver la carga en tiempo real. Prioriza una barra verde con un número bajo; una barra amarilla de “Disponible” significa que aún puedes entrar, pero puede estar más lleno. Si indica que el tipo de suscripción no coincide, compra un plan en la tienda del sitio o canjea un código primero.",
+      "cta": "✨ Abrir el vestíbulo nuevo",
+      "ctaOld": "🗂️ Vestíbulo antiguo (reserva)",
+      "imgAlt": "Vestíbulo de nodos momoAI.New, filtrado por Todos / Recomendados / Ocupados, con etiquetas Super o Grok y números de carga",
+      "caption": "El vestíbulo de nodos momoAI.New. En esta captura el filtro apunta más a nodos Super / Grok; en la barra izquierda puedes volver a los nodos avanzados de GPT Plus."
+    },
+    "old": {
+      "badge": "Canal 1 · Reserva",
+      "title": "Nodos web antiguos de momoAI (nodos Plus sin degradación)",
+      "pain": "Un vestíbulo antiguo al estilo de “muro de tarjetas de nodos”. La barra superior permite cambiar entre nodos Plus sin degradación, SuperGrok, Gemini, Claude Pro Max, el sitio Codex de acceso nacional y otras entradas.",
+      "method": "Los nodos libres suelen tener una barra verde con “Recomendado”; los ocupados, una barra amarilla con “Disponible”. Si uno se vuelve lento, basta con cambiar a otra tarjeta. Los espejos web sirven para abrir un chat de inmediato, pero no equivalen a tener una cuenta oficial completa.",
+      "redirect": "Redirección del dominio antiguo:",
+      "same": "igual que arriba",
+      "cta": "Abrir el vestíbulo antiguo",
+      "imgAlt": "Vestíbulo momoAI de “nodos Plus sin degradación”, con columnas de libre/ocupado y etiquetas de Recomendado o Disponible",
+      "caption": "El vestíbulo antiguo de momoAI de “nodos Plus sin degradación”, capturado el 14 de noviembre de 2026. El pie identifica el sitio como momoAI."
+    },
+    "recharge": {
+      "badge": "Canal 3",
+      "title": "Recarga oficial de ChatGPT Plus / GPT Pro",
+      "pain": "Si ya tienes (o puedes preparar) tu propia cuenta de ChatGPT y solo no puedes pagar con una tarjeta de crédito extranjera: recarga Plus / Pro en tu cuenta oficial y sigue usando el sitio oficial.",
+      "method": "El sitio se presenta como un “canal iOS formal, totalmente automático las 24 horas”, acepta WeChat Pay y Alipay, y afirma que el crédito suele llegar en 1–2 minutos. Las cifras promocionales (más de 13.000 clientes, tasa de bloqueo <0,1%, llegada habitual en 1–3 minutos) son afirmaciones del propio sitio; esta página solo las reproduce y no las ha auditado de forma independiente. El coste de esta vía es que debes seguir el proceso del sitio y entregar credenciales de la cuenta, lo que conlleva su propio riesgo.",
+      "steps": [
+        "Confirma que has entrado en uno de los dos dominios de abajo y no uses sitios imitados de origen desconocido.",
+        "Recarga solo tu propia cuenta. No compres “cuentas ya hechas” de origen desconocido.",
+        "No cierres la página durante la recarga y guarda el pedido y los registros de atención.",
+        "Las promesas del sitio (reembolsos por día, garantía ante bloqueos, etc.) siguen las reglas de esa página: léelas antes de pedir."
+      ],
+      "backup": "Reserva del mismo sitio:",
+      "cta": "💳 Abrir el sitio de recarga",
+      "imgAlt": "Inicio de recarga GPTPro: recarga de ChatGPT Plus / GPT Pro, con WeChat Pay y Alipay",
+      "caption": "Inicio de recarga GPTPro. Sirve para recargar tu propia cuenta oficial, no es una página de cuentas compartidas.",
+      "disclaimer": "⚠️ Si solo quieres una charla breve, un nodo web es más sencillo. Elige esta vía cuando quieras que la cuenta sea tuya y que las funciones sigan el sitio oficial."
+    },
+    "codex": {
+      "badge": "Canal 4",
+      "title": "Sitio Codex de acceso nacional (momoAPICodex)",
+      "pain": "Para quienes quieren escribir código o ejecutar agentes con Codex Desktop / CLI, o también generar imágenes con GPTimage2. No es una suscripción oficial de OpenAI, sino un relé de terceros accesible desde China continental.",
+      "method": "Regístrate en momoai.asia, activa un plan por uso o mensual, crea una clave API en el grupo correspondiente y, con CC Switch, apunta el cliente oficial a la dirección del relé. Los precios y las cuotas diarias cambian: sigue las reglas en vivo de la consola.",
+      "steps": [
+        "Pon en Base URL la raíz del relé, por ejemplo https://momoai.asia, y no apuntes a https://api.openai.com.",
+        "La clave debe salir de un grupo que admita Codex (a menudo un grupo mensual de Codex). Si eliges el grupo equivocado verás “modelo no compatible” o te quedarás sin cuota.",
+        "Usa los ID de modelo de la lista de la consola ese día; no escribas de memoria nombres que quizá ya se hayan retirado.",
+        "Si antes iniciaste sesión con una cuenta oficial de Codex, cierra sesión primero y luego pasa a la clave API."
+      ],
+      "serviceEntry": "Entrada del servicio:",
+      "backup": "Dominio de reserva:",
+      "docsLabel": "Guía ilustrada:",
+      "docsLink": "Brecha de información de IA, “Sitio Codex de acceso nacional” (2026-07-12)",
+      "cta": "💻 Abrir momoai.asia",
+      "ctaDocs": "📖 Ver la guía",
+      "imgAlt": "Página de la guía “Sitio Codex de acceso nacional” de Brecha de información de IA, con la entrada momoAPICodex y la configuración de acceso nacional",
+      "caption": "El lugar para crear claves y comprar un plan de verdad es momoai.asia. La entrada antigua codexinstall.asia devolvió HTTP 451 el día de la comprobación: ya no la uses.",
+      "disclaimer": "⚠️ El dominio antiguo https://codex.maynor1024.live/ sigue abriendo, pero ahora es un aviso de cambio de marca y te pide pasar a momoai.asia."
+    },
+    "api": {
+      "badge": "Canal 5",
+      "title": "Agregador de interfaces momoAPIPro / TryAllAPI",
+      "pain": "Si quieres llamar modelos desde tu proyecto, un script o un cliente de escritorio, este camino encaja mejor. Una sola Base URL compatible con OpenAI para varios modelos. No es una sala de chat web de ChatGPT.",
+      "method": "La marca de la portada es momoAPIPro. Anuncia “más de 10.000 desarrolladores y 18 meses de operación estable”; la lista real de modelos, los precios unitarios y los grupos siguen la consola. Tanto este sitio como momoai.asia ofrecen API: momoai se acerca más a Codex, a los planes mensuales y al relé de clientes; TryAllAPI hace hincapié en el acceso por uso a muchos modelos.",
+      "history": "Redirecciones de dominios históricos:",
+      "cta": "🔌 Abrir tryallapi.com",
+      "imgAlt": "Inicio de momoAPIPro / tryallapi.com: agregador de API de IA, con una Base URL de ejemplo https://tryallapi.com/v1",
+      "caption": "Sustituye your-api-key por una clave de la consola y cambia el nombre del modelo por un ID que exista realmente en la consola. No pongas claves en un repositorio público ni en el historial de un chat.",
+      "disclaimer": "⚠️ https://api.maynorai.asia/ también abrió el día de la comprobación, pero es otra Base URL. Si ya usas tryallapi.com, no hace falta cambiar; a los usuarios nuevos les recomendamos empezar por la dirección tryallapi.com verificada en este artículo."
+    }
+  },
+  "compare": {
+    "title": "📊 Tabla comparativa y recomendaciones",
+    "intro": "Una combinación práctica es: usa momoAI.New para el chat web diario; usa la recarga oficial cuando quieras la experiencia Plus oficial; deja el código en momoai.asia + Codex; y usa TryAllAPI cuando un producto o un script necesite muchos modelos.",
+    "col": {
+      "item": "Comparar",
+      "web": "Nodos web",
+      "recharge": "Recarga oficial",
+      "codex": "Sitio Codex de acceso nacional",
+      "api": "Agregador de API"
+    },
+    "row": {
+      "entry": "Entrada típica",
+      "usage": "Cómo se usa",
+      "who": "Para quién es",
+      "cost": "Principal contraprestación",
+      "not": "No es adecuado"
+    },
+    "usage": {
+      "web": "Chatear en un nodo desde el navegador",
+      "recharge": "Recargar tu propia cuenta oficial",
+      "codex": "Cliente / CLI + clave API",
+      "api": "API compatible con OpenAI"
+    },
+    "who": {
+      "web": "Quienes quieren chatear ya y cambiar de nodo",
+      "recharge": "Quienes quieren las funciones oficiales completas y una identidad oficial",
+      "codex": "Programar, agentes y generación de imágenes con Codex",
+      "api": "Integraciones de desarrollo y llamadas a varios modelos"
+    },
+    "cost": {
+      "web": "Las funciones pueden no coincidir con el sitio oficial",
+      "recharge": "Debes entregar credenciales de la cuenta según el proceso del sitio",
+      "codex": "Hay que configurar el relé y los grupos",
+      "api": "Tienes que escribir las llamadas o conectar un cliente tú mismo"
+    },
+    "not": {
+      "web": "Beneficios exclusivos de lo oficial",
+      "recharge": "Solo quieres una prueba rápida o no tienes cuenta propia",
+      "codex": "Solo quieres una charla informal en la web",
+      "api": "Quienes no quieren tocar una API en absoluto"
+    }
+  },
+  "map": {
+    "title": "🗺️ Mapa de canales (verificado el 2026-11-14)",
+    "intro": "Comprobado el mismo día con solicitudes HTTP públicas: las seis direcciones siguientes devolvieron 200 y se abrieron. Tanto el sitio antiguo como el nuevo son aplicaciones de una sola página; los títulos de la cáscara HTML solo muestran ChatGPT / gpt. Toma las capturas de este artículo como referencia de la interfaz.",
+    "col": {
+      "role": "Rol",
+      "addr": "Dirección verificada",
+      "result": "Resultado"
+    },
+    "old": {
+      "role": "Nodos web antiguos",
+      "result": "200. maynorai.top redirige a esta página"
+    },
+    "new": {
+      "role": "Nuevo vestíbulo de nodos",
+      "result": "200. La ruta raíz también lleva a /list/"
+    },
+    "recharge": {
+      "role": "Recarga oficial",
+      "result": "200. El título es servicio de recarga GPTPro"
+    },
+    "codex": {
+      "role": "Sitio Codex de acceso nacional",
+      "result": "200. /home también abre"
+    },
+    "docs": {
+      "role": "Guía de Codex",
+      "result": "200. Publicado el 2026-07-12"
+    },
+    "api": {
+      "role": "Agregador de API",
+      "result": "200. La Base URL de demostración es /v1"
+    }
+  },
+  "notes": {
+    "title": "💡 Léelo antes de empezar",
+    "group": {
+      "title": "🔑 Revisa primero el grupo y el ID del modelo",
+      "text": "Si Codex o la API devuelven 401, no hay cuota o el modelo no es compatible, suele ser un desajuste entre el grupo de la clave o el nombre del modelo y la consola, no que “todo el sitio esté caído”."
+    },
+    "price": {
+      "title": "📌 Los precios solo valen el día en curso",
+      "text": "No pegues claves ni el estado de inicio de sesión en un chat o en un repositorio público. En la recarga oficial, comprueba bien el dominio. Las cuotas mensuales y los bonos de artículos o capturas antiguas pueden estar desactualizados. Cumple también las leyes locales y las condiciones de la plataforma."
+    }
+  },
+  "backups": {
+    "title": "🔗 Dominios de reserva y entradas extra",
+    "intro": "Las direcciones siguientes se verificaron el mismo día y pueden servir de reserva o complemento; no sustituyen las seis entradas principales de arriba. Cuando necesites la URL más reciente, parte de una dirección de trygpt / momoai / recarga / TryAllAPI que ya hayas confirmado que abre.",
+    "col": {
+      "addr": "Dirección",
+      "result": "Resultado del día",
+      "note": "Notas"
+    },
+    "recharge": {
+      "result": "200, el título coincide con el sitio principal de recarga",
+      "note": "Dominio de reserva para la recarga oficial"
+    },
+    "codex": {
+      "result": "200, abre momoAPICodex",
+      "note": "Dominio de reserva para Codex / momoai"
+    },
+    "maynor": {
+      "result": "200, redirige al vestíbulo antiguo",
+      "note": "Dominio anterior del vestíbulo de nodos antiguo"
+    },
+    "trymodel": {
+      "result": "200, redirige a /zh",
+      "note": "Un chat web multimodelo del mismo ecosistema; no es uno de los cinco canales principales de este artículo"
+    },
+    "image": {
+      "note": "Un sitio independiente de GPT Image; la nueva barra lateral también enlaza aquí"
+    },
+    "install": {
+      "note": "No se pudo verificar como una entrada usable; usa momoai.asia"
+    }
+  },
+  "faq": {
+    "title": "❓ Preguntas frecuentes",
+    "chat": {
+      "q": "Solo quiero abrir una página y empezar a chatear. ¿Cuál elijo?",
+      "a": "Guarda primero el nuevo vestíbulo de nodos en https://trygpt.asia/list/#/home. El sitio antiguo https://old.trygpt.asia/list/ sigue abriendo y puedes dejarlo como reserva."
+    },
+    "account": {
+      "q": "¿Y si quiero las funciones oficiales completas y mi propia cuenta?",
+      "a": "Usa la recarga oficial: https://chongzhi.chatgpt-plus.top/ , reserva https://chongzhi.trygpt.asia/ . Recarga solo tu cuenta, confirma el dominio y guarda los registros del pedido."
+    },
+    "codex": {
+      "q": "¿Adónde voy para escribir código o usar Codex?",
+      "a": "Crea una clave en https://momoai.asia/ y, con CC Switch, apunta el cliente a la dirección del relé. No uses codexinstall.asia, que devuelve 451."
+    },
+    "down": {
+      "q": "¿Qué hago si un dominio no abre?",
+      "a": "Prueba primero las direcciones de reserva de este artículo y sigue la página del sitio ese día. Tener guardada una entrada ya verificada importa más que ir detrás de otro lote de “espejos nuevos” de origen desconocido."
+    }
+  },
+  "finalCta": {
+    "title": "🎯 Guarda primero una entrada que sí abra",
+    "description": "Para chatear en la web, entra al vestíbulo de nodos; para una identidad oficial, usa la recarga oficial; para programar, usa el sitio Codex de acceso nacional; para llamar modelos desde tu aplicación, usa el agregador de API.",
+    "primary": "✨ Abrir el nuevo vestíbulo de nodos",
+    "recharge": "💳 Recarga oficial",
+    "codex": "💻 Sitio Codex de acceso nacional",
+    "markdown": "📄 Ver el origen en Markdown"
+  },
+  "footer": {
+    "copyright": "© 2026 Canales para usar GPT en China. Un directorio de terceros, no un producto oficial de OpenAI. Verificado el 14 de noviembre de 2026 (Asia/Shanghai).",
+    "github": "GitHub",
+    "choose": "Cómo elegir",
+    "compare": "Comparación"
+  },
+  "ui": {
+    "languageSelector": "Elegir idioma",
+    "themeToLight": "Cambiar a modo claro",
+    "themeToDark": "Cambiar a modo oscuro"
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "国内使用GPT的渠道汇总 · 网页节点 / 官网代充 / Codex / API",
+    "description": "国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站与 API 聚合。2026 年 11 月 14 日核实。"
+  },
+  "nav": {
+    "logo": "GPT 渠道汇总",
+    "meta": "2026-11-14 核实"
+  },
+  "hero": {
+    "badge": "✨ 按场景选入口",
+    "title": "国内使用 GPT 的渠道汇总",
+    "titleAccent": "网页节点 · 官网代充 · Codex · API",
+    "subtitle": "直接打开 chatgpt.com 并不总是顺利：网络、海外手机号、信用卡和账号风控，都会把第一步卡住。把目前仍可打开的几条主要渠道放在一起，方便按场景选，而不是到处搜链接。",
+    "features": [
+      "🧩 第三方渠道",
+      "🗺️ 六条入口当日可打开",
+      "📌 以当天页面为准"
+    ],
+    "cta": {
+      "primary": "✨ 打开新版节点大厅",
+      "recharge": "💳 官网代充",
+      "choose": "🧭 先看怎么选",
+      "codex": "💻 Codex 国内站",
+      "api": "🔌 API 聚合"
+    }
+  },
+  "fable": {
+    "badge": "日常推荐",
+    "title": "推荐：在 momoAI.New 开箱即聊",
+    "description": "想在浏览器里直接对话、按负载切节点，优先收藏新版大厅 https://trygpt.asia/list/#/home。旧站仍可打开，适合当备用入口。同一套生态里，trygpt 侧重网页节点大厅，momoai 侧重 API 与包月控制台。",
+    "cta": "打开 https://trygpt.asia/"
+  },
+  "choose": {
+    "title": "🧭 怎么选：先看场景",
+    "lead": "不必四个都开。按你现在最想做的那件事选一条就行。",
+    "cards": [
+      {
+        "title": "💬 马上在网页里聊",
+        "text": "走网页镜像节点，按负载切卡片。入口：trygpt.asia（新站）/ old.trygpt.asia（旧站）。"
+      },
+      {
+        "title": "🪪 要自己的官方账号",
+        "text": "把 Plus / Pro 充到你自己的 ChatGPT 账号，继续用官网完整功能。入口：chongzhi.chatgpt-plus.top。"
+      },
+      {
+        "title": "💻 写代码、跑 Agent",
+        "text": "用 Codex Desktop / CLI + 中转 Key，也可顺带生图。入口：momoai.asia。"
+      },
+      {
+        "title": "🔌 在自己的项目里调模型",
+        "text": "一个 OpenAI 兼容 Key，接多家模型。入口：tryallapi.com。"
+      }
+    ],
+    "note": "✅ 新站优先，旧站备用　✅ 代充是另一条线，不经过镜像对话页　✅ 价格和模型列表以当天控制台为准"
+  },
+  "channel": {
+    "new": {
+      "badge": "渠道二 · 更常用",
+      "title": "momoAI.New 高级节点大厅",
+      "pain": "目前更常用的新版大厅，界面品牌为 momoAI.New。左侧按产品划分：GPT Plus 高级节点、Gemini Pro、SuperGrok、AI 绘图、Claude Pro Max、代充值站、Codex 国内站等。",
+      "method": "节点用卡片展示，可按「全部 / 推荐 / 繁忙」筛选，并显示实时负载。绿条且数字较小的优先；黄条「可用」表示还能进，但可能更挤。若提示订阅类型不符，需先在站内商店购买或用卡密兑换。",
+      "cta": "✨ 打开新版大厅",
+      "ctaOld": "🗂️ 旧版备用大厅",
+      "caption": "momoAI.New 节点大厅。截图里当前筛选偏 Super / Grok 节点，左侧可切回 GPT Plus 高级节点。",
+      "imgAlt": "momoAI.New 节点大厅，按全部/推荐/繁忙筛选，节点带 Super 或 Grok 标签与负载数字"
+    },
+    "entry": "入口：",
+    "old": {
+      "badge": "渠道一 · 备用",
+      "title": "momoAI 旧版网页节点（不降智 Plus 节点）",
+      "pain": "偏「节点卡片墙」的旧版大厅。顶栏可在不降智 Plus 节点、SuperGrok、Gemini、Claude Pro Max、Codex 国内站等入口之间切换。",
+      "method": "空闲节点多为绿条并标「推荐」，繁忙节点则为黄条并标「可用」。某一个变慢，直接换一张卡片即可。网页镜像适合打开就能聊，但不等于拥有完整官方账号。",
+      "redirect": "旧域名跳转：",
+      "same": "同上",
+      "cta": "打开旧版大厅",
+      "caption": "2026 年 11 月 14 日截取的 momoAI 旧版「不降智 Plus 节点」大厅。页脚站点标识为 momoAI。",
+      "imgAlt": "momoAI「不降智 Plus 节点」大厅，节点按空闲/繁忙分列，并带推荐或可用标记"
+    },
+    "recharge": {
+      "badge": "渠道三",
+      "title": "ChatGPT Plus / GPT Pro 官网代充",
+      "pain": "如果你已经有（或可以准备）自己的 ChatGPT 账号，只是没法用海外信用卡付款：把 Plus / Pro 充到你自己的官方账号上，然后仍在官网使用。",
+      "method": "站点自称「24 小时全自动 · 正规 IOS 通道」，支持微信和支付宝，并写明通常 1–2 分钟到账。宣传数据（已服务 1.3 万+、封号率 &lt;0.1%、通常 1–3 分钟到账）均为站点自评，本文只转述、未独立审计。这条路的代价是需按站点流程提供账号相关凭证，本身有风险。",
+      "steps": [
+        "确认进入的是下面这两个域名，不要跟来路不明的仿站。",
+        "只给自己的账号充值，不要购买来源不明的「成品号」。",
+        "充值过程中不要关闭页面，并保留订单与客服记录。",
+        "站点承诺（按天退款、封号质保等）以当页规则为准，下单前先看清楚。"
+      ],
+      "backup": "同站备用：",
+      "cta": "💳 打开代充站",
+      "caption": "GPTPro 代充首页。这是给自有官方账号充值，不是共享号池页面。",
+      "disclaimer": "⚠️ 只想临时聊两句，网页节点更简单。想要「账号是自己的、功能跟官网走」时，再选这条。",
+      "imgAlt": "GPTPro 代充首页：ChatGPT Plus / GPT Pro 充值服务，支持微信和支付宝"
+    },
+    "codex": {
+      "badge": "渠道四",
+      "title": "Codex 国内站（momoAPICodex）",
+      "pain": "面向要用 Codex Desktop / CLI 写代码、跑 Agent，或同时用 GPTimage2 出图的人。这不是 OpenAI 官方订阅，而是国内可访问的第三方中转。",
+      "method": "在 momoai.asia 注册，开通按量或包月，创建对应分组的 API Key，再用 CC Switch 把官方客户端指到中转地址。套餐价格和每日额度会变，请以控制台实时规则为准。",
+      "steps": [
+        "Base URL 填中转根地址，例如 https://momoai.asia，不要再指向 https://api.openai.com。",
+        "Key 必须来自支持 Codex 的分组（常见是包月 Codex 分组）；选错会出现「模型不受支持」或没额度。",
+        "模型 ID 以控制台当天列表为准，不要凭记忆写已经下线的名字。",
+        "若之前登录过官方 Codex 账号，先退出，再改用 API Key。"
+      ],
+      "serviceEntry": "服务入口：",
+      "backup": "备用域名：",
+      "docsLabel": "图文说明：",
+      "docsLink": "AI 信息差《Codex国内站》（2026-07-12）",
+      "cta": "💻 打开 momoai.asia",
+      "ctaDocs": "📖 查看说明文",
+      "caption": "真正开 Key、买套餐的地方是 momoai.asia。旧入口 codexinstall.asia 当日返回 HTTP 451，请不要再用。",
+      "disclaimer": "⚠️ 旧域名 https://codex.maynor1024.live/ 仍可打开，但已是品牌升级通知，并提示迁移到 momoai.asia。",
+      "imgAlt": "AI 信息差《Codex国内站》说明页，介绍 momoAPICodex 入口与国内直连配置"
+    },
+    "api": {
+      "badge": "渠道五",
+      "title": "momoAPIPro / TryAllAPI 接口聚合",
+      "pain": "要在自己的项目、脚本或桌面客户端里调模型，这一条更合适。一个 OpenAI 兼容的 Base URL，接多家模型。它不是 ChatGPT 网页聊天室。",
+      "method": "首页品牌为 momoAPIPro。页面宣传「10,000+ 开发者、18 个月稳定运营」，具体模型列表、单价和分组以控制台为准。和 momoai.asia 都提供 API：momoai 更贴近 Codex / 包月与客户端中转；TryAllAPI 更强调多模型按量接入。",
+      "history": "历史域名跳转：",
+      "cta": "🔌 打开 tryallapi.com",
+      "caption": "请把 your-api-key 换成控制台密钥，模型名改成控制台里实际存在的 ID。不要把 Key 写进公开仓库或聊天记录。",
+      "disclaimer": "⚠️ https://api.maynorai.asia/ 当日也可打开，但是另一套 Base URL。若已在用 tryallapi.com，不必换；新用户建议先走本文核实过的 tryallapi.com。",
+      "imgAlt": "momoAPIPro / tryallapi.com 首页：AI 接口聚合，示例 Base URL 为 https://tryallapi.com/v1"
+    }
+  },
+  "compare": {
+    "title": "📊 对照表与选用建议",
+    "intro": "一个很实用的组合是：日常网页对话用 momoAI.New；要官方 Plus 体验再走代充；写代码固定用 momoai.asia + Codex；产品或脚本里要切很多模型，再用 TryAllAPI。",
+    "col": {
+      "item": "对比",
+      "web": "网页节点",
+      "recharge": "官网代充",
+      "codex": "Codex 国内站",
+      "api": "API 聚合"
+    },
+    "row": {
+      "entry": "典型入口",
+      "usage": "使用方式",
+      "who": "适合谁",
+      "cost": "主要代价",
+      "not": "不适合"
+    },
+    "usage": {
+      "web": "浏览器进节点聊天",
+      "recharge": "充到自己的官网账号",
+      "codex": "客户端 / CLI + API Key",
+      "api": "OpenAI 兼容 API"
+    },
+    "who": {
+      "web": "想马上对话、切节点",
+      "recharge": "要完整官网能力和官方身份",
+      "codex": "写代码、Agent、Codex 生图",
+      "api": "开发集成、多模型调用"
+    },
+    "cost": {
+      "web": "功能不一定对齐官网",
+      "recharge": "需按站点流程提供账号凭证",
+      "codex": "需配置中转与分组",
+      "api": "需自己写调用或接客户端"
+    },
+    "not": {
+      "web": "官方独有权益",
+      "recharge": "只想临时试用、没有自有账号",
+      "codex": "只想网页随手聊两句",
+      "api": "完全不想碰 API 的人"
+    }
+  },
+  "map": {
+    "title": "🗺️ 渠道地图（2026-11-14 核实）",
+    "intro": "当日用公开 HTTP 访问核对，以下 6 个地址均返回 200，可以打开。旧站、新站都是前端单页应用，HTML 壳子的 title 分别只显示 ChatGPT / gpt，界面形态以文中截图为准。",
+    "col": {
+      "role": "角色",
+      "addr": "核实地址",
+      "result": "结果"
+    },
+    "old": {
+      "role": "旧版网页节点",
+      "result": "200。maynorai.top 会跳转到该页"
+    },
+    "new": {
+      "role": "新版节点大厅",
+      "result": "200。根路径也会进入 /list/"
+    },
+    "recharge": {
+      "role": "官网代充",
+      "result": "200。标题为 GPTPro 代充服务"
+    },
+    "codex": {
+      "role": "Codex 国内站",
+      "result": "200。/home 同样可打开"
+    },
+    "docs": {
+      "role": "Codex 说明文",
+      "result": "200。发布于 2026-07-12"
+    },
+    "api": {
+      "role": "API 聚合",
+      "result": "200。演示 Base URL 为 /v1"
+    }
+  },
+  "notes": {
+    "title": "💡 使用前请注意",
+    "group": {
+      "title": "🔑 先看分组和模型 ID",
+      "text": "Codex 或 API 报 401、没额度、模型不支持，多半是 Key 分组或模型名与控制台不一致，而不是「站点完全挂了」。"
+    },
+    "price": {
+      "title": "📌 价格只以当天为准",
+      "text": "不要把密钥和登录态发到聊天里或公开仓库。代充尤其要认准域名。旧博文、旧截图里的月费和赠送额度都可能过时。并请遵守所在地法律法规和平台条款。"
+    }
+  },
+  "backups": {
+    "title": "🔗 备用域名与补充入口",
+    "intro": "以下地址当日核实过，可作备用或补充，但不是上面 6 个主入口的替代关系。需要最新地址时，优先以你已经核实能打开的 trygpt / momoai / 代充 / TryAllAPI 为准。",
+    "col": {
+      "addr": "地址",
+      "result": "当日结果",
+      "note": "说明"
+    },
+    "recharge": {
+      "result": "200，与代充主站标题一致",
+      "note": "代充备用域名"
+    },
+    "codex": {
+      "result": "200，打开 momoAPICodex",
+      "note": "Codex / momoai 备用域名"
+    },
+    "maynor": {
+      "result": "200，跳转到旧版大厅",
+      "note": "旧版节点厅的旧域名"
+    },
+    "trymodel": {
+      "result": "200，跳转到 /zh",
+      "note": "同生态多模型网页聊天，不是本次五条主渠道"
+    },
+    "image": {
+      "note": "独立 GPT Image 站点，新版侧栏也会链到"
+    },
+    "install": {
+      "note": "未能核实为可用入口，请改用 momoai.asia"
+    }
+  },
+  "faq": {
+    "title": "❓ 常见问题",
+    "chat": {
+      "q": "我只想打开就能聊，选哪条？",
+      "a": "优先收藏新版节点大厅 https://trygpt.asia/list/#/home。旧站 https://old.trygpt.asia/list/ 仍可打开，当作备用入口即可。"
+    },
+    "account": {
+      "q": "我想要完整官网功能和自己的账号呢？",
+      "a": "走官网代充：https://chongzhi.chatgpt-plus.top/ ，备用 https://chongzhi.trygpt.asia/ 。只给自己的账号充，认准域名，保留订单记录。"
+    },
+    "codex": {
+      "q": "写代码、用 Codex 应该去哪？",
+      "a": "去 https://momoai.asia/ 开 Key，再用 CC Switch 把客户端指到中转地址。不要再用返回 451 的 codexinstall.asia。"
+    },
+    "down": {
+      "q": "某个域名打不开怎么办？",
+      "a": "先试文中列出的备用地址，并以站点当时页面为准。把已核实能打开的入口收藏好，比再追一批来路不明的「最新镜像」更重要。"
+    }
+  },
+  "finalCta": {
+    "title": "🎯 先收藏一条能打开的入口",
+    "description": "要网页对话，进节点大厅；要官方身份，走代充；要写代码，用 Codex 国内站；要在自己的应用里调模型，用 API 聚合。",
+    "primary": "✨ 打开新版节点大厅",
+    "recharge": "💳 官网代充",
+    "codex": "💻 Codex 国内站",
+    "markdown": "📄 查看 Markdown 原文"
+  },
+  "footer": {
+    "copyright": "© 2026 国内使用GPT的渠道汇总。第三方导流说明，非 OpenAI 官方产品。核实日期：2026 年 11 月 14 日（Asia/Shanghai）。",
+    "github": "GitHub",
+    "choose": "怎么选",
+    "compare": "对照表"
+  },
+  "ui": {
+    "languageSelector": "选择语言",
+    "themeToLight": "切换到浅色模式",
+    "themeToDark": "切换到深色模式"
+  }
+}
