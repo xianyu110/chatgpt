@@ -281,5 +281,12 @@
     "languageSelector": "Choose language",
     "themeToLight": "Switch to light mode",
     "themeToDark": "Switch to dark mode"
+  },
+  "cs": {
+    "title": "Customer support",
+    "copy": "Copy number",
+    "open": "Open QQ chat",
+    "toggle": "Contact support",
+    "copied": "Copied"
   }
 }

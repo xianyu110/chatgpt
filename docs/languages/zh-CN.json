@@ -281,5 +281,12 @@
     "languageSelector": "选择语言",
     "themeToLight": "切换到浅色模式",
     "themeToDark": "切换到深色模式"
+  },
+  "cs": {
+    "title": "客服联系方式",
+    "copy": "复制号码",
+    "open": "打开 QQ 聊天",
+    "toggle": "联系客服",
+    "copied": "已复制"
   }
 }
