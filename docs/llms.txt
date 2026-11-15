@@ -1,0 +1,20 @@
+# GPT 渠道汇总
+
+> 国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站与 API 聚合。
+
+- 站点：https://chatgpt-plus.top/
+- 核实日期：2026-11-14（Asia/Shanghai）
+- 第三方导流说明，非 OpenAI 官方产品
+
+## 主要入口
+
+- 旧版网页节点：https://old.trygpt.asia/list/
+- 新版节点大厅：https://trygpt.asia/list/#/home
+- 官网代充：https://chongzhi.chatgpt-plus.top/
+- Codex 国内站：https://momoai.asia/
+- API 聚合：https://tryallapi.com/
+
+## 备用地址
+
+- 代充备用：https://chongzhi.trygpt.asia/
+- Codex 备用：https://codex.trygpt.asia/

@@ -118,16 +118,25 @@ class EnhancedI18nManager {
         }
         
         const siteUrl = 'https://chatgpt-plus.top/';
-        canonical.href = siteUrl;
+        canonical.href = this.currentLanguage === 'zh-CN' ? siteUrl : `${siteUrl}?lang=${this.currentLanguage}`;
     }
 
     // 更新Open Graph标签
     updateOpenGraphTags() {
+        const siteUrl = 'https://chatgpt-plus.top/';
+        const pageUrl = this.currentLanguage === 'zh-CN' ? siteUrl : `${siteUrl}?lang=${this.currentLanguage}`;
+        const imageUrl = `${siteUrl}og-image.png`;
+        const title = this.seoConfig.title;
+        const description = this.seoConfig.description;
+
         const ogTags = {
-            'og:title': this.seoConfig.title,
-            'og:description': this.seoConfig.description,
-            'og:url': 'https://chatgpt-plus.top/',
-            'og:locale': this.currentLanguage.replace('-', '_')
+            'og:title': title,
+            'og:description': description,
+            'og:url': pageUrl,
+            'og:locale': this.currentLanguage.replace('-', '_'),
+            'og:site_name': this.t('nav.logo', 'GPT 渠道汇总'),
+            'og:image': imageUrl,
+            'og:image:alt': title || '国内使用GPT的渠道汇总'
         };
 
         Object.entries(ogTags).forEach(([property, content]) => {
@@ -136,6 +145,26 @@ class EnhancedI18nManager {
                 if (!tag) {
                     tag = document.createElement('meta');
                     tag.setAttribute('property', property);
+                    document.head.appendChild(tag);
+                }
+                tag.setAttribute('content', content);
+            }
+        });
+
+        const twitterTags = {
+            'twitter:card': 'summary_large_image',
+            'twitter:title': title,
+            'twitter:description': description,
+            'twitter:image': imageUrl,
+            'twitter:image:alt': title || '国内使用GPT的渠道汇总'
+        };
+
+        Object.entries(twitterTags).forEach(([name, content]) => {
+            if (content) {
+                let tag = document.querySelector(`meta[name="${name}"]`);
+                if (!tag) {
+                    tag = document.createElement('meta');
+                    tag.setAttribute('name', name);
                     document.head.appendChild(tag);
                 }
                 tag.setAttribute('content', content);
@@ -175,10 +204,56 @@ class EnhancedI18nManager {
         if (structuredDataScript) {
             try {
                 const data = JSON.parse(structuredDataScript.textContent);
-                data.name = this.seoConfig.title || data.name;
-                data.description = this.seoConfig.description || data.description;
-                data.inLanguage = Object.keys(this.supportedLanguages);
-                structuredDataScript.textContent = JSON.stringify(data, null, 2);
+                const site = Array.isArray(data['@graph'])
+                    ? (data['@graph'].find((node) => node['@type'] === 'WebSite') || data['@graph'][0])
+                    : data;
+                if (site) {
+                    if (this.seoConfig.title) {
+                        site.name = this.seoConfig.title;
+                    }
+                    if (this.seoConfig.description) {
+                        site.description = this.seoConfig.description;
+                    }
+                    site.inLanguage = Object.keys(this.supportedLanguages);
+                    site.url = 'https://chatgpt-plus.top/';
+                    site.image = 'https://chatgpt-plus.top/og-image.png';
+                }
+                const faq = Array.isArray(data['@graph'])
+                    ? data['@graph'].find((node) => node['@type'] === 'FAQPage')
+                    : null;
+                if (faq) {
+                    faq.inLanguage = this.currentLanguage;
+                    const faqItems = this.t('faq.items');
+                    const fallbackPairs = [
+                        ['faq.chat.q', 'faq.chat.a'],
+                        ['faq.account.q', 'faq.account.a'],
+                        ['faq.codex.q', 'faq.codex.a'],
+                        ['faq.down.q', 'faq.down.a']
+                    ];
+                    let entities = [];
+                    if (Array.isArray(faqItems)) {
+                        entities = faqItems
+                            .filter((item) => item && item.question && item.answer)
+                            .map((item) => ({
+                                '@type': 'Question',
+                                name: item.question,
+                                acceptedAnswer: { '@type': 'Answer', text: item.answer }
+                            }));
+                    }
+                    if (!entities.length) {
+                        entities = fallbackPairs
+                            .map(([q, a]) => ({
+                                '@type': 'Question',
+                                name: this.t(q),
+                                acceptedAnswer: { '@type': 'Answer', text: this.t(a) }
+                            }))
+                            .filter((item) => item.name && item.acceptedAnswer.text && item.name !== item.acceptedAnswer.text);
+                    }
+                    if (entities.length) {
+                        faq.mainEntity = entities;
+                    }
+                }
+                structuredDataScript.textContent = JSON.stringify(data);
             } catch (error) {
                 console.error('Error updating structured data:', error);
             }

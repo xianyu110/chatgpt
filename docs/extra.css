@@ -49,3 +49,8 @@
         text-align: left;
     }
 }
+
+/* Keep FAQ questions tight after switching the markup to h3 */
+h3.faq-question {
+    margin: 0;
+}
