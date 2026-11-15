@@ -18,3 +18,11 @@
 
 - 代充备用：https://chongzhi.trygpt.asia/
 - Codex 备用：https://codex.trygpt.asia/
+
+## 语言版本
+
+- 中文：https://chatgpt-plus.top/
+- English：https://chatgpt-plus.top/en/
+- 日本語：https://chatgpt-plus.top/ja/
+- 한국어：https://chatgpt-plus.top/ko/
+- Español：https://chatgpt-plus.top/es/

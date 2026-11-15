@@ -8,14 +8,78 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgpt-plus.top/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://chatgpt-plus.top/?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://chatgpt-plus.top/?lang=ja-JP"/>
-    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://chatgpt-plus.top/?lang=ko-KR"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://chatgpt-plus.top/?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://chatgpt-plus.top/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://chatgpt-plus.top/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://chatgpt-plus.top/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://chatgpt-plus.top/es/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://chatgpt-plus.top/"/>
     <image:image>
       <image:loc>https://chatgpt-plus.top/og-image.png</image:loc>
-      <image:title>国内使用GPT的渠道汇总</image:title>
+      <image:title>国内使用GPT的渠道汇总 · 网页节点 / 官网代充 / Codex / API</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://chatgpt-plus.top/en/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgpt-plus.top/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://chatgpt-plus.top/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://chatgpt-plus.top/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://chatgpt-plus.top/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://chatgpt-plus.top/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chatgpt-plus.top/"/>
+    <image:image>
+      <image:loc>https://chatgpt-plus.top/og-image.png</image:loc>
+      <image:title>GPT access channels in China · Web nodes / Official top-up / Codex / API</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://chatgpt-plus.top/ja/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgpt-plus.top/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://chatgpt-plus.top/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://chatgpt-plus.top/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://chatgpt-plus.top/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://chatgpt-plus.top/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chatgpt-plus.top/"/>
+    <image:image>
+      <image:loc>https://chatgpt-plus.top/og-image.png</image:loc>
+      <image:title>中国国内で使う GPT の経路まとめ · ウェブノード / 公式代行チャージ / Codex / API</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://chatgpt-plus.top/ko/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgpt-plus.top/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://chatgpt-plus.top/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://chatgpt-plus.top/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://chatgpt-plus.top/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://chatgpt-plus.top/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chatgpt-plus.top/"/>
+    <image:image>
+      <image:loc>https://chatgpt-plus.top/og-image.png</image:loc>
+      <image:title>중국에서 쓰는 GPT 경로 모음 · 웹 노드 / 공식 대신 충전 / Codex / API</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://chatgpt-plus.top/es/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgpt-plus.top/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://chatgpt-plus.top/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://chatgpt-plus.top/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://chatgpt-plus.top/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://chatgpt-plus.top/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chatgpt-plus.top/"/>
+    <image:image>
+      <image:loc>https://chatgpt-plus.top/og-image.png</image:loc>
+      <image:title>Canales para usar GPT en China · Nodos web / Recarga oficial / Codex / API</image:title>
     </image:image>
   </url>
 </urlset>

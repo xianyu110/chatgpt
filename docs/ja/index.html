@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ja-JP" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow" id="meta-robots">
+    <script>
+    (function(){
+      var origin='https://chatgpt-plus.top';
+      var map={'zh-CN':'/','en-US':'/en/','ja-JP':'/ja/','ko-KR':'/ko/','es-ES':'/es/'};
+      var params=new URLSearchParams(location.search);
+      var lang=params.get('lang');
+      var path=location.pathname;
+      if(path==='/index.html') path='/';
+      else if(path.slice(-11)==='/index.html') path=path.slice(0,-10);
+      else if(path==='/en'||path==='/ja'||path==='/ko'||path==='/es') path+='/';
+      var dest=null;
+      if(lang&&map[lang]){
+        dest=map[lang];
+        params.delete('lang');
+      } else if(location.pathname==='/index.html' || /\/[a-z]{2}\/index\.html$/.test(location.pathname)){
+        dest=path;
+      }
+      if(!dest){
+        try{
+          var saved=localStorage.getItem('preferred-language');
+          if(saved&&map[saved]&&path==='/'&&saved!=='zh-CN') dest=map[saved];
+        }catch(e){}
+      }
+      if(!dest) return;
+      var q=params.toString();
+      var next=origin+dest+(q?'?'+q:'')+location.hash;
+      if(location.href!==next) location.replace(next);
+    })();
+    </script>
+    <script>
+    (function(){try{var q=new URLSearchParams(location.search).get('theme');var t=(q==='light'||q==='dark')?q:localStorage.getItem('preferred-theme');if(t!=='light'&&t!=='dark'){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
+    </script>
+    <meta name="description" content="中国国内で GPT を使う経路のまとめ：ウェブミラーノード、ChatGPT Plus / GPT Pro の公式代行チャージ、国内向け Codex サイト、API アグリゲーター。2026年11月14日に確認。">
+    <meta name="keywords" content="国内使用GPT, ChatGPT 镜像, ChatGPT Plus 代充, Codex 国内站, momoAI, trygpt.asia, momoai.asia, tryallapi, chongzhi.chatgpt-plus.top">
+    <title data-i18n="meta.title">中国国内で使う GPT の経路まとめ · ウェブノード / 公式代行チャージ / Codex / API</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/extra.css">
+    <link rel="stylesheet" href="/contact-widget.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="canonical" href="https://chatgpt-plus.top/ja/">
+    <link rel="alternate" hreflang="zh-CN" href="https://chatgpt-plus.top/">
+    <link rel="alternate" hreflang="en-US" href="https://chatgpt-plus.top/en/">
+    <link rel="alternate" hreflang="ja-JP" href="https://chatgpt-plus.top/ja/">
+    <link rel="alternate" hreflang="ko-KR" href="https://chatgpt-plus.top/ko/">
+    <link rel="alternate" hreflang="es-ES" href="https://chatgpt-plus.top/es/">
+    <link rel="alternate" hreflang="x-default" href="https://chatgpt-plus.top/">
+    <link rel="preconnect" href="https://upload.maynor1024.live" crossorigin>
+    <meta name="theme-color" content="#0b0b0d">
+    <meta name="color-scheme" content="dark light">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GPT 経路まとめ">
+    <meta property="og:title" content="中国国内で使う GPT の経路まとめ · ウェブノード / 公式代行チャージ / Codex / API">
+    <meta property="og:description" content="中国国内で GPT を使う経路のまとめ：ウェブミラーノード、ChatGPT Plus / GPT Pro の公式代行チャージ、国内向け Codex サイト、API アグリゲーター。2026年11月14日に確認。">
+    <meta property="og:url" content="https://chatgpt-plus.top/ja/">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:image" content="https://chatgpt-plus.top/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="中国国内で使う GPT の経路まとめ · ウェブノード / 公式代行チャージ / Codex / API">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="中国国内で使う GPT の経路まとめ · ウェブノード / 公式代行チャージ / Codex / API">
+    <meta name="twitter:description" content="中国国内で GPT を使う経路のまとめ：ウェブミラーノード、ChatGPT Plus / GPT Pro の公式代行チャージ、国内向け Codex サイト、API アグリゲーター。2026年11月14日に確認。">
+    <meta name="twitter:image" content="https://chatgpt-plus.top/og-image.png">
+    <meta name="twitter:image:alt" content="中国国内で使う GPT の経路まとめ · ウェブノード / 公式代行チャージ / Codex / API">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://chatgpt-plus.top/#website","name":"中国国内で使う GPT の経路まとめ · ウェブノード / 公式代行チャージ / Codex / API","url":"https://chatgpt-plus.top/","description":"中国国内で GPT を使う経路のまとめ：ウェブミラーノード、ChatGPT Plus / GPT Pro の公式代行チャージ、国内向け Codex サイト、API アグリゲーター。2026年11月14日に確認。","inLanguage":"ja-JP","image":"https://chatgpt-plus.top/og-image.png"},{"@type":"FAQPage","@id":"https://chatgpt-plus.top/ja/#faq","isPartOf":{"@id":"https://chatgpt-plus.top/#website"},"inLanguage":"ja-JP","mainEntity":[{"@type":"Question","name":"開いてすぐに話したいだけです。どれを選べばいいですか？","acceptedAnswer":{"@type":"Answer","text":"まず旧版ノードホール https://old.trygpt.asia/list/ をブックマークしてください。新しいサイト https://trygpt.asia/list/#/home も開けます。"}},{"@type":"Question","name":"公式の全機能と、自分のアカウントが欲しい場合は？","acceptedAnswer":{"@type":"Answer","text":"公式代行チャージを使います：https://chongzhi.chatgpt-plus.top/ 、予備は https://chongzhi.trygpt.asia/ 。自分のアカウントにだけチャージし、ドメインを確認し、注文記録を残してください。"}},{"@type":"Question","name":"コードを書いたり、Codex を使うならどこへ行けばいいですか？","acceptedAnswer":{"@type":"Answer","text":"https://momoai.asia/ で Key を発行し、CC Switch でクライアントを中継アドレスに向けてください。451 を返す codexinstall.asia は使わないでください。"}},{"@type":"Question","name":"あるドメインが開かないときは？","acceptedAnswer":{"@type":"Answer","text":"まず本文に挙げた予備アドレスを試し、その時点のサイト表示に従ってください。出所の分からない「最新ミラー」をまた探すより、確認済みで開けた入り口をブックマークしておく方が大切です。"}}]}]}
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/logo.png" alt="GPT 経路まとめ" data-i18n-alt="nav.logo" width="28" height="28" decoding="async">
+                <span data-i18n="nav.logo">GPT 経路まとめ</span>
+            </div>
+            <div class="nav-controls">
+                <div class="nav-meta" data-i18n="nav.meta">2026-11-14 確認</div>
+                <button type="button" id="theme-toggle" class="theme-toggle" aria-label="切换到浅色模式" title="切换到浅色模式"></button>
+                <div id="language-selector-container" class="language-selector-container"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-badge" data-i18n="hero.badge">✨ 用途から入り口を選ぶ</div>
+            <h1 class="hero-title">
+                <span class="hero-title-main" data-i18n="hero.title">中国国内で使う GPT の経路まとめ</span>
+                <span class="hero-title-accent" data-i18n="hero.titleAccent">ウェブノード · 公式代行チャージ · Codex · API</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">chatgpt.com を直接開いても、いつも順調とは限りません。回線、海外の携帯電話番号、クレジットカード、アカウントのリスク判定が、最初の一歩でつまずくことがあります。いま開いている主な経路をここにまとめました。リンクをあちこち探すより、用途から選んでください。</p>
+
+            <div class="hero-features">
+                <div class="feature-tag feature-tag-warn" data-i18n="hero.features.0">🧩 第三者の経路</div>
+                <div class="feature-tag feature-tag-new" data-i18n="hero.features.1">🗺️ 本日確認できた入り口は 6 件</div>
+                <div class="feature-tag feature-tag-fable" data-i18n="hero.features.2">📌 当日のページ表示を基準に</div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="https://old.trygpt.asia/list/" target="_blank" rel="noopener" class="cta-button primary" data-i18n="hero.cta.primary">✨ 旧版ノードホールを開く</a>
+                <a href="https://chongzhi.chatgpt-plus.top/" target="_blank" rel="noopener" class="cta-button secondary" data-i18n="hero.cta.recharge">💳 公式代行チャージ</a>
+                <a href="#how-to-choose" class="cta-button secondary" data-i18n="hero.cta.choose">🧭 まず選び方を見る</a>
+                <a href="https://momoai.asia/" target="_blank" rel="noopener" class="cta-button secondary" data-i18n="hero.cta.codex">💻 国内向け Codex サイト</a>
+                <a href="https://tryallapi.com/" target="_blank" rel="noopener" class="cta-button ghost" data-i18n="hero.cta.api">🔌 API アグリゲーター</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="fable-highlight">
+            <div class="container">
+                <div class="fable-card">
+                    <div class="fable-card-badge" data-i18n="fable.badge">日常のおすすめ</div>
+                    <h2 data-i18n="fable.title">おすすめ：momoAI.New ですぐに話し始める</h2>
+                    <p data-i18n="fable.description">ブラウザで直接会話し、負荷を見ながらノードを切り替えたいなら、まず新しいホール https://trygpt.asia/list/#/home をブックマークしてください。旧サイトも開けます。同じエコシステムでは、trygpt はウェブのノードホール、momoai は API と月額コンソールが中心です。</p>
+                    <a href="https://trygpt.asia/list/#/home" target="_blank" rel="noopener" class="cta-button primary" data-i18n="fable.cta">https://trygpt.asia/ を開く</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-choose" class="desktop-section">
+            <div class="container">
+                <div class="desktop-inner">
+                    <h2 data-i18n="choose.title">🧭 選び方：まず用途を見る</h2>
+                    <p class="desktop-lead" data-i18n="choose.lead">四つとも開く必要はありません。いま一番やりたいことに合う道を一つ選べば十分です。</p>
+                    <div class="desktop-grid">
+                        <div class="desktop-card">
+                            <h3 data-i18n="choose.cards.0.title">💬 すぐにウェブで話す</h3>
+                            <p data-i18n="choose.cards.0.text">ウェブのミラーノードを使い、負荷を見ながらカードを切り替えます。入口：old.trygpt.asia（旧）/ trygpt.asia（新）。</p>
+                        </div>
+                        <div class="desktop-card">
+                            <h3 data-i18n="choose.cards.1.title">🪪 自分の公式アカウントが欲しい</h3>
+                            <p data-i18n="choose.cards.1.text">自分の ChatGPT アカウントに Plus / Pro をチャージし、公式サイトの全機能を使い続けます。入り口：chongzhi.chatgpt-plus.top。</p>
+                        </div>
+                        <div class="desktop-card">
+                            <h3 data-i18n="choose.cards.2.title">💻 コードを書く、Agent を動かす</h3>
+                            <p data-i18n="choose.cards.2.text">Codex Desktop / CLI と中継用 API Key を使い、画像生成もできます。入り口：momoai.asia。</p>
+                        </div>
+                        <div class="desktop-card">
+                            <h3 data-i18n="choose.cards.3.title">🔌 自分のプロジェクトからモデルを呼ぶ</h3>
+                            <p data-i18n="choose.cards.3.text">OpenAI 互換の Key 一つで、複数のモデルにつながります。入り口：tryallapi.com。</p>
+                        </div>
+                    </div>
+                    <div class="desktop-note">
+                        <p data-i18n="choose.note">✅ 旧サイトを優先、新サイトも利用可　✅ 代行チャージは別経路で、ミラー会話ページは経由しない　✅ 料金とモデル一覧は当日のコンソールに従う</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trygpt-old" class="sessionkey-section">
+            <div class="container">
+                <div class="sessionkey-card">
+                    <div class="sessionkey-badge" data-i18n="channel.old.badge">経路一</div>
+                    <h2 data-i18n="channel.old.title">momoAI 旧ウェブノード（性能を落とさない Plus ノード）</h2>
+                    <p class="sessionkey-pain" data-i18n="channel.old.pain">「ノードカードの壁」型の旧ホールです。トップバーで、性能を落とさない Plus ノード、SuperGrok、Gemini、Claude Pro Max、国内向け Codex サイトなどの入り口を切り替えられます。</p>
+                    <p class="sessionkey-method" data-i18n="channel.old.method">空きノードは緑のバーで「おすすめ」、混雑ノードは黄色のバーで「利用可」と出ることが多いです。一つが遅くなったら、別のカードに切り替えれば十分です。ウェブミラーはすぐに会話を始めるのに向きますが、公式アカウントを丸ごと持つのと同じではありません。</p>
+                    <div class="sessionkey-links">
+                        <p><span data-i18n="channel.entry">入り口：</span><a href="https://old.trygpt.asia/list/" target="_blank" rel="noopener">https://old.trygpt.asia/list/</a></p>
+                        <p><span data-i18n="channel.old.redirect">旧ドメインの転送：</span><a href="https://maynorai.top/" target="_blank" rel="noopener">https://maynorai.top/</a> → <span data-i18n="channel.old.same">同上</span></p>
+                    </div>
+                    <div class="sessionkey-actions">
+                        <a href="https://old.trygpt.asia/list/" target="_blank" rel="noopener" class="cta-button primary" data-i18n="channel.old.cta">旧ホールを開く</a>
+                    </div>
+                    <figure class="sessionkey-figure">
+                        <img src="https://upload.maynor1024.live/file/1794665528040_01-momoai-plus-nodes.png" data-i18n-alt="channel.old.imgAlt" alt="momoAI「性能を落とさない Plus ノード」ホール。空き/混雑の列と、おすすめまたは利用可の表示" width="960" height="540" loading="lazy" decoding="async">
+                        <figcaption data-i18n="channel.old.caption">2026年11月14日に撮影した、momoAI 旧版「性能を落とさない Plus ノード」ホール。フッターのサイト名は momoAI です。</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="trygpt-new" class="sessionkey-section channel-block">
+            <div class="container">
+                <div class="sessionkey-card">
+                    <div class="sessionkey-badge" data-i18n="channel.new.badge">経路二</div>
+                    <h2 data-i18n="channel.new.title">momoAI.New 上級ノードホール</h2>
+                    <p class="sessionkey-pain" data-i18n="channel.new.pain">いまより多く使われている新しいホールで、ブランド名は momoAI.New です。左サイドバーは製品別：GPT Plus 上級ノード、Gemini Pro、SuperGrok、AI 画像生成、Claude Pro Max、代行チャージサイト、国内向け Codex サイトなど。</p>
+                    <p class="sessionkey-method" data-i18n="channel.new.method">ノードはカードで表示され、「すべて / おすすめ / 混雑」で絞り込め、リアルタイムの負荷も見られます。緑のバーで数値が小さいものを優先してください。黄色の「利用可」は入れるものの、混んでいる可能性があります。サブスクリプション種別が合わないと出たら、先にサイト内ストアで購入するか、カードコードで交換してください。</p>
+                    <div class="sessionkey-links">
+                        <p><span data-i18n="channel.entry">入り口：</span><a href="https://trygpt.asia/list/#/home" target="_blank" rel="noopener">https://trygpt.asia/list/#/home</a></p>
+                    </div>
+                    <div class="sessionkey-actions">
+                        <a href="https://trygpt.asia/list/#/home" target="_blank" rel="noopener" class="cta-button primary" data-i18n="channel.new.cta">✨ 新しいホールを開く</a>
+                        <a href="https://old.trygpt.asia/list/" target="_blank" rel="noopener" class="cta-button secondary" data-i18n="channel.new.ctaOld">🗂️ 旧ホール（予備）</a>
+                    </div>
+                    <figure class="sessionkey-figure">
+                        <img src="https://upload.maynor1024.live/file/1794665535891_02-momoai-new-nodes.png" data-i18n-alt="channel.new.imgAlt" alt="momoAI.New のノードホール。すべて / おすすめ / 混雑で絞り込み、Super や Grok のタグと負荷数値が付いている" width="960" height="540" loading="lazy" decoding="async">
+                        <figcaption data-i18n="channel.new.caption">momoAI.New のノードホール。このスクリーンショットは Super / Grok ノード寄りの絞り込みです。左サイドバーから GPT Plus 上級ノードに戻せます。</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="recharge" class="sessionkey-section channel-block">
+            <div class="container">
+                <div class="sessionkey-card">
+                    <div class="sessionkey-badge" data-i18n="channel.recharge.badge">経路三</div>
+                    <h2 data-i18n="channel.recharge.title">ChatGPT Plus / GPT Pro 公式代行チャージ</h2>
+                    <p class="sessionkey-pain" data-i18n="channel.recharge.pain">すでに（またはこれから用意できる）自分の ChatGPT アカウントがあり、海外のクレジットカードで払えないだけなら：自分の公式アカウントに Plus / Pro をチャージし、その後も公式サイトで使います。</p>
+                    <p class="sessionkey-method" data-i18n="channel.recharge.method">サイトは「24時間全自動 · 正規 iOS チャネル」を名乗り、WeChat と Alipay に対応し、通常 1〜2 分で反映すると書いています。宣伝数字（1.3 万件以上に対応、凍結率 &lt;0.1%、通常 1〜3 分で反映）はサイト自身の主張であり、このページは転記するだけで、独自には検証していません。この経路では、サイトの手順に従ってアカウント関連の証憑を出す必要があり、それ自体にリスクがあります。</p>
+                    <ol class="sessionkey-steps">
+                        <li data-i18n="channel.recharge.steps.0">次の 2 つのドメインに入ったことを確認し、出所の分からない模倣サイトには近づかないでください。</li>
+                        <li data-i18n="channel.recharge.steps.1">自分のアカウントにだけチャージし、出所不明の「完成アカウント」は買わないでください。</li>
+                        <li data-i18n="channel.recharge.steps.2">チャージ中はページを閉じず、注文とカスタマーサポートの記録を残してください。</li>
+                        <li data-i18n="channel.recharge.steps.3">サイトの約束（日割り返金、凍結保証など）は当日のページ規則に従います。注文前によく読んでください。</li>
+                    </ol>
+                    <div class="sessionkey-links">
+                        <p><span data-i18n="channel.entry">入り口：</span><a href="https://chongzhi.chatgpt-plus.top/" target="_blank" rel="noopener">https://chongzhi.chatgpt-plus.top/</a></p>
+                        <p><span data-i18n="channel.recharge.backup">同一サイトの予備：</span><a href="https://chongzhi.trygpt.asia/" target="_blank" rel="noopener">https://chongzhi.trygpt.asia/</a></p>
+                    </div>
+                    <div class="sessionkey-actions">
+                        <a href="https://chongzhi.chatgpt-plus.top/" target="_blank" rel="noopener" class="cta-button primary" data-i18n="channel.recharge.cta">💳 代行チャージサイトを開く</a>
+                    </div>
+                    <figure class="sessionkey-figure">
+                        <img src="https://upload.maynor1024.live/file/1794665532606_03-chatgpt-plus-recharge.png" data-i18n-alt="channel.recharge.imgAlt" alt="GPTPro 代行チャージトップ：ChatGPT Plus / GPT Pro チャージ、WeChat と Alipay 対応" width="960" height="540" loading="lazy" decoding="async">
+                        <figcaption data-i18n="channel.recharge.caption">GPTPro 代行チャージのトップページ。自分の公式アカウントへのチャージであり、共有アカウント池のページではありません。</figcaption>
+                    </figure>
+                    <p class="sessionkey-disclaimer" data-i18n="channel.recharge.disclaimer">⚠️ 少し話すだけなら、ウェブノードの方が簡単です。アカウントを自分のものにし、機能を公式サイトに合わせたいときに、この経路を選んでください。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="codex" class="sessionkey-section channel-block">
+            <div class="container">
+                <div class="sessionkey-card">
+                    <div class="sessionkey-badge" data-i18n="channel.codex.badge">経路四</div>
+                    <h2 data-i18n="channel.codex.title">国内向け Codex サイト（momoAPICodex）</h2>
+                    <p class="sessionkey-pain" data-i18n="channel.codex.pain">Codex Desktop / CLI でコードを書いたり Agent を動かしたり、あわせて GPTimage2 で画像を出したい人向けです。これは OpenAI 公式のサブスクリプションではなく、中国国内から届く第三者の中継です。</p>
+                    <p class="sessionkey-method" data-i18n="channel.codex.method">momoai.asia で登録し、従量または月額を開き、対応グループの API Key を作り、CC Switch で公式クライアントを中継アドレスに向けます。料金と一日あたりの枠は変わるので、コンソールのその時点の規則に従ってください。</p>
+                    <ol class="sessionkey-steps">
+                        <li data-i18n="channel.codex.steps.0">Base URL には中継のルート、例えば https://momoai.asia を入れ、https://api.openai.com は指さないでください。</li>
+                        <li data-i18n="channel.codex.steps.1">Key は Codex に対応したグループ（多くは月額の Codex グループ）のものである必要があります。グループを間違えると「モデル非対応」や枠なしになります。</li>
+                        <li data-i18n="channel.codex.steps.2">モデル ID は当日のコンソール一覧に従い、すでに下された名前を記憶だけで書かないでください。</li>
+                        <li data-i18n="channel.codex.steps.3">以前に公式の Codex アカウントでログインしていた場合は、先にログアウトしてから API Key に切り替えてください。</li>
+                    </ol>
+                    <div class="sessionkey-links">
+                        <p><span data-i18n="channel.codex.serviceEntry">サービス入り口：</span><a href="https://momoai.asia/" target="_blank" rel="noopener">https://momoai.asia/</a></p>
+                        <p><span data-i18n="channel.codex.backup">予備ドメイン：</span><a href="https://codex.trygpt.asia/" target="_blank" rel="noopener">https://codex.trygpt.asia/</a></p>
+                        <p><span data-i18n="channel.codex.docsLabel">図解ガイド：</span><a href="https://doc.momoai.asia/blog/codex-china-gpt-5-6-launch" target="_blank" rel="noopener" data-i18n="channel.codex.docsLink">AI 情報差『Codex国内サイト』（2026-07-12）</a></p>
+                    </div>
+                    <div class="sessionkey-actions">
+                        <a href="https://momoai.asia/" target="_blank" rel="noopener" class="cta-button primary" data-i18n="channel.codex.cta">💻 momoai.asia を開く</a>
+                        <a href="https://doc.momoai.asia/blog/codex-china-gpt-5-6-launch" target="_blank" rel="noopener" class="cta-button secondary" data-i18n="channel.codex.ctaDocs">📖 説明記事を見る</a>
+                    </div>
+                    <figure class="sessionkey-figure">
+                        <img src="https://upload.maynor1024.live/file/1794665534339_04-codex-domestic.png" data-i18n-alt="channel.codex.imgAlt" alt="AI 情報差『Codex国内サイト』の説明ページ。momoAPICodex の入り口と国内向け設定を紹介" width="960" height="540" loading="lazy" decoding="async">
+                        <figcaption data-i18n="channel.codex.caption">実際に Key を発行し、プランを買う場所は momoai.asia です。旧入り口 codexinstall.asia は確認当日に HTTP 451 を返したので、使わないでください。</figcaption>
+                    </figure>
+                    <p class="sessionkey-disclaimer" data-i18n="channel.codex.disclaimer">⚠️ 旧ドメイン https://codex.maynor1024.live/ はまだ開けますが、いまはブランド移行の案内で、momoai.asia への移動を促しています。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tryallapi" class="sessionkey-section channel-block">
+            <div class="container">
+                <div class="sessionkey-card">
+                    <div class="sessionkey-badge" data-i18n="channel.api.badge">経路五</div>
+                    <h2 data-i18n="channel.api.title">momoAPIPro / TryAllAPI インターフェース集約</h2>
+                    <p class="sessionkey-pain" data-i18n="channel.api.pain">自分のプロジェクト、スクリプト、デスクトップクライアントからモデルを呼びたいなら、この経路の方が向いています。OpenAI 互換の Base URL 一つで、複数のモデルにつながります。ChatGPT のウェブチャットルームではありません。</p>
+                    <p class="sessionkey-method" data-i18n="channel.api.method">トップのブランド名は momoAPIPro です。「開発者 10,000 人以上、18 か月の安定運用」と宣伝していますが、具体的なモデル一覧、単価、グループはコンソールに従ってください。momoai.asia も API を出しています。momoai は Codex、月額、クライアント中継に近く、TryAllAPI は多モデルの従量接続を強調します。</p>
+                    <pre class="code-block"><code>import OpenAI from 'openai';
+
+const client = new OpenAI({
+  apiKey: 'your-api-key',
+  baseURL: 'https://tryallapi.com/v1'
+});
+
+const completion = await client.chat.completions.create({
+  model: 'gpt-4o',
+  messages: [{ role: 'user', content: '创造无限可能...' }]
+});</code></pre>
+                    <div class="sessionkey-links">
+                        <p><span data-i18n="channel.entry">入り口：</span><a href="https://tryallapi.com/" target="_blank" rel="noopener">https://tryallapi.com/</a></p>
+                        <p><span data-i18n="channel.api.history">旧ドメインの転送：</span>apipro.maynor1024.live、api.maynor1024.live → tryallapi.com</p>
+                    </div>
+                    <div class="sessionkey-actions">
+                        <a href="https://tryallapi.com/" target="_blank" rel="noopener" class="cta-button primary" data-i18n="channel.api.cta">🔌 tryallapi.com を開く</a>
+                    </div>
+                    <figure class="sessionkey-figure">
+                        <img src="https://upload.maynor1024.live/file/1794665539093_05-tryallapi-home.png" data-i18n-alt="channel.api.imgAlt" alt="momoAPIPro / tryallapi.com トップ：AI API 集約。サンプルの Base URL は https://tryallapi.com/v1" width="960" height="540" loading="lazy" decoding="async">
+                        <figcaption data-i18n="channel.api.caption">your-api-key をコンソールのキーに替え、モデル名もコンソールに実在する ID に変えてください。Key を公開リポジトリやチャット履歴に書かないでください。</figcaption>
+                    </figure>
+                    <p class="sessionkey-disclaimer" data-i18n="channel.api.disclaimer">⚠️ https://api.maynorai.asia/ も確認当日は開けましたが、別の Base URL です。すでに tryallapi.com を使っているなら替える必要はありません。新規の方は、本稿で確認した tryallapi.com から始めることをおすすめします。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="compare" class="experience">
+            <div class="container">
+                <h2 data-i18n="compare.title">📊 比較表と選び方の目安</h2>
+                <p class="section-intro" data-i18n="compare.intro">実用的な組み合わせは、日常のウェブ会話は momoAI.New、公式の Plus 体験が欲しいときだけ代行チャージ、コードは momoai.asia + Codex に固定、製品やスクリプトで多くのモデルを切り替えるときは TryAllAPI です。</p>
+                <div class="table-scroll">
+                    <div class="comparison-table wide">
+                        <div class="comparison-header">
+                            <div data-i18n="compare.col.item">比較</div>
+                            <div data-i18n="compare.col.web">ウェブノード</div>
+                            <div data-i18n="compare.col.recharge">公式代行チャージ</div>
+                            <div data-i18n="compare.col.codex">国内向け Codex サイト</div>
+                            <div data-i18n="compare.col.api">API アグリゲーター</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div><strong data-i18n="compare.row.entry">代表的な入り口</strong></div>
+                            <div>trygpt.asia / old.trygpt.asia</div>
+                            <div>chongzhi.chatgpt-plus.top</div>
+                            <div>momoai.asia</div>
+                            <div>tryallapi.com</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div><strong data-i18n="compare.row.usage">使い方</strong></div>
+                            <div data-i18n="compare.usage.web">ブラウザでノードに入って会話</div>
+                            <div data-i18n="compare.usage.recharge">自分の公式アカウントにチャージ</div>
+                            <div data-i18n="compare.usage.codex">クライアント / CLI + API Key</div>
+                            <div data-i18n="compare.usage.api">OpenAI 互換 API</div>
+                        </div>
+                        <div class="comparison-row comparison-row-highlight">
+                            <div><strong data-i18n="compare.row.who">向いている人</strong></div>
+                            <div data-i18n="compare.who.web">すぐに話して、ノードを切り替えたい人</div>
+                            <div data-i18n="compare.who.recharge">公式の全機能と公式の身分が欲しい人</div>
+                            <div data-i18n="compare.who.codex">コード、Agent、Codex での画像生成</div>
+                            <div data-i18n="compare.who.api">開発連携と多モデル呼び出し</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div><strong data-i18n="compare.row.cost">主なトレードオフ</strong></div>
+                            <div data-i18n="compare.cost.web">機能が公式サイトと揃わないことがある</div>
+                            <div data-i18n="compare.cost.recharge">サイトの手順でアカウント証憑を出す必要がある</div>
+                            <div data-i18n="compare.cost.codex">中継とグループの設定が必要</div>
+                            <div data-i18n="compare.cost.api">自分で呼び出しを書くか、クライアントをつなぐ必要がある</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div><strong data-i18n="compare.row.not">向いていない場合</strong></div>
+                            <div data-i18n="compare.not.web">公式だけの特典</div>
+                            <div data-i18n="compare.not.recharge">ちょっと試したいだけ、自分のアカウントがない</div>
+                            <div data-i18n="compare.not.codex">ウェブで気軽に少し話したいだけ</div>
+                            <div data-i18n="compare.not.api">API には一切触りたくない人</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="map" class="experience">
+            <div class="container">
+                <h2 data-i18n="map.title">🗺️ 経路マップ（2026-11-14 確認）</h2>
+                <p class="section-intro" data-i18n="map.intro">当日、公開 HTTP アクセスで確認し、次の 6 アドレスはいずれも 200 を返し、開けました。旧サイトも新サイトもフロントエンドのシングルページアプリで、HTML シェルの title はそれぞれ ChatGPT / gpt としか出ません。画面の様子は本文のスクリーンショットを基準にしてください。</p>
+                <div class="comparison-table usage-table">
+                    <div class="comparison-header">
+                        <div data-i18n="map.col.role">役割</div>
+                        <div data-i18n="map.col.addr">確認したアドレス</div>
+                        <div data-i18n="map.col.result">結果</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div><strong data-i18n="map.old.role">旧ウェブノード</strong></div>
+                        <div>old.trygpt.asia/list/</div>
+                        <div data-i18n="map.old.result">200。maynorai.top はこのページへ転送します</div>
+                    </div>
+                    <div class="comparison-row comparison-row-highlight">
+                        <div><strong data-i18n="map.new.role">新しいノードホール</strong></div>
+                        <div>trygpt.asia/list/#/home</div>
+                        <div data-i18n="map.new.result">200。ルートも /list/ に入ります</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div><strong data-i18n="map.recharge.role">公式代行チャージ</strong></div>
+                        <div>chongzhi.chatgpt-plus.top</div>
+                        <div data-i18n="map.recharge.result">200。タイトルは GPTPro 代行チャージサービス</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div><strong data-i18n="map.codex.role">国内向け Codex サイト</strong></div>
+                        <div>momoai.asia</div>
+                        <div data-i18n="map.codex.result">200。/home も開けます</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div><strong data-i18n="map.docs.role">Codex 説明記事</strong></div>
+                        <div>doc.momoai.asia/blog/codex-china-gpt-5-6-launch</div>
+                        <div data-i18n="map.docs.result">200。公開日は 2026-07-12</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div><strong data-i18n="map.api.role">API アグリゲーター</strong></div>
+                        <div>tryallapi.com</div>
+                        <div data-i18n="map.api.result">200。デモの Base URL は /v1</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solutions usage-notes">
+            <div class="container">
+                <h2 data-i18n="notes.title">💡 使う前に読んでください</h2>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <h3 data-i18n="notes.group.title">🔑 まずグループとモデル ID を確認</h3>
+                        <p data-i18n="notes.group.text">Codex や API が 401、枠なし、モデル非対応を返すとき、多くは Key のグループかモデル名がコンソールと一致していないだけで、「サイト全体が落ちた」わけではありません。</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3 data-i18n="notes.price.title">📌 料金は当日の表示だけを基準に</h3>
+                        <p data-i18n="notes.price.text">キーやログイン状態をチャットや公開リポジトリに貼らないでください。代行チャージでは、とくにドメインを確認してください。古い記事やスクリーンショットの月額や付与枠は、もう古い可能性があります。所在地の法令とプラットフォームの規約も守ってください。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="backups" class="experience">
+            <div class="container">
+                <h2 data-i18n="backups.title">🔗 予備ドメインと補足の入り口</h2>
+                <p class="section-intro" data-i18n="backups.intro">次のアドレスは当日確認済みで、予備や補足には使えますが、上の 6 つの主入り口の代わりではありません。最新のアドレスが必要なときは、すでに開けたことを確認した trygpt / momoai / 代行チャージ / TryAllAPI を優先してください。</p>
+                <div class="comparison-table usage-table">
+                    <div class="comparison-header">
+                        <div data-i18n="backups.col.addr">アドレス</div>
+                        <div data-i18n="backups.col.result">当日の結果</div>
+                        <div data-i18n="backups.col.note">説明</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>chongzhi.trygpt.asia</div>
+                        <div data-i18n="backups.recharge.result">200、代行チャージ本サイトと同じタイトル</div>
+                        <div data-i18n="backups.recharge.note">代行チャージの予備ドメイン</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>codex.trygpt.asia</div>
+                        <div data-i18n="backups.codex.result">200、momoAPICodex が開く</div>
+                        <div data-i18n="backups.codex.note">Codex / momoai の予備ドメイン</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>maynorai.top</div>
+                        <div data-i18n="backups.maynor.result">200、旧ホールへ転送</div>
+                        <div data-i18n="backups.maynor.note">旧ノードホールの旧ドメイン</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>trymodel.chat</div>
+                        <div data-i18n="backups.trymodel.result">200、/zh へ転送</div>
+                        <div data-i18n="backups.trymodel.note">同じエコシステムの多モデルウェブチャットであり、今回の 5 つの主経路ではありません</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>gptimage2.asia/zh</div>
+                        <div>200</div>
+                        <div data-i18n="backups.image.note">独立した GPT Image サイト。新しいサイドバーからもリンクされています</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>codexinstall.asia</div>
+                        <div>HTTP 451</div>
+                        <div data-i18n="backups.install.note">使える入り口としては確認できませんでした。momoai.asia を使ってください</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2 data-i18n="faq.title">❓ よくある質問</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="faq.chat.q">開いてすぐに話したいだけです。どれを選べばいいですか？</h3>
+                        <div class="faq-answer" data-i18n="faq.chat.a">まず旧版ノードホール https://old.trygpt.asia/list/ をブックマークしてください。新しいサイト https://trygpt.asia/list/#/home も開けます。</div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="faq.account.q">公式の全機能と、自分のアカウントが欲しい場合は？</h3>
+                        <div class="faq-answer" data-i18n="faq.account.a">公式代行チャージを使います：https://chongzhi.chatgpt-plus.top/ 、予備は https://chongzhi.trygpt.asia/ 。自分のアカウントにだけチャージし、ドメインを確認し、注文記録を残してください。</div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="faq.codex.q">コードを書いたり、Codex を使うならどこへ行けばいいですか？</h3>
+                        <div class="faq-answer" data-i18n="faq.codex.a">https://momoai.asia/ で Key を発行し、CC Switch でクライアントを中継アドレスに向けてください。451 を返す codexinstall.asia は使わないでください。</div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="faq.down.q">あるドメインが開かないときは？</h3>
+                        <div class="faq-answer" data-i18n="faq.down.a">まず本文に挙げた予備アドレスを試し、その時点のサイト表示に従ってください。出所の分からない「最新ミラー」をまた探すより、確認済みで開けた入り口をブックマークしておく方が大切です。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta">
+            <div class="container">
+                <h2 data-i18n="finalCta.title">🎯 まず開ける入り口を一つ保存する</h2>
+                <p data-i18n="finalCta.description">ウェブで話すならノードホール、公式の身分が必要なら代行チャージ、コードを書くなら国内向け Codex サイト、自分のアプリからモデルを呼ぶなら API アグリゲーターです。</p>
+                <div class="final-buttons">
+                    <a href="https://old.trygpt.asia/list/" target="_blank" rel="noopener" class="cta-button primary large" data-i18n="finalCta.primary">✨ 旧版ノードホールを開く</a>
+                    <a href="https://chongzhi.chatgpt-plus.top/" target="_blank" rel="noopener" class="cta-button secondary large" data-i18n="finalCta.recharge">💳 公式代行チャージ</a>
+                    <a href="https://momoai.asia/" target="_blank" rel="noopener" class="cta-button secondary large" data-i18n="finalCta.codex">💻 国内向け Codex サイト</a>
+                    <a href="https://github.com/xianyu110/chatgpt" target="_blank" rel="noopener" class="cta-button ghost large" data-i18n="finalCta.markdown">📄 Markdown 原文を見る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.copyright">© 2026 中国国内で使う GPT の経路まとめ。第三者による案内であり、OpenAI 公式製品ではありません。確認日：2026年11月14日（Asia/Shanghai）。</p>
+            <div class="footer-links">
+                <a href="https://github.com/xianyu110/chatgpt" data-i18n="footer.github">GitHub</a>
+                <a href="#how-to-choose" data-i18n="footer.choose">選び方</a>
+                <a href="#compare" data-i18n="footer.compare">比較表</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cs-widget" id="cs-widget">
+        <div class="cs-widget-panel" id="cs-widget-panel" hidden>
+            <p class="cs-widget-kicker" data-i18n="cs.toggle">サポートに連絡</p>
+            <p class="cs-widget-title" data-i18n="cs.title">カスタマーサポート</p>
+            <div class="cs-widget-qq">
+                <span class="cs-widget-qq-label">QQ</span>
+                <span class="cs-widget-qq-number">1002569303</span>
+            </div>
+            <div class="cs-widget-actions">
+                <button type="button" class="cs-widget-copy" data-i18n="cs.copy">番号をコピー</button>
+                <a class="cs-widget-open" href="https://wpa.qq.com/msgrd?v=3&uin=1002569303&site=qq&menu=yes" target="_blank" rel="noopener" data-i18n="cs.open">QQチャットを開く</a>
+            </div>
+        </div>
+        <button type="button" class="cs-widget-toggle" aria-expanded="false" aria-controls="cs-widget-panel" data-i18n-aria-label="cs.toggle" title="サポートに連絡" aria-label="サポートに連絡">
+            <svg class="cs-widget-icon-chat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 18.5 5 21v-4.2A8.5 8.5 0 1 1 19.2 16"></path>
+                <circle cx="9" cy="11.5" r="0.9" fill="currentColor" stroke="none"></circle>
+                <circle cx="12.5" cy="11.5" r="0.9" fill="currentColor" stroke="none"></circle>
+                <circle cx="16" cy="11.5" r="0.9" fill="currentColor" stroke="none"></circle>
+            </svg>
+            <svg class="cs-widget-icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <path d="M6 6l12 12M18 6 6 18"></path>
+            </svg>
+        </button>
+    </div>
+
+
+    <script src="/js/i18n.js"></script>
+    <script src="/script.js"></script>
+    <script src="/contact-widget.js"></script>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow" id="meta-robots">
+    <script>
+    (function(){
+      var origin='https://chatgpt-plus.top';
+      var map={'zh-CN':'/','en-US':'/en/','ja-JP':'/ja/','ko-KR':'/ko/','es-ES':'/es/'};
+      var params=new URLSearchParams(location.search);
+      var lang=params.get('lang');
+      var path=location.pathname;
+      if(path==='/index.html') path='/';
+      else if(path.slice(-11)==='/index.html') path=path.slice(0,-10);
+      else if(path==='/en'||path==='/ja'||path==='/ko'||path==='/es') path+='/';
+      var dest=null;
+      if(lang&&map[lang]){
+        dest=map[lang];
+        params.delete('lang');
+      } else if(location.pathname==='/index.html' || /\/[a-z]{2}\/index\.html$/.test(location.pathname)){
+        dest=path;
+      }
+      if(!dest){
+        try{
+          var saved=localStorage.getItem('preferred-language');
+          if(saved&&map[saved]&&path==='/'&&saved!=='zh-CN') dest=map[saved];
+        }catch(e){}
+      }
+      if(!dest) return;
+      var q=params.toString();
+      var next=origin+dest+(q?'?'+q:'')+location.hash;
+      if(location.href!==next) location.replace(next);
+    })();
+    </script>
+    <script>
+    (function(){try{var q=new URLSearchParams(location.search).get('theme');var t=(q==='light'||q==='dark')?q:localStorage.getItem('preferred-theme');if(t!=='light'&&t!=='dark'){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
+    </script>
+    <meta name="description" content="A roundup of GPT access channels in China: web mirror nodes, official ChatGPT Plus / GPT Pro top-up, a domestic Codex site, and an API aggregator. Verified on 14 November 2026.">
+    <meta name="keywords" content="国内使用GPT, ChatGPT 镜像, ChatGPT Plus 代充, Codex 国内站, momoAI, trygpt.asia, momoai.asia, tryallapi, chongzhi.chatgpt-plus.top">
+    <title data-i18n="meta.title">GPT access channels in China · Web nodes / Official top-up / Codex / API</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/extra.css">
+    <link rel="stylesheet" href="/contact-widget.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="canonical" href="https://chatgpt-plus.top/en/">
+    <link rel="alternate" hreflang="zh-CN" href="https://chatgpt-plus.top/">
+    <link rel="alternate" hreflang="en-US" href="https://chatgpt-plus.top/en/">
+    <link rel="alternate" hreflang="ja-JP" href="https://chatgpt-plus.top/ja/">
+    <link rel="alternate" hreflang="ko-KR" href="https://chatgpt-plus.top/ko/">
+    <link rel="alternate" hreflang="es-ES" href="https://chatgpt-plus.top/es/">
+    <link rel="alternate" hreflang="x-default" href="https://chatgpt-plus.top/">
+    <link rel="preconnect" href="https://upload.maynor1024.live" crossorigin>
+    <meta name="theme-color" content="#0b0b0d">
+    <meta name="color-scheme" content="dark light">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GPT channel roundup">
+    <meta property="og:title" content="GPT access channels in China · Web nodes / Official top-up / Codex / API">
+    <meta property="og:description" content="A roundup of GPT access channels in China: web mirror nodes, official ChatGPT Plus / GPT Pro top-up, a domestic Codex site, and an API aggregator. Verified on 14 November 2026.">
+    <meta property="og:url" content="https://chatgpt-plus.top/en/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:image" content="https://chatgpt-plus.top/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="GPT access channels in China · Web nodes / Official top-up / Codex / API">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GPT access channels in China · Web nodes / Official top-up / Codex / API">
+    <meta name="twitter:description" content="A roundup of GPT access channels in China: web mirror nodes, official ChatGPT Plus / GPT Pro top-up, a domestic Codex site, and an API aggregator. Verified on 14 November 2026.">
+    <meta name="twitter:image" content="https://chatgpt-plus.top/og-image.png">
+    <meta name="twitter:image:alt" content="GPT access channels in China · Web nodes / Official top-up / Codex / API">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://chatgpt-plus.top/#website","name":"GPT access channels in China · Web nodes / Official top-up / Codex / API","url":"https://chatgpt-plus.top/","description":"A roundup of GPT access channels in China: web mirror nodes, official ChatGPT Plus / GPT Pro top-up, a domestic Codex site, and an API aggregator. Verified on 14 November 2026.","inLanguage":"en-US","image":"https://chatgpt-plus.top/og-image.png"},{"@type":"FAQPage","@id":"https://chatgpt-plus.top/en/#faq","isPartOf":{"@id":"https://chatgpt-plus.top/#website"},"inLanguage":"en-US","mainEntity":[{"@type":"Question","name":"I just want to open a page and start chatting. Which one should I pick?","acceptedAnswer":{"@type":"Answer","text":"Bookmark the classic node lobby at https://old.trygpt.asia/list/ first. The newer site https://trygpt.asia/list/#/home still opens."}},{"@type":"Question","name":"What if I want the full official features and my own account?","acceptedAnswer":{"@type":"Answer","text":"Use official top-up: https://chongzhi.chatgpt-plus.top/ , backup https://chongzhi.trygpt.asia/ . Only top up your own account, confirm the domain, and keep your order records."}},{"@type":"Question","name":"Where should I go to write code or use Codex?","acceptedAnswer":{"@type":"Answer","text":"Create a key at https://momoai.asia/ , then point the client at the relay address with CC Switch. Do not use codexinstall.asia, which returns 451."}},{"@type":"Question","name":"What if a domain will not open?","acceptedAnswer":{"@type":"Answer","text":"Try the backup addresses listed in this article, and follow the site’s page on the day. Keeping a verified entry bookmarked matters more than chasing another batch of “latest mirrors” of unknown origin."}}]}]}
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/logo.png" alt="GPT channel roundup" data-i18n-alt="nav.logo" width="28" height="28" decoding="async">
+                <span data-i18n="nav.logo">GPT channel roundup</span>
+            </div>
+            <div class="nav-controls">
+                <div class="nav-meta" data-i18n="nav.meta">Verified 2026-11-14</div>
+                <button type="button" id="theme-toggle" class="theme-toggle" aria-label="切换到浅色模式" title="切换到浅色模式"></button>
+                <div id="language-selector-container" class="language-selector-container"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-badge" data-i18n="hero.badge">✨ Pick an entry by scenario</div>
+            <h1 class="hero-title">
+                <span class="hero-title-main" data-i18n="hero.title">GPT access channels in China</span>
+                <span class="hero-title-accent" data-i18n="hero.titleAccent">Web nodes · Official top-up · Codex · API</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Opening chatgpt.com is not always straightforward: the network, an overseas phone number, a credit card, and account risk checks can all stall the first step. This page gathers the main channels that still open, so you can pick by scenario instead of hunting for links.</p>
+
+            <div class="hero-features">
+                <div class="feature-tag feature-tag-warn" data-i18n="hero.features.0">🧩 Third-party channels</div>
+                <div class="feature-tag feature-tag-new" data-i18n="hero.features.1">🗺️ Six entries confirmed open today</div>
+                <div class="feature-tag feature-tag-fable" data-i18n="hero.features.2">📌 Follow the live page on the day</div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="https://old.trygpt.asia/list/" target="_blank" rel="noopener" class="cta-button primary" data-i18n="hero.cta.primary">✨ Open the classic node lobby</a>
+                <a href="https://chongzhi.chatgpt-plus.top/" target="_blank" rel="noopener" class="cta-button secondary" data-i18n="hero.cta.recharge">💳 Official top-up</a>
+                <a href="#how-to-choose" class="cta-button secondary" data-i18n="hero.cta.choose">🧭 See how to choose first</a>
+                <a href="https://momoai.asia/" target="_blank" rel="noopener" class="cta-button secondary" data-i18n="hero.cta.codex">💻 Domestic Codex site</a>
+                <a href="https://tryallapi.com/" target="_blank" rel="noopener" class="cta-button ghost" data-i18n="hero.cta.api">🔌 API aggregator</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="fable-highlight">
+            <div class="container">
+                <div class="fable-card">
+                    <div class="fable-card-badge" data-i18n="fable.badge">Daily pick</div>
+                    <h2 data-i18n="fable.title">Recommended: start chatting in momoAI.New</h2>
+                    <p data-i18n="fable.description">If you want to chat in the browser and switch nodes by load, bookmark the newer lobby at https://trygpt.asia/list/#/home first. The classic site still opens. In the same ecosystem, trygpt is the web node lobby, while momoai focuses on the API and monthly-plan console.</p>
+                    <a href="https://trygpt.asia/list/#/home" target="_blank" rel="noopener" class="cta-button primary" data-i18n="fable.cta">Open https://trygpt.asia/</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-choose" class="desktop-section">
+            <div class="container">
+                <div class="desktop-inner">
+                    <h2 data-i18n="choose.title">🧭 How to choose: start with your scenario</h2>
+                    <p class="desktop-lead" data-i18n="choose.lead">You don&#x27;t need all four. Pick the one that matches what you want to do right now.</p>
+                    <div class="desktop-grid">
+                        <div class="desktop-card">
+                            <h3 data-i18n="choose.cards.0.title">💬 Chat on the web right away</h3>
+                            <p data-i18n="choose.cards.0.text">Use web mirror nodes and switch cards by load. Entry: old.trygpt.asia (classic) / trygpt.asia (newer).</p>
+                        </div>
+                        <div class="desktop-card">
+                            <h3 data-i18n="choose.cards.1.title">🪪 You want your own official account</h3>
+                            <p data-i18n="choose.cards.1.text">Top up Plus / Pro on your own ChatGPT account and keep using the full official site. Entry: chongzhi.chatgpt-plus.top.</p>
+                        </div>
+                        <div class="desktop-card">
+                            <h3 data-i18n="choose.cards.2.title">💻 Write code and run agents</h3>
+                            <p data-i18n="choose.cards.2.text">Use Codex Desktop / CLI with a relay API key; image generation is also available. Entry: momoai.asia.</p>
+                        </div>
+                        <div class="desktop-card">
+                            <h3 data-i18n="choose.cards.3.title">🔌 Call models from your own project</h3>
+                            <p data-i18n="choose.cards.3.text">One OpenAI-compatible key, many models. Entry: tryallapi.com.</p>
+                        </div>
+                    </div>
+                    <div class="desktop-note">
+                        <p data-i18n="choose.note">✅ Classic lobby first, newer site also works  ✅ Top-up is a separate path, not via the mirror chat page  ✅ Prices and model lists follow that day’s console</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trygpt-old" class="sessionkey-section">
+            <div class="container">
+                <div class="sessionkey-card">
+                    <div class="sessionkey-badge" data-i18n="channel.old.badge">Channel 1</div>
+                    <h2 data-i18n="channel.old.title">momoAI legacy web nodes (non-downgraded Plus nodes)</h2>
+                    <p class="sessionkey-pain" data-i18n="channel.old.pain">A “wall of node cards” style legacy lobby. The top bar switches among non-downgraded Plus nodes, SuperGrok, Gemini, Claude Pro Max, the domestic Codex site, and other entries.</p>
+                    <p class="sessionkey-method" data-i18n="channel.old.method">Idle nodes are usually a green bar labeled “Recommended”; busy ones are a yellow bar labeled “Available.” If one slows down, just switch to another card. Web mirrors are good for opening a chat immediately, but they are not the same as having a full official account.</p>
+                    <div class="sessionkey-links">
+                        <p><span data-i18n="channel.entry">Entry:</span><a href="https://old.trygpt.asia/list/" target="_blank" rel="noopener">https://old.trygpt.asia/list/</a></p>
+                        <p><span data-i18n="channel.old.redirect">Legacy domain redirect:</span><a href="https://maynorai.top/" target="_blank" rel="noopener">https://maynorai.top/</a> → <span data-i18n="channel.old.same">same as above</span></p>
+                    </div>
+                    <div class="sessionkey-actions">
+                        <a href="https://old.trygpt.asia/list/" target="_blank" rel="noopener" class="cta-button primary" data-i18n="channel.old.cta">Open the legacy lobby</a>
+                    </div>
+                    <figure class="sessionkey-figure">
+                        <img src="https://upload.maynor1024.live/file/1794665528040_01-momoai-plus-nodes.png" data-i18n-alt="channel.old.imgAlt" alt="momoAI “non-downgraded Plus nodes” lobby, with idle/busy columns and Recommended or Available labels" width="960" height="540" loading="lazy" decoding="async">
+                        <figcaption data-i18n="channel.old.caption">The momoAI legacy “non-downgraded Plus nodes” lobby, captured on 14 November 2026. The footer identifies the site as momoAI.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="trygpt-new" class="sessionkey-section channel-block">
+            <div class="container">
+                <div class="sessionkey-card">
+                    <div class="sessionkey-badge" data-i18n="channel.new.badge">Channel 2</div>
+                    <h2 data-i18n="channel.new.title">momoAI.New advanced node lobby</h2>
+                    <p class="sessionkey-pain" data-i18n="channel.new.pain">This is the newer lobby most people use now, branded momoAI.New. The left sidebar is organized by product: GPT Plus advanced nodes, Gemini Pro, SuperGrok, AI image generation, Claude Pro Max, the top-up site, the domestic Codex site, and more.</p>
+                    <p class="sessionkey-method" data-i18n="channel.new.method">Nodes are shown as cards. You can filter by All / Recommended / Busy and see live load. Prefer a green bar with a lower number; a yellow “Available” bar means you can still get in, but it may be more crowded. If it says your subscription type doesn&#x27;t match, buy a plan in the site shop or redeem a code first.</p>
+                    <div class="sessionkey-links">
+                        <p><span data-i18n="channel.entry">Entry:</span><a href="https://trygpt.asia/list/#/home" target="_blank" rel="noopener">https://trygpt.asia/list/#/home</a></p>
+                    </div>
+                    <div class="sessionkey-actions">
+                        <a href="https://trygpt.asia/list/#/home" target="_blank" rel="noopener" class="cta-button primary" data-i18n="channel.new.cta">✨ Open the new lobby</a>
+                        <a href="https://old.trygpt.asia/list/" target="_blank" rel="noopener" class="cta-button secondary" data-i18n="channel.new.ctaOld">🗂️ Legacy lobby (backup)</a>
+                    </div>
+                    <figure class="sessionkey-figure">
+                        <img src="https://upload.maynor1024.live/file/1794665535891_02-momoai-new-nodes.png" data-i18n-alt="channel.new.imgAlt" alt="momoAI.New node lobby, filtered by All / Recommended / Busy, with Super or Grok tags and load numbers" width="960" height="540" loading="lazy" decoding="async">
+                        <figcaption data-i18n="channel.new.caption">The momoAI.New node lobby. This screenshot is filtered toward Super / Grok nodes; use the left sidebar to switch back to GPT Plus advanced nodes.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="recharge" class="sessionkey-section channel-block">
+            <div class="container">
+                <div class="sessionkey-card">
+                    <div class="sessionkey-badge" data-i18n="channel.recharge.badge">Channel 3</div>
+                    <h2 data-i18n="channel.recharge.title">Official ChatGPT Plus / GPT Pro top-up</h2>
+                    <p class="sessionkey-pain" data-i18n="channel.recharge.pain">If you already have (or can set up) your own ChatGPT account and just cannot pay with an overseas credit card: top up Plus / Pro on your own official account, then keep using the official site.</p>
+                    <p class="sessionkey-method" data-i18n="channel.recharge.method">The site describes itself as a “24/7 fully automatic, formal iOS channel,” accepts WeChat Pay and Alipay, and says credit usually arrives in 1–2 minutes. Promotional figures (13,000+ customers served, ban rate &lt;0.1%, typical arrival in 1–3 minutes) are the site’s own claims; this page only restates them and has not independently audited them. The trade-off is that you must follow the site’s process and provide account-related credentials, which carries its own risk.</p>
+                    <ol class="sessionkey-steps">
+                        <li data-i18n="channel.recharge.steps.0">Confirm you are on one of the two domains below, and stay away from look-alike sites of unknown origin.</li>
+                        <li data-i18n="channel.recharge.steps.1">Only top up your own account. Do not buy “ready-made accounts” from unknown sources.</li>
+                        <li data-i18n="channel.recharge.steps.2">Do not close the page during top-up, and keep your order and support records.</li>
+                        <li data-i18n="channel.recharge.steps.3">Site promises (same-day refunds, ban warranties, and so on) follow the rules on that page—read them before you order.</li>
+                    </ol>
+                    <div class="sessionkey-links">
+                        <p><span data-i18n="channel.entry">Entry:</span><a href="https://chongzhi.chatgpt-plus.top/" target="_blank" rel="noopener">https://chongzhi.chatgpt-plus.top/</a></p>
+                        <p><span data-i18n="channel.recharge.backup">Same-site backup:</span><a href="https://chongzhi.trygpt.asia/" target="_blank" rel="noopener">https://chongzhi.trygpt.asia/</a></p>
+                    </div>
+                    <div class="sessionkey-actions">
+                        <a href="https://chongzhi.chatgpt-plus.top/" target="_blank" rel="noopener" class="cta-button primary" data-i18n="channel.recharge.cta">💳 Open the top-up site</a>
+                    </div>
+                    <figure class="sessionkey-figure">
+                        <img src="https://upload.maynor1024.live/file/1794665532606_03-chatgpt-plus-recharge.png" data-i18n-alt="channel.recharge.imgAlt" alt="GPTPro top-up homepage: ChatGPT Plus / GPT Pro recharge, with WeChat Pay and Alipay" width="960" height="540" loading="lazy" decoding="async">
+                        <figcaption data-i18n="channel.recharge.caption">The GPTPro top-up homepage. This is for topping up your own official account, not a shared-account pool.</figcaption>
+                    </figure>
+                    <p class="sessionkey-disclaimer" data-i18n="channel.recharge.disclaimer">⚠️ If you only want a quick chat, a web node is simpler. Choose this path when you want the account to be yours and the features to follow the official site.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="codex" class="sessionkey-section channel-block">
+            <div class="container">
+                <div class="sessionkey-card">
+                    <div class="sessionkey-badge" data-i18n="channel.codex.badge">Channel 4</div>
+                    <h2 data-i18n="channel.codex.title">Domestic Codex site (momoAPICodex)</h2>
+                    <p class="sessionkey-pain" data-i18n="channel.codex.pain">For people who want to write code or run agents with Codex Desktop / CLI, or also generate images with GPTimage2. This is not an official OpenAI subscription, but a third-party relay that can be reached from mainland China.</p>
+                    <p class="sessionkey-method" data-i18n="channel.codex.method">Register at momoai.asia, start a usage-based or monthly plan, create an API key in the matching group, then point the official client at the relay address with CC Switch. Plan prices and daily quotas change—follow the live console rules.</p>
+                    <ol class="sessionkey-steps">
+                        <li data-i18n="channel.codex.steps.0">Set the Base URL to the relay root, for example https://momoai.asia, not https://api.openai.com.</li>
+                        <li data-i18n="channel.codex.steps.1">The key must come from a group that supports Codex (often a monthly Codex group). The wrong group leads to “model not supported” or no quota.</li>
+                        <li data-i18n="channel.codex.steps.2">Use model IDs from the console list on the day; do not type names from memory that may already have been retired.</li>
+                        <li data-i18n="channel.codex.steps.3">If you previously signed in with an official Codex account, sign out first, then switch to the API key.</li>
+                    </ol>
+                    <div class="sessionkey-links">
+                        <p><span data-i18n="channel.codex.serviceEntry">Service entry:</span><a href="https://momoai.asia/" target="_blank" rel="noopener">https://momoai.asia/</a></p>
+                        <p><span data-i18n="channel.codex.backup">Backup domain:</span><a href="https://codex.trygpt.asia/" target="_blank" rel="noopener">https://codex.trygpt.asia/</a></p>
+                        <p><span data-i18n="channel.codex.docsLabel">Illustrated guide:</span><a href="https://doc.momoai.asia/blog/codex-china-gpt-5-6-launch" target="_blank" rel="noopener" data-i18n="channel.codex.docsLink">AI Information Gap, “Domestic Codex site” (2026-07-12)</a></p>
+                    </div>
+                    <div class="sessionkey-actions">
+                        <a href="https://momoai.asia/" target="_blank" rel="noopener" class="cta-button primary" data-i18n="channel.codex.cta">💻 Open momoai.asia</a>
+                        <a href="https://doc.momoai.asia/blog/codex-china-gpt-5-6-launch" target="_blank" rel="noopener" class="cta-button secondary" data-i18n="channel.codex.ctaDocs">📖 Read the guide</a>
+                    </div>
+                    <figure class="sessionkey-figure">
+                        <img src="https://upload.maynor1024.live/file/1794665534339_04-codex-domestic.png" data-i18n-alt="channel.codex.imgAlt" alt="AI Information Gap “Domestic Codex site” guide, covering the momoAPICodex entry and domestic setup" width="960" height="540" loading="lazy" decoding="async">
+                        <figcaption data-i18n="channel.codex.caption">The place to actually create keys and buy a plan is momoai.asia. The old entry codexinstall.asia returned HTTP 451 on the day of checking—do not use it anymore.</figcaption>
+                    </figure>
+                    <p class="sessionkey-disclaimer" data-i18n="channel.codex.disclaimer">⚠️ The old domain https://codex.maynor1024.live/ still opens, but it is now a brand-upgrade notice and asks you to move to momoai.asia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tryallapi" class="sessionkey-section channel-block">
+            <div class="container">
+                <div class="sessionkey-card">
+                    <div class="sessionkey-badge" data-i18n="channel.api.badge">Channel 5</div>
+                    <h2 data-i18n="channel.api.title">momoAPIPro / TryAllAPI aggregator</h2>
+                    <p class="sessionkey-pain" data-i18n="channel.api.pain">If you want to call models from your own project, script, or desktop client, this path is a better fit. One OpenAI-compatible Base URL, many models. It is not a ChatGPT web chat room.</p>
+                    <p class="sessionkey-method" data-i18n="channel.api.method">The homepage is branded momoAPIPro. It promotes “10,000+ developers and 18 months of stable operation”; the actual model list, unit prices, and groups follow the console. Both this site and momoai.asia offer APIs: momoai is closer to Codex, monthly plans, and client relays; TryAllAPI emphasizes multi-model, usage-based access.</p>
+                    <pre class="code-block"><code>import OpenAI from 'openai';
+
+const client = new OpenAI({
+  apiKey: 'your-api-key',
+  baseURL: 'https://tryallapi.com/v1'
+});
+
+const completion = await client.chat.completions.create({
+  model: 'gpt-4o',
+  messages: [{ role: 'user', content: '创造无限可能...' }]
+});</code></pre>
+                    <div class="sessionkey-links">
+                        <p><span data-i18n="channel.entry">Entry:</span><a href="https://tryallapi.com/" target="_blank" rel="noopener">https://tryallapi.com/</a></p>
+                        <p><span data-i18n="channel.api.history">Historical domain redirects:</span>apipro.maynor1024.live、api.maynor1024.live → tryallapi.com</p>
+                    </div>
+                    <div class="sessionkey-actions">
+                        <a href="https://tryallapi.com/" target="_blank" rel="noopener" class="cta-button primary" data-i18n="channel.api.cta">🔌 Open tryallapi.com</a>
+                    </div>
+                    <figure class="sessionkey-figure">
+                        <img src="https://upload.maynor1024.live/file/1794665539093_05-tryallapi-home.png" data-i18n-alt="channel.api.imgAlt" alt="momoAPIPro / tryallapi.com homepage: AI API aggregator, with a sample Base URL of https://tryallapi.com/v1" width="960" height="540" loading="lazy" decoding="async">
+                        <figcaption data-i18n="channel.api.caption">Replace your-api-key with a console key, and change the model name to an ID that actually exists in the console. Do not put keys in a public repository or in chat logs.</figcaption>
+                    </figure>
+                    <p class="sessionkey-disclaimer" data-i18n="channel.api.disclaimer">⚠️ https://api.maynorai.asia/ also opened on the day of checking, but it is a different Base URL. If you already use tryallapi.com, there is no need to switch; new users should start with the tryallapi.com address verified in this article.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="compare" class="experience">
+            <div class="container">
+                <h2 data-i18n="compare.title">📊 Comparison and recommendations</h2>
+                <p class="section-intro" data-i18n="compare.intro">A practical mix is: use momoAI.New for everyday web chat; use official top-up when you want the official Plus experience; keep coding on momoai.asia + Codex; and use TryAllAPI when a product or script needs many models.</p>
+                <div class="table-scroll">
+                    <div class="comparison-table wide">
+                        <div class="comparison-header">
+                            <div data-i18n="compare.col.item">Compare</div>
+                            <div data-i18n="compare.col.web">Web nodes</div>
+                            <div data-i18n="compare.col.recharge">Official top-up</div>
+                            <div data-i18n="compare.col.codex">Domestic Codex site</div>
+                            <div data-i18n="compare.col.api">API aggregator</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div><strong data-i18n="compare.row.entry">Typical entry</strong></div>
+                            <div>trygpt.asia / old.trygpt.asia</div>
+                            <div>chongzhi.chatgpt-plus.top</div>
+                            <div>momoai.asia</div>
+                            <div>tryallapi.com</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div><strong data-i18n="compare.row.usage">How you use it</strong></div>
+                            <div data-i18n="compare.usage.web">Chat at a node in the browser</div>
+                            <div data-i18n="compare.usage.recharge">Top up your own official account</div>
+                            <div data-i18n="compare.usage.codex">Client / CLI + API key</div>
+                            <div data-i18n="compare.usage.api">OpenAI-compatible API</div>
+                        </div>
+                        <div class="comparison-row comparison-row-highlight">
+                            <div><strong data-i18n="compare.row.who">Best for</strong></div>
+                            <div data-i18n="compare.who.web">People who want to chat now and switch nodes</div>
+                            <div data-i18n="compare.who.recharge">People who want full official features and an official identity</div>
+                            <div data-i18n="compare.who.codex">Coding, agents, and Codex image generation</div>
+                            <div data-i18n="compare.who.api">Development integrations and multi-model calls</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div><strong data-i18n="compare.row.cost">Main trade-off</strong></div>
+                            <div data-i18n="compare.cost.web">Features may not match the official site</div>
+                            <div data-i18n="compare.cost.recharge">You must provide account credentials through the site’s process</div>
+                            <div data-i18n="compare.cost.codex">You need to configure the relay and groups</div>
+                            <div data-i18n="compare.cost.api">You have to write the calls or hook up a client yourself</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div><strong data-i18n="compare.row.not">Not a good fit</strong></div>
+                            <div data-i18n="compare.not.web">Official-only benefits</div>
+                            <div data-i18n="compare.not.recharge">A quick trial, or no account of your own</div>
+                            <div data-i18n="compare.not.codex">Just a casual chat in the browser</div>
+                            <div data-i18n="compare.not.api">People who do not want to touch an API at all</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="map" class="experience">
+            <div class="container">
+                <h2 data-i18n="map.title">🗺️ Channel map (verified 2026-11-14)</h2>
+                <p class="section-intro" data-i18n="map.intro">Checked the same day with public HTTP requests: all six addresses below returned 200 and opened. Both the legacy and new sites are front-end single-page apps; the HTML shell titles only show ChatGPT / gpt. Treat the screenshots in this article as the source of truth for the UI.</p>
+                <div class="comparison-table usage-table">
+                    <div class="comparison-header">
+                        <div data-i18n="map.col.role">Role</div>
+                        <div data-i18n="map.col.addr">Verified address</div>
+                        <div data-i18n="map.col.result">Result</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div><strong data-i18n="map.old.role">Legacy web nodes</strong></div>
+                        <div>old.trygpt.asia/list/</div>
+                        <div data-i18n="map.old.result">200. maynorai.top redirects to this page</div>
+                    </div>
+                    <div class="comparison-row comparison-row-highlight">
+                        <div><strong data-i18n="map.new.role">New node lobby</strong></div>
+                        <div>trygpt.asia/list/#/home</div>
+                        <div data-i18n="map.new.result">200. The root path also leads to /list/</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div><strong data-i18n="map.recharge.role">Official top-up</strong></div>
+                        <div>chongzhi.chatgpt-plus.top</div>
+                        <div data-i18n="map.recharge.result">200. Title is GPTPro top-up service</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div><strong data-i18n="map.codex.role">Domestic Codex site</strong></div>
+                        <div>momoai.asia</div>
+                        <div data-i18n="map.codex.result">200. /home also opens</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div><strong data-i18n="map.docs.role">Codex guide</strong></div>
+                        <div>doc.momoai.asia/blog/codex-china-gpt-5-6-launch</div>
+                        <div data-i18n="map.docs.result">200. Published 2026-07-12</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div><strong data-i18n="map.api.role">API aggregator</strong></div>
+                        <div>tryallapi.com</div>
+                        <div data-i18n="map.api.result">200. Sample Base URL is /v1</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solutions usage-notes">
+            <div class="container">
+                <h2 data-i18n="notes.title">💡 Please read this before you start</h2>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <h3 data-i18n="notes.group.title">🔑 Check the group and model ID first</h3>
+                        <p data-i18n="notes.group.text">If Codex or the API returns 401, has no quota, or says a model is not supported, it is usually a mismatch between the key’s group or the model name and the console—not that “the whole site is down.”</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3 data-i18n="notes.price.title">📌 Prices are only valid on the day</h3>
+                        <p data-i18n="notes.price.text">Do not paste keys or login state into chat or a public repository. For official top-up, double-check the domain. Monthly fees and bonus quotas in old posts or screenshots may be outdated. Please also follow local laws and the platform’s terms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="backups" class="experience">
+            <div class="container">
+                <h2 data-i18n="backups.title">🔗 Backup domains and extra entries</h2>
+                <p class="section-intro" data-i18n="backups.intro">The addresses below were verified the same day and can serve as backups or supplements; they are not substitutes for the six main entries above. When you need the latest URL, start from a trygpt / momoai / top-up / TryAllAPI address you have already confirmed opens.</p>
+                <div class="comparison-table usage-table">
+                    <div class="comparison-header">
+                        <div data-i18n="backups.col.addr">Address</div>
+                        <div data-i18n="backups.col.result">Result that day</div>
+                        <div data-i18n="backups.col.note">Notes</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>chongzhi.trygpt.asia</div>
+                        <div data-i18n="backups.recharge.result">200, title matches the main top-up site</div>
+                        <div data-i18n="backups.recharge.note">Backup domain for official top-up</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>codex.trygpt.asia</div>
+                        <div data-i18n="backups.codex.result">200, opens momoAPICodex</div>
+                        <div data-i18n="backups.codex.note">Backup domain for Codex / momoai</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>maynorai.top</div>
+                        <div data-i18n="backups.maynor.result">200, redirects to the legacy lobby</div>
+                        <div data-i18n="backups.maynor.note">Former domain of the legacy node lobby</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>trymodel.chat</div>
+                        <div data-i18n="backups.trymodel.result">200, redirects to /zh</div>
+                        <div data-i18n="backups.trymodel.note">A same-ecosystem multi-model web chat, not one of the five main channels in this article</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>gptimage2.asia/zh</div>
+                        <div>200</div>
+                        <div data-i18n="backups.image.note">A standalone GPT Image site; the new sidebar also links here</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>codexinstall.asia</div>
+                        <div>HTTP 451</div>
+                        <div data-i18n="backups.install.note">Could not be verified as a working entry; use momoai.asia instead</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2 data-i18n="faq.title">❓ FAQ</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="faq.chat.q">I just want to open a page and start chatting. Which one should I pick?</h3>
+                        <div class="faq-answer" data-i18n="faq.chat.a">Bookmark the classic node lobby at https://old.trygpt.asia/list/ first. The newer site https://trygpt.asia/list/#/home still opens.</div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="faq.account.q">What if I want the full official features and my own account?</h3>
+                        <div class="faq-answer" data-i18n="faq.account.a">Use official top-up: https://chongzhi.chatgpt-plus.top/ , backup https://chongzhi.trygpt.asia/ . Only top up your own account, confirm the domain, and keep your order records.</div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="faq.codex.q">Where should I go to write code or use Codex?</h3>
+                        <div class="faq-answer" data-i18n="faq.codex.a">Create a key at https://momoai.asia/ , then point the client at the relay address with CC Switch. Do not use codexinstall.asia, which returns 451.</div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="faq.down.q">What if a domain will not open?</h3>
+                        <div class="faq-answer" data-i18n="faq.down.a">Try the backup addresses listed in this article, and follow the site’s page on the day. Keeping a verified entry bookmarked matters more than chasing another batch of “latest mirrors” of unknown origin.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta">
+            <div class="container">
+                <h2 data-i18n="finalCta.title">🎯 Bookmark one entry that actually opens</h2>
+                <p data-i18n="finalCta.description">For web chat, go to the node lobby; for an official identity, use official top-up; for coding, use the domestic Codex site; to call models from your own app, use the API aggregator.</p>
+                <div class="final-buttons">
+                    <a href="https://old.trygpt.asia/list/" target="_blank" rel="noopener" class="cta-button primary large" data-i18n="finalCta.primary">✨ Open the classic node lobby</a>
+                    <a href="https://chongzhi.chatgpt-plus.top/" target="_blank" rel="noopener" class="cta-button secondary large" data-i18n="finalCta.recharge">💳 Official top-up</a>
+                    <a href="https://momoai.asia/" target="_blank" rel="noopener" class="cta-button secondary large" data-i18n="finalCta.codex">💻 Domestic Codex site</a>
+                    <a href="https://github.com/xianyu110/chatgpt" target="_blank" rel="noopener" class="cta-button ghost large" data-i18n="finalCta.markdown">📄 View the Markdown source</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.copyright">© 2026 GPT access channels in China. A third-party directory, not an official OpenAI product. Verified 14 November 2026 (Asia/Shanghai).</p>
+            <div class="footer-links">
+                <a href="https://github.com/xianyu110/chatgpt" data-i18n="footer.github">GitHub</a>
+                <a href="#how-to-choose" data-i18n="footer.choose">How to choose</a>
+                <a href="#compare" data-i18n="footer.compare">Comparison</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cs-widget" id="cs-widget">
+        <div class="cs-widget-panel" id="cs-widget-panel" hidden>
+            <p class="cs-widget-kicker" data-i18n="cs.toggle">Contact support</p>
+            <p class="cs-widget-title" data-i18n="cs.title">Customer support</p>
+            <div class="cs-widget-qq">
+                <span class="cs-widget-qq-label">QQ</span>
+                <span class="cs-widget-qq-number">1002569303</span>
+            </div>
+            <div class="cs-widget-actions">
+                <button type="button" class="cs-widget-copy" data-i18n="cs.copy">Copy number</button>
+                <a class="cs-widget-open" href="https://wpa.qq.com/msgrd?v=3&uin=1002569303&site=qq&menu=yes" target="_blank" rel="noopener" data-i18n="cs.open">Open QQ chat</a>
+            </div>
+        </div>
+        <button type="button" class="cs-widget-toggle" aria-expanded="false" aria-controls="cs-widget-panel" data-i18n-aria-label="cs.toggle" title="Contact support" aria-label="Contact support">
+            <svg class="cs-widget-icon-chat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 18.5 5 21v-4.2A8.5 8.5 0 1 1 19.2 16"></path>
+                <circle cx="9" cy="11.5" r="0.9" fill="currentColor" stroke="none"></circle>
+                <circle cx="12.5" cy="11.5" r="0.9" fill="currentColor" stroke="none"></circle>
+                <circle cx="16" cy="11.5" r="0.9" fill="currentColor" stroke="none"></circle>
+            </svg>
+            <svg class="cs-widget-icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <path d="M6 6l12 12M18 6 6 18"></path>
+            </svg>
+        </button>
+    </div>
+
+
+    <script src="/js/i18n.js"></script>
+    <script src="/script.js"></script>
+    <script src="/contact-widget.js"></script>
+</body>
+</html>
