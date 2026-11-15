@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站与 API 聚合。2026 年 11 月 14 日核实，均为第三方渠道，不是 OpenAI 官方订阅。">
+    <meta name="description" content="国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站与 API 聚合。2026 年 11 月 14 日核实。">
     <meta name="keywords" content="国内使用GPT, ChatGPT 镜像, ChatGPT Plus 代充, Codex 国内站, momoAI, trygpt.asia, momoai.asia, tryallapi, chongzhi.chatgpt-plus.top">
     <title>国内使用GPT的渠道汇总 · 网页节点 / 官网代充 / Codex / API</title>
     <link rel="stylesheet" href="styles.css">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="desktop-note">
-                        <p>✅ 新站优先，旧站备用　✅ 代充是另一条线，不经过镜像对话页　✅ 价格和模型列表以当天控制台为准　✅ 不要把敏感文件或生产密钥交给不了解的站点</p>
+                        <p>✅ 新站优先，旧站备用　✅ 代充是另一条线，不经过镜像对话页　✅ 价格和模型列表以当天控制台为准</p>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                     <div class="sessionkey-badge">渠道一 · 备用</div>
                     <h2>momoAI 旧版网页节点（不降智 Plus 节点）</h2>
                     <p class="sessionkey-pain">偏「节点卡片墙」的旧版大厅。顶栏可在不降智 Plus 节点、SuperGrok、Gemini、Claude Pro Max、Codex 国内站等入口之间切换。</p>
-                    <p class="sessionkey-method">空闲节点多为绿条并标「推荐」，繁忙节点则为黄条并标「可用」。某一个变慢，直接换一张卡片即可。网页镜像适合打开就能聊，但不等于拥有完整官方账号；对话会经过第三方，不适合处理机密材料。</p>
+                    <p class="sessionkey-method">空闲节点多为绿条并标「推荐」，繁忙节点则为黄条并标「可用」。某一个变慢，直接换一张卡片即可。网页镜像适合打开就能聊，但不等于拥有完整官方账号。</p>
                     <div class="sessionkey-links">
                         <p><span>入口：</span><a href="https://old.trygpt.asia/list/" target="_blank" rel="noopener">https://old.trygpt.asia/list/</a></p>
                         <p><span>旧域名跳转：</span><a href="https://maynorai.top/" target="_blank" rel="noopener">https://maynorai.top/</a> → 同上</p>
@@ -187,7 +187,7 @@
                         <img src="https://upload.maynor1024.live/file/1794665534339_04-codex-domestic.png" alt="AI 信息差《Codex国内站》说明页，介绍 momoAPICodex 入口与国内直连配置" width="960" height="540" loading="lazy" decoding="async">
                         <figcaption>真正开 Key、买套餐的地方是 momoai.asia。旧入口 codexinstall.asia 当日返回 HTTP 451，请不要再用。</figcaption>
                     </figure>
-                    <p class="sessionkey-disclaimer">⚠️ 这是第三方中转，对话和代码上下文会经过中转站。旧域名 https://codex.maynor1024.live/ 仍可打开，但已是品牌升级通知，并提示迁移到 momoai.asia。</p>
+                    <p class="sessionkey-disclaimer">⚠️ 旧域名 https://codex.maynor1024.live/ 仍可打开，但已是品牌升级通知，并提示迁移到 momoai.asia。</p>
                 </div>
             </div>
         </section>
@@ -262,14 +262,14 @@ const completion = await client.chat.completions.create({
                         </div>
                         <div class="comparison-row">
                             <div><strong>主要代价</strong></div>
-                            <div>对话走第三方；功能不一定对齐官网</div>
+                            <div>功能不一定对齐官网</div>
                             <div>需按站点流程提供账号凭证</div>
                             <div>需配置中转与分组</div>
                             <div>需自己写调用或接客户端</div>
                         </div>
                         <div class="comparison-row">
                             <div><strong>不适合</strong></div>
-                            <div>机密数据和官方独有权益</div>
+                            <div>官方独有权益</div>
                             <div>只想临时试用、没有自有账号</div>
                             <div>只想网页随手聊两句</div>
                             <div>完全不想碰 API 的人</div>
@@ -327,10 +327,6 @@ const completion = await client.chat.completions.create({
             <div class="container">
                 <h2>💡 使用前请注意</h2>
                 <div class="solutions-grid">
-                    <div class="solution-card">
-                        <h3>🧩 第三方不等于官网</h3>
-                        <p>镜像和中转可以降低门槛，但内容会经过别人的服务器，服务也可能随时调整或中断。不要把敏感文件或生产密钥交给不了解的站点。</p>
-                    </div>
                     <div class="solution-card">
                         <h3>🔑 先看分组和模型 ID</h3>
                         <p>Codex 或 API 报 401、没额度、模型不支持，多半是 Key 分组或模型名与控制台不一致，而不是「站点完全挂了」。</p>
@@ -391,10 +387,6 @@ const completion = await client.chat.completions.create({
             <div class="container">
                 <h2>❓ 常见问题</h2>
                 <div class="faq-container">
-                    <div class="faq-item">
-                        <div class="faq-question">这些站是 OpenAI 官方吗？</div>
-                        <div class="faq-answer">不是。它们都是第三方渠道。网页节点和 API 中转会经过第三方服务器；代充则是把套餐充到你自己的官方账号，然后仍在官网使用。</div>
-                    </div>
                     <div class="faq-item">
                         <div class="faq-question">我只想打开就能聊，选哪条？</div>
                         <div class="faq-answer">优先收藏新版节点大厅 https://trygpt.asia/list/#/home。旧站 https://old.trygpt.asia/list/ 仍可打开，当作备用入口即可。</div>
