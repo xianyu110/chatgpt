@@ -6,20 +6,31 @@
     <meta name="robots" content="index, follow" id="meta-robots">
     <script>
     (function(){
-        var path = location.pathname || '/';
-        var params = new URLSearchParams(location.search);
-        var lang = params.get('lang');
-        var isHome = (path === '/' || path === '');
-        var isDefaultLang = !lang || lang === 'zh-CN';
-        if (!isHome || !isDefaultLang) {
-            var robots = document.getElementById('meta-robots');
-            if (robots) robots.setAttribute('content', 'noindex, follow');
-        }
-        if (!isHome) {
-            var dest = 'https://chatgpt-plus.top/';
-            if (lang && lang !== 'zh-CN') dest += '?lang=' + encodeURIComponent(lang);
-            location.replace(dest);
-        }
+      var origin='https://chatgpt-plus.top';
+      var map={'zh-CN':'/','en-US':'/en/','ja-JP':'/ja/','ko-KR':'/ko/','es-ES':'/es/'};
+      var params=new URLSearchParams(location.search);
+      var lang=params.get('lang');
+      var path=location.pathname;
+      if(path==='/index.html') path='/';
+      else if(path.slice(-11)==='/index.html') path=path.slice(0,-10);
+      else if(path==='/en'||path==='/ja'||path==='/ko'||path==='/es') path+='/';
+      var dest=null;
+      if(lang&&map[lang]){
+        dest=map[lang];
+        params.delete('lang');
+      } else if(location.pathname==='/index.html' || /\/[a-z]{2}\/index\.html$/.test(location.pathname)){
+        dest=path;
+      }
+      if(!dest){
+        try{
+          var saved=localStorage.getItem('preferred-language');
+          if(saved&&map[saved]&&path==='/'&&saved!=='zh-CN') dest=map[saved];
+        }catch(e){}
+      }
+      if(!dest) return;
+      var q=params.toString();
+      var next=origin+dest+(q?'?'+q:'')+location.hash;
+      if(location.href!==next) location.replace(next);
     })();
     </script>
     <script>
@@ -28,14 +39,20 @@
     <meta name="description" content="国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站与 API 聚合。2026 年 11 月 14 日核实。">
     <meta name="keywords" content="国内使用GPT, ChatGPT 镜像, ChatGPT Plus 代充, Codex 国内站, momoAI, trygpt.asia, momoai.asia, tryallapi, chongzhi.chatgpt-plus.top">
     <title data-i18n="meta.title">国内使用GPT的渠道汇总 · 网页节点 / 官网代充 / Codex / API</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="extra.css">
-    <link rel="stylesheet" href="contact-widget.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/extra.css">
+    <link rel="stylesheet" href="/contact-widget.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="canonical" href="https://chatgpt-plus.top/">
+    <link rel="alternate" hreflang="zh-CN" href="https://chatgpt-plus.top/">
+    <link rel="alternate" hreflang="en-US" href="https://chatgpt-plus.top/en/">
+    <link rel="alternate" hreflang="ja-JP" href="https://chatgpt-plus.top/ja/">
+    <link rel="alternate" hreflang="ko-KR" href="https://chatgpt-plus.top/ko/">
+    <link rel="alternate" hreflang="es-ES" href="https://chatgpt-plus.top/es/">
+    <link rel="alternate" hreflang="x-default" href="https://chatgpt-plus.top/">
     <link rel="preconnect" href="https://upload.maynor1024.live" crossorigin>
     <meta name="theme-color" content="#0b0b0d">
     <meta name="color-scheme" content="dark light">
@@ -66,7 +83,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="logo.png" alt="GPT 渠道汇总" data-i18n-alt="nav.logo" width="28" height="28" decoding="async">
+                <img src="/logo.png" alt="GPT 渠道汇总" data-i18n-alt="nav.logo" width="28" height="28" decoding="async">
                 <span data-i18n="nav.logo">GPT 渠道汇总</span>
             </div>
             <div class="nav-controls">
@@ -515,8 +532,8 @@ const completion = await client.chat.completions.create({
     </div>
 
 
-    <script src="js/i18n.js"></script>
-    <script src="script.js"></script>
-    <script src="contact-widget.js"></script>
+    <script src="/js/i18n.js"></script>
+    <script src="/script.js"></script>
+    <script src="/contact-widget.js"></script>
 </body>
 </html>

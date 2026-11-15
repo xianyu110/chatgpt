@@ -24,45 +24,46 @@ class EnhancedI18nManager {
         this.trackLanguageChange();
     }
 
-    // 检测并设置语言
+    localePath(lang = this.currentLanguage) {
+        const paths = {
+            'zh-CN': '/',
+            'en-US': '/en/',
+            'ja-JP': '/ja/',
+            'ko-KR': '/ko/',
+            'es-ES': '/es/'
+        };
+        return paths[lang] || '/';
+    }
+
+    pageUrl(lang = this.currentLanguage) {
+        return 'https://chatgpt-plus.top' + this.localePath(lang);
+    }
+
+    languageFromPath(pathname) {
+        const map = {
+            '/': 'zh-CN',
+            '/en': 'en-US',
+            '/en/': 'en-US',
+            '/ja': 'ja-JP',
+            '/ja/': 'ja-JP',
+            '/ko': 'ko-KR',
+            '/ko/': 'ko-KR',
+            '/es': 'es-ES',
+            '/es/': 'es-ES'
+        };
+        const trimmed = pathname.replace(/\/index\.html$/, '') || '/';
+        return map[trimmed] || map[trimmed + '/'] || 'zh-CN';
+    }
+
+    // 检测并设置语言（路径优先；?lang= 由页面头部脚本跳转到对应路径）
     detectLanguage() {
-        // URL参数优先
-        const urlParams = new URLSearchParams(window.location.search);
-        const langParam = urlParams.get('lang');
-        if (langParam && this.supportedLanguages[langParam]) {
-            this.currentLanguage = langParam;
-            return;
-        }
-
-        // localStorage其次
-        const savedLanguage = localStorage.getItem('preferred-language');
-        if (savedLanguage && this.supportedLanguages[savedLanguage]) {
-            this.currentLanguage = savedLanguage;
-            return;
-        }
-
-        // 浏览器语言最后
-        const browserLanguage = navigator.language || navigator.userLanguage;
-        if (this.supportedLanguages[browserLanguage]) {
-            this.currentLanguage = browserLanguage;
-            return;
-        }
-
-        // 语言代码匹配
-        const languageCode = browserLanguage.split('-')[0];
-        const matchedLanguage = Object.keys(this.supportedLanguages).find(key => 
-            key.startsWith(languageCode + '-')
-        );
-        
-        if (matchedLanguage) {
-            this.currentLanguage = matchedLanguage;
-        }
+        this.currentLanguage = this.languageFromPath(window.location.pathname);
     }
 
     // 加载翻译文件
     async loadTranslations() {
         try {
-            const response = await fetch(`./languages/${this.currentLanguage}.json`);
+            const response = await fetch(`/languages/${this.currentLanguage}.json`);
             if (!response.ok) {
                 throw new Error(`Failed to load ${this.currentLanguage}.json`);
             }
@@ -72,7 +73,7 @@ class EnhancedI18nManager {
             console.error('Error loading translations:', error);
             if (this.currentLanguage !== 'zh-CN') {
                 this.currentLanguage = 'zh-CN';
-                const response = await fetch('./languages/zh-CN.json');
+                const response = await fetch('/languages/zh-CN.json');
                 this.translations = await response.json();
                 this.seoConfig = this.translations.meta || {};
             }
@@ -117,15 +118,13 @@ class EnhancedI18nManager {
             document.head.appendChild(canonical);
         }
         
-        const siteUrl = 'https://chatgpt-plus.top/';
-        // 语言切换只是同一页的客户端翻译，规范网址始终指向首页，避免 ?lang= 被当成独立页面。
-        canonical.href = siteUrl;
+        canonical.href = this.pageUrl();
     }
 
     // 更新Open Graph标签
     updateOpenGraphTags() {
         const siteUrl = 'https://chatgpt-plus.top/';
-        const pageUrl = siteUrl;
+        const pageUrl = this.pageUrl();
         const imageUrl = `${siteUrl}og-image.png`;
         const title = this.seoConfig.title;
         const description = this.seoConfig.description;
@@ -180,16 +179,19 @@ class EnhancedI18nManager {
             link.remove();
         });
 
-        // 翻译在客户端完成，HTML 源码只有中文，因此不再把 ?lang= 声明为独立语言版本。
-        const siteUrl = 'https://chatgpt-plus.top/';
-        const pairs = [['zh-CN', siteUrl], ['x-default', siteUrl]];
-        pairs.forEach(function (pair) {
+        Object.keys(this.supportedLanguages).forEach(lang => {
             const link = document.createElement('link');
             link.rel = 'alternate';
-            link.hreflang = pair[0];
-            link.href = pair[1];
+            link.hreflang = lang;
+            link.href = this.pageUrl(lang);
             document.head.appendChild(link);
         });
+
+        const defaultLink = document.createElement('link');
+        defaultLink.rel = 'alternate';
+        defaultLink.hreflang = 'x-default';
+        defaultLink.href = this.pageUrl('zh-CN');
+        document.head.appendChild(defaultLink);
     }
 
     // 更新结构化数据
@@ -208,7 +210,7 @@ class EnhancedI18nManager {
                     if (this.seoConfig.description) {
                         site.description = this.seoConfig.description;
                     }
-                    site.inLanguage = 'zh-CN';
+                    site.inLanguage = this.currentLanguage;
                     site.url = 'https://chatgpt-plus.top/';
                     site.image = 'https://chatgpt-plus.top/og-image.png';
                 }
@@ -294,6 +296,15 @@ class EnhancedI18nManager {
             const translation = this.t(key);
             if (typeof translation === 'string' && translation && translation !== key) {
                 element.setAttribute('alt', translation);
+            }
+        });
+
+        document.querySelectorAll('[data-i18n-aria-label]').forEach(element => {
+            const key = element.getAttribute('data-i18n-aria-label');
+            const translation = this.t(key);
+            if (typeof translation === 'string' && translation && translation !== key) {
+                element.setAttribute('aria-label', translation);
+                element.setAttribute('title', translation);
             }
         });
 
@@ -435,31 +446,21 @@ class EnhancedI18nManager {
         }
     }
 
-    // 切换语言
-    async changeLanguage(newLanguage) {
+    // 切换语言：跳转到对应静态语言页
+    changeLanguage(newLanguage) {
         if (!this.supportedLanguages[newLanguage]) return;
 
-        this.currentLanguage = newLanguage;
-        
-        // 保存用户偏好
-        localStorage.setItem('preferred-language', newLanguage);
-        
-        // 更新URL（不刷新页面）
-        const url = new URL(window.location);
-        if (newLanguage === 'zh-CN') {
-            url.searchParams.delete('lang');
-        } else {
-            url.searchParams.set('lang', newLanguage);
+        try {
+            localStorage.setItem('preferred-language', newLanguage);
+        } catch (e) { /* ignore */ }
+
+        const params = new URLSearchParams(window.location.search);
+        params.delete('lang');
+        const query = params.toString();
+        const next = this.pageUrl(newLanguage) + (query ? `?${query}` : '') + window.location.hash;
+        if (window.location.href !== next) {
+            window.location.assign(next);
         }
-        window.history.replaceState({}, '', url.toString());
-        
-        // 重新加载翻译并应用
-        await this.loadTranslations();
-        this.applySEOOptimizations();
-        this.applyTranslations();
-        
-        // 触发语言变更事件
-        this.trackLanguageChange();
     }
 
     // 跟踪语言变更
