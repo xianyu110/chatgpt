@@ -27,9 +27,9 @@
   },
   "fable": {
     "badge": "Recomendación diaria",
-    "title": "Recomendado: empieza a chatear en el vestíbulo clásico de momoAI",
-    "description": "Si quieres conversar en el navegador y cambiar de nodo según la carga, guarda primero el vestíbulo clásico en https://old.trygpt.asia/list/. El sitio más nuevo en https://trygpt.asia/list/#/home también sigue abriendo. En el mismo ecosistema, trygpt es el vestíbulo de nodos web y momoai se centra en la API y la consola de planes mensuales.",
-    "cta": "Abrir https://old.trygpt.asia/"
+    "title": "Recomendado: empieza a chatear en momoAI.New",
+    "description": "Si quieres conversar en el navegador y cambiar de nodo según la carga, guarda primero el vestíbulo más nuevo en https://trygpt.asia/list/#/home. El sitio clásico también sigue abriendo. En el mismo ecosistema, trygpt es el vestíbulo de nodos web y momoai se centra en la API y la consola de planes mensuales.",
+    "cta": "Abrir https://trygpt.asia/"
   },
   "choose": {
     "title": "🧭 Cómo elegir: empieza por el uso",

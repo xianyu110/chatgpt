@@ -27,9 +27,9 @@
   },
   "fable": {
     "badge": "Daily pick",
-    "title": "Recommended: start chatting in the momoAI classic node lobby",
-    "description": "If you want to chat in the browser and switch nodes by load, bookmark the classic lobby at https://old.trygpt.asia/list/ first. The newer site at https://trygpt.asia/list/#/home still opens. In the same ecosystem, trygpt is the web node lobby, while momoai focuses on the API and monthly-plan console.",
-    "cta": "Open https://old.trygpt.asia/"
+    "title": "Recommended: start chatting in momoAI.New",
+    "description": "If you want to chat in the browser and switch nodes by load, bookmark the newer lobby at https://trygpt.asia/list/#/home first. The classic site still opens. In the same ecosystem, trygpt is the web node lobby, while momoai focuses on the API and monthly-plan console.",
+    "cta": "Open https://trygpt.asia/"
   },
   "choose": {
     "title": "🧭 How to choose: start with your scenario",

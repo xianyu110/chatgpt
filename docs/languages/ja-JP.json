@@ -27,9 +27,9 @@
   },
   "fable": {
     "badge": "日常のおすすめ",
-    "title": "おすすめ：momoAI 旧版ウェブノードですぐに話し始める",
-    "description": "ブラウザで直接会話し、負荷を見ながらノードを切り替えたいなら、まず旧版ホール https://old.trygpt.asia/list/ をブックマークしてください。新しいサイト https://trygpt.asia/list/#/home も開けます。同じエコシステムでは、trygpt はウェブのノードホール、momoai は API と月額コンソールが中心です。",
-    "cta": "https://old.trygpt.asia/ を開く"
+    "title": "おすすめ：momoAI.New ですぐに話し始める",
+    "description": "ブラウザで直接会話し、負荷を見ながらノードを切り替えたいなら、まず新しいホール https://trygpt.asia/list/#/home をブックマークしてください。旧サイトも開けます。同じエコシステムでは、trygpt はウェブのノードホール、momoai は API と月額コンソールが中心です。",
+    "cta": "https://trygpt.asia/ を開く"
   },
   "choose": {
     "title": "🧭 選び方：まず用途を見る",
