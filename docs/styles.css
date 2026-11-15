@@ -208,6 +208,10 @@ body {
     object-fit: contain;
 }
 
+html[data-theme="dark"] .nav-logo img {
+    filter: invert(1);
+}
+
 .language-selector-container {
     position: relative;
 }
