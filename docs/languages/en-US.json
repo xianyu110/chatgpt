@@ -18,7 +18,7 @@
       "📌 Follow the live page on the day"
     ],
     "cta": {
-      "primary": "✨ Open the new node lobby",
+      "primary": "✨ Open the classic node lobby",
       "recharge": "💳 Official top-up",
       "choose": "🧭 See how to choose first",
       "codex": "💻 Domestic Codex site",
@@ -27,9 +27,9 @@
   },
   "fable": {
     "badge": "Daily pick",
-    "title": "Recommended: start chatting in momoAI.New",
-    "description": "If you want to chat in the browser and switch nodes by load, bookmark the new lobby at https://trygpt.asia/list/#/home first. The old site still opens and works as a backup. In the same ecosystem, trygpt is the web node lobby, while momoai focuses on the API and monthly-plan console.",
-    "cta": "Open https://trygpt.asia/"
+    "title": "Recommended: start chatting in the momoAI classic node lobby",
+    "description": "If you want to chat in the browser and switch nodes by load, bookmark the classic lobby at https://old.trygpt.asia/list/ first. The newer site at https://trygpt.asia/list/#/home still opens. In the same ecosystem, trygpt is the web node lobby, while momoai focuses on the API and monthly-plan console.",
+    "cta": "Open https://old.trygpt.asia/"
   },
   "choose": {
     "title": "🧭 How to choose: start with your scenario",
@@ -37,7 +37,7 @@
     "cards": [
       {
         "title": "💬 Chat on the web right away",
-        "text": "Use the web mirror nodes and switch cards by load. Entry: trygpt.asia (new) / old.trygpt.asia (legacy)."
+        "text": "Use web mirror nodes and switch cards by load. Entry: old.trygpt.asia (classic) / trygpt.asia (newer)."
       },
       {
         "title": "🪪 You want your own official account",
@@ -52,12 +52,12 @@
         "text": "One OpenAI-compatible key, many models. Entry: tryallapi.com."
       }
     ],
-    "note": "✅ Prefer the new site, keep the old one as backup　✅ Official top-up is a separate path and does not go through the mirror chat page　✅ Prices and model lists follow the console on the day"
+    "note": "✅ Classic lobby first, newer site also works  ✅ Top-up is a separate path, not via the mirror chat page  ✅ Prices and model lists follow that day’s console"
   },
   "channel": {
     "entry": "Entry:",
     "new": {
-      "badge": "Channel 2 · More commonly used",
+      "badge": "Channel 2",
       "title": "momoAI.New advanced node lobby",
       "pain": "This is the newer lobby most people use now, branded momoAI.New. The left sidebar is organized by product: GPT Plus advanced nodes, Gemini Pro, SuperGrok, AI image generation, Claude Pro Max, the top-up site, the domestic Codex site, and more.",
       "method": "Nodes are shown as cards. You can filter by All / Recommended / Busy and see live load. Prefer a green bar with a lower number; a yellow “Available” bar means you can still get in, but it may be more crowded. If it says your subscription type doesn't match, buy a plan in the site shop or redeem a code first.",
@@ -67,7 +67,7 @@
       "caption": "The momoAI.New node lobby. This screenshot is filtered toward Super / Grok nodes; use the left sidebar to switch back to GPT Plus advanced nodes."
     },
     "old": {
-      "badge": "Channel 1 · Backup",
+      "badge": "Channel 1",
       "title": "momoAI legacy web nodes (non-downgraded Plus nodes)",
       "pain": "A “wall of node cards” style legacy lobby. The top bar switches among non-downgraded Plus nodes, SuperGrok, Gemini, Claude Pro Max, the domestic Codex site, and other entries.",
       "method": "Idle nodes are usually a green bar labeled “Recommended”; busy ones are a yellow bar labeled “Available.” If one slows down, just switch to another card. Web mirrors are good for opening a chat immediately, but they are not the same as having a full official account.",
@@ -248,7 +248,7 @@
     "title": "❓ FAQ",
     "chat": {
       "q": "I just want to open a page and start chatting. Which one should I pick?",
-      "a": "Bookmark the new node lobby at https://trygpt.asia/list/#/home first. The legacy site https://old.trygpt.asia/list/ still opens and can be kept as a backup."
+      "a": "Bookmark the classic node lobby at https://old.trygpt.asia/list/ first. The newer site https://trygpt.asia/list/#/home still opens."
     },
     "account": {
       "q": "What if I want the full official features and my own account?",
@@ -266,7 +266,7 @@
   "finalCta": {
     "title": "🎯 Bookmark one entry that actually opens",
     "description": "For web chat, go to the node lobby; for an official identity, use official top-up; for coding, use the domestic Codex site; to call models from your own app, use the API aggregator.",
-    "primary": "✨ Open the new node lobby",
+    "primary": "✨ Open the classic node lobby",
     "recharge": "💳 Official top-up",
     "codex": "💻 Domestic Codex site",
     "markdown": "📄 View the Markdown source"

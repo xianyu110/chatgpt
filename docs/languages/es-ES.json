@@ -18,7 +18,7 @@
       "📌 Toma como referencia la página del día"
     ],
     "cta": {
-      "primary": "✨ Abrir el nuevo vestíbulo de nodos",
+      "primary": "✨ Abrir el vestíbulo clásico de nodos",
       "recharge": "💳 Recarga oficial",
       "choose": "🧭 Ver primero cómo elegir",
       "codex": "💻 Sitio Codex de acceso nacional",
@@ -27,9 +27,9 @@
   },
   "fable": {
     "badge": "Recomendación diaria",
-    "title": "Recomendado: empieza a chatear en momoAI.New",
-    "description": "Si quieres conversar en el navegador y cambiar de nodo según la carga, guarda primero el nuevo vestíbulo en https://trygpt.asia/list/#/home. El sitio antiguo sigue abriendo y sirve como reserva. En el mismo ecosistema, trygpt es el vestíbulo de nodos web y momoai se centra en la API y la consola de planes mensuales.",
-    "cta": "Abrir https://trygpt.asia/"
+    "title": "Recomendado: empieza a chatear en el vestíbulo clásico de momoAI",
+    "description": "Si quieres conversar en el navegador y cambiar de nodo según la carga, guarda primero el vestíbulo clásico en https://old.trygpt.asia/list/. El sitio más nuevo en https://trygpt.asia/list/#/home también sigue abriendo. En el mismo ecosistema, trygpt es el vestíbulo de nodos web y momoai se centra en la API y la consola de planes mensuales.",
+    "cta": "Abrir https://old.trygpt.asia/"
   },
   "choose": {
     "title": "🧭 Cómo elegir: empieza por el uso",
@@ -37,7 +37,7 @@
     "cards": [
       {
         "title": "💬 Chatear ya en la web",
-        "text": "Usa los nodos espejo web y cambia de tarjeta según la carga. Entrada: trygpt.asia (nuevo) / old.trygpt.asia (antiguo)."
+        "text": "Usa nodos espejo web y cambia de tarjeta según la carga. Entrada: old.trygpt.asia (clásico) / trygpt.asia (más nuevo)."
       },
       {
         "title": "🪪 Quieres tu propia cuenta oficial",
@@ -52,12 +52,12 @@
         "text": "Una clave compatible con OpenAI para conectar varios modelos. Entrada: tryallapi.com."
       }
     ],
-    "note": "✅ Prioriza el sitio nuevo y deja el antiguo como reserva　✅ La recarga oficial es otra vía y no pasa por la página de chat del espejo　✅ Los precios y la lista de modelos siguen la consola del día"
+    "note": "✅ Primero el vestíbulo clásico; el sitio nuevo también funciona  ✅ La recarga es otra vía, no pasa por la página de chat espejo  ✅ Precios y listas de modelos según la consola del día"
   },
   "channel": {
     "entry": "Entrada:",
     "new": {
-      "badge": "Canal 2 · El más usado",
+      "badge": "Canal 2",
       "title": "Vestíbulo avanzado de nodos momoAI.New",
       "pain": "Este es el vestíbulo nuevo que más se usa ahora, con la marca momoAI.New. La barra izquierda se organiza por producto: nodos avanzados de GPT Plus, Gemini Pro, SuperGrok, generación de imágenes, Claude Pro Max, el sitio de recarga, el sitio Codex de acceso nacional y más.",
       "method": "Los nodos se muestran como tarjetas. Puedes filtrar por Todos / Recomendados / Ocupados y ver la carga en tiempo real. Prioriza una barra verde con un número bajo; una barra amarilla de “Disponible” significa que aún puedes entrar, pero puede estar más lleno. Si indica que el tipo de suscripción no coincide, compra un plan en la tienda del sitio o canjea un código primero.",
@@ -67,7 +67,7 @@
       "caption": "El vestíbulo de nodos momoAI.New. En esta captura el filtro apunta más a nodos Super / Grok; en la barra izquierda puedes volver a los nodos avanzados de GPT Plus."
     },
     "old": {
-      "badge": "Canal 1 · Reserva",
+      "badge": "Canal 1",
       "title": "Nodos web antiguos de momoAI (nodos Plus sin degradación)",
       "pain": "Un vestíbulo antiguo al estilo de “muro de tarjetas de nodos”. La barra superior permite cambiar entre nodos Plus sin degradación, SuperGrok, Gemini, Claude Pro Max, el sitio Codex de acceso nacional y otras entradas.",
       "method": "Los nodos libres suelen tener una barra verde con “Recomendado”; los ocupados, una barra amarilla con “Disponible”. Si uno se vuelve lento, basta con cambiar a otra tarjeta. Los espejos web sirven para abrir un chat de inmediato, pero no equivalen a tener una cuenta oficial completa.",
@@ -248,7 +248,7 @@
     "title": "❓ Preguntas frecuentes",
     "chat": {
       "q": "Solo quiero abrir una página y empezar a chatear. ¿Cuál elijo?",
-      "a": "Guarda primero el nuevo vestíbulo de nodos en https://trygpt.asia/list/#/home. El sitio antiguo https://old.trygpt.asia/list/ sigue abriendo y puedes dejarlo como reserva."
+      "a": "Guarda primero el vestíbulo clásico de nodos en https://old.trygpt.asia/list/. El sitio más nuevo https://trygpt.asia/list/#/home también sigue abriendo."
     },
     "account": {
       "q": "¿Y si quiero las funciones oficiales completas y mi propia cuenta?",
@@ -266,7 +266,7 @@
   "finalCta": {
     "title": "🎯 Guarda primero una entrada que sí abra",
     "description": "Para chatear en la web, entra al vestíbulo de nodos; para una identidad oficial, usa la recarga oficial; para programar, usa el sitio Codex de acceso nacional; para llamar modelos desde tu aplicación, usa el agregador de API.",
-    "primary": "✨ Abrir el nuevo vestíbulo de nodos",
+    "primary": "✨ Abrir el vestíbulo clásico de nodos",
     "recharge": "💳 Recarga oficial",
     "codex": "💻 Sitio Codex de acceso nacional",
     "markdown": "📄 Ver el origen en Markdown"
