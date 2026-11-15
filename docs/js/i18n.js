@@ -117,9 +117,8 @@ class EnhancedI18nManager {
             document.head.appendChild(canonical);
         }
         
-        const baseUrl = window.location.origin + window.location.pathname;
-        const canonicalUrl = this.currentLanguage === 'zh-CN' ? baseUrl : `${baseUrl}?lang=${this.currentLanguage}`;
-        canonical.href = canonicalUrl;
+        const siteUrl = 'https://chatgpt-plus.top/';
+        canonical.href = siteUrl;
     }
 
     // 更新Open Graph标签
@@ -127,7 +126,7 @@ class EnhancedI18nManager {
         const ogTags = {
             'og:title': this.seoConfig.title,
             'og:description': this.seoConfig.description,
-            'og:url': window.location.href,
+            'og:url': 'https://chatgpt-plus.top/',
             'og:locale': this.currentLanguage.replace('-', '_')
         };
 
@@ -151,14 +150,14 @@ class EnhancedI18nManager {
             link.remove();
         });
 
-        const baseUrl = window.location.origin + window.location.pathname;
-        
+        const siteUrl = 'https://chatgpt-plus.top/';
+
         // 为每种语言添加hreflang链接
         Object.keys(this.supportedLanguages).forEach(lang => {
             const link = document.createElement('link');
             link.rel = 'alternate';
             link.hreflang = lang;
-            link.href = lang === 'zh-CN' ? baseUrl : `${baseUrl}?lang=${lang}`;
+            link.href = lang === 'zh-CN' ? siteUrl : `${siteUrl}?lang=${lang}`;
             document.head.appendChild(link);
         });
 
@@ -166,7 +165,7 @@ class EnhancedI18nManager {
         const defaultLink = document.createElement('link');
         defaultLink.rel = 'alternate';
         defaultLink.hreflang = 'x-default';
-        defaultLink.href = baseUrl;
+        defaultLink.href = siteUrl;
         document.head.appendChild(defaultLink);
     }
 
