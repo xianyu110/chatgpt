@@ -1,4 +1,16 @@
 User-agent: *
 Allow: /
 
+# 非内容地址，避免浪费抓取配额
+Disallow: /CNAME
+Disallow: /.nojekyll
+Disallow: /404.html
+Disallow: /list
+Disallow: /list.html
+Disallow: /index.html
+Disallow: /*?lang=
+Disallow: /*&lang=
+Disallow: /*?theme=
+Disallow: /*&theme=
+
 Sitemap: https://chatgpt-plus.top/sitemap.xml

@@ -118,13 +118,14 @@ class EnhancedI18nManager {
         }
         
         const siteUrl = 'https://chatgpt-plus.top/';
-        canonical.href = this.currentLanguage === 'zh-CN' ? siteUrl : `${siteUrl}?lang=${this.currentLanguage}`;
+        // 语言切换只是同一页的客户端翻译，规范网址始终指向首页，避免 ?lang= 被当成独立页面。
+        canonical.href = siteUrl;
     }
 
     // 更新Open Graph标签
     updateOpenGraphTags() {
         const siteUrl = 'https://chatgpt-plus.top/';
-        const pageUrl = this.currentLanguage === 'zh-CN' ? siteUrl : `${siteUrl}?lang=${this.currentLanguage}`;
+        const pageUrl = siteUrl;
         const imageUrl = `${siteUrl}og-image.png`;
         const title = this.seoConfig.title;
         const description = this.seoConfig.description;
@@ -179,23 +180,16 @@ class EnhancedI18nManager {
             link.remove();
         });
 
+        // 翻译在客户端完成，HTML 源码只有中文，因此不再把 ?lang= 声明为独立语言版本。
         const siteUrl = 'https://chatgpt-plus.top/';
-
-        // 为每种语言添加hreflang链接
-        Object.keys(this.supportedLanguages).forEach(lang => {
+        const pairs = [['zh-CN', siteUrl], ['x-default', siteUrl]];
+        pairs.forEach(function (pair) {
             const link = document.createElement('link');
             link.rel = 'alternate';
-            link.hreflang = lang;
-            link.href = lang === 'zh-CN' ? siteUrl : `${siteUrl}?lang=${lang}`;
+            link.hreflang = pair[0];
+            link.href = pair[1];
             document.head.appendChild(link);
         });
-
-        // 添加x-default
-        const defaultLink = document.createElement('link');
-        defaultLink.rel = 'alternate';
-        defaultLink.hreflang = 'x-default';
-        defaultLink.href = siteUrl;
-        document.head.appendChild(defaultLink);
     }
 
     // 更新结构化数据
@@ -214,7 +208,7 @@ class EnhancedI18nManager {
                     if (this.seoConfig.description) {
                         site.description = this.seoConfig.description;
                     }
-                    site.inLanguage = Object.keys(this.supportedLanguages);
+                    site.inLanguage = 'zh-CN';
                     site.url = 'https://chatgpt-plus.top/';
                     site.image = 'https://chatgpt-plus.top/og-image.png';
                 }

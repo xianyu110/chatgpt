@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow" id="meta-robots">
     <script>
-    (function(){if(location.pathname!=='/'){location.replace('https://chatgpt-plus.top/');}})();
+    (function(){
+        var path = location.pathname || '/';
+        var params = new URLSearchParams(location.search);
+        var lang = params.get('lang');
+        var isHome = (path === '/' || path === '');
+        var isDefaultLang = !lang || lang === 'zh-CN';
+        if (!isHome || !isDefaultLang) {
+            var robots = document.getElementById('meta-robots');
+            if (robots) robots.setAttribute('content', 'noindex, follow');
+        }
+        if (!isHome) {
+            var dest = 'https://chatgpt-plus.top/';
+            if (lang && lang !== 'zh-CN') dest += '?lang=' + encodeURIComponent(lang);
+            location.replace(dest);
+        }
+    })();
     </script>
     <script>
     (function(){try{var q=new URLSearchParams(location.search).get('theme');var t=(q==='light'||q==='dark')?q:localStorage.getItem('preferred-theme');if(t!=='light'&&t!=='dark'){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
@@ -20,14 +36,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="canonical" href="https://chatgpt-plus.top/">
-    <link rel="alternate" hreflang="zh-CN" href="https://chatgpt-plus.top/">
-    <link rel="alternate" hreflang="en-US" href="https://chatgpt-plus.top/?lang=en-US">
-    <link rel="alternate" hreflang="ja-JP" href="https://chatgpt-plus.top/?lang=ja-JP">
-    <link rel="alternate" hreflang="ko-KR" href="https://chatgpt-plus.top/?lang=ko-KR">
-    <link rel="alternate" hreflang="es-ES" href="https://chatgpt-plus.top/?lang=es-ES">
-    <link rel="alternate" hreflang="x-default" href="https://chatgpt-plus.top/">
     <link rel="preconnect" href="https://upload.maynor1024.live" crossorigin>
-    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0b0b0d">
     <meta name="color-scheme" content="dark light">
     <meta property="og:type" content="website">
@@ -50,7 +59,7 @@
     <meta name="twitter:image" content="https://chatgpt-plus.top/og-image.png">
     <meta name="twitter:image:alt" content="国内使用GPT的渠道汇总：网页节点、官网代充、Codex 与 API">
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://chatgpt-plus.top/#website","name":"国内使用GPT的渠道汇总","url":"https://chatgpt-plus.top/","description":"国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站与 API 聚合。","inLanguage":["zh-CN","en-US","ja-JP","ko-KR","es-ES"],"image":"https://chatgpt-plus.top/og-image.png"},{"@type":"FAQPage","@id":"https://chatgpt-plus.top/#faq","isPartOf":{"@id":"https://chatgpt-plus.top/#website"},"inLanguage":"zh-CN","mainEntity":[{"@type":"Question","name":"我只想打开就能聊，选哪条？","acceptedAnswer":{"@type":"Answer","text":"优先收藏旧版节点大厅 https://old.trygpt.asia/list/。新站 https://trygpt.asia/list/#/home 仍可打开。"}},{"@type":"Question","name":"我想要完整官网功能和自己的账号呢？","acceptedAnswer":{"@type":"Answer","text":"走官网代充：https://chongzhi.chatgpt-plus.top/ ，备用 https://chongzhi.trygpt.asia/ 。只给自己的账号充，认准域名，保留订单记录。"}},{"@type":"Question","name":"写代码、用 Codex 应该去哪？","acceptedAnswer":{"@type":"Answer","text":"去 https://momoai.asia/ 开 Key，再用 CC Switch 把客户端指到中转地址。不要再用返回 451 的 codexinstall.asia。"}},{"@type":"Question","name":"某个域名打不开怎么办？","acceptedAnswer":{"@type":"Answer","text":"先试文中列出的备用地址，并以站点当时页面为准。把已核实能打开的入口收藏好，比再追一批来路不明的「最新镜像」更重要。"}}]}]}
+    {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://chatgpt-plus.top/#website","name":"国内使用GPT的渠道汇总","url":"https://chatgpt-plus.top/","description":"国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站与 API 聚合。","inLanguage":"zh-CN","image":"https://chatgpt-plus.top/og-image.png"},{"@type":"FAQPage","@id":"https://chatgpt-plus.top/#faq","isPartOf":{"@id":"https://chatgpt-plus.top/#website"},"inLanguage":"zh-CN","mainEntity":[{"@type":"Question","name":"我只想打开就能聊，选哪条？","acceptedAnswer":{"@type":"Answer","text":"优先收藏旧版节点大厅 https://old.trygpt.asia/list/。新站 https://trygpt.asia/list/#/home 仍可打开。"}},{"@type":"Question","name":"我想要完整官网功能和自己的账号呢？","acceptedAnswer":{"@type":"Answer","text":"走官网代充：https://chongzhi.chatgpt-plus.top/ ，备用 https://chongzhi.trygpt.asia/ 。只给自己的账号充，认准域名，保留订单记录。"}},{"@type":"Question","name":"写代码、用 Codex 应该去哪？","acceptedAnswer":{"@type":"Answer","text":"去 https://momoai.asia/ 开 Key，再用 CC Switch 把客户端指到中转地址。不要再用返回 451 的 codexinstall.asia。"}},{"@type":"Question","name":"某个域名打不开怎么办？","acceptedAnswer":{"@type":"Answer","text":"先试文中列出的备用地址，并以站点当时页面为准。把已核实能打开的入口收藏好，比再追一批来路不明的「最新镜像」更重要。"}}]}]}
     </script>
 </head>
 <body>
