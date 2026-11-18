@@ -8,7 +8,7 @@
     "meta": "2026-11-18 更新"
   },
   "hero": {
-    "badge": "✨ GPT-6.2 Astra 已可使用",
+    "badge": "✨ 按场景选入口",
     "title": "国内使用 GPT 的渠道汇总",
     "titleAccent": "网页节点 · 官网代充 · Codex · API",
     "subtitle": "直接打开 chatgpt.com 并不总是顺利：网络、海外手机号、信用卡和账号风控，都会把第一步卡住。把目前仍可打开的几条主要渠道放在一起，方便按场景选，而不是到处搜链接。",
@@ -289,5 +289,9 @@
     "open": "打开 QQ 聊天",
     "toggle": "联系客服",
     "copied": "已复制"
+  },
+  "banner": {
+    "tag": "新模型",
+    "text": "GPT-6.2 Astra 已可使用，模型 ID：gpt-6.2-astra。官方用于 ChatGPT Work / Codex / API，普通 Chat 暂未加入。"
   }
 }
