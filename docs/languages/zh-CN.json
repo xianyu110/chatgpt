@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "国内使用GPT的渠道汇总 · 网页节点 / 官网代充 / Codex / API",
-    "description": "国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站与 API 聚合。2026 年 11 月 14 日核实。"
+    "description": "国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站与 API 聚合。2026 年 11 月 18 日更新：GPT-6.2 Astra 已可使用。"
   },
   "nav": {
     "logo": "GPT 渠道汇总",
-    "meta": "2026-11-14 核实"
+    "meta": "2026-11-18 更新"
   },
   "hero": {
-    "badge": "✨ 按场景选入口",
+    "badge": "✨ GPT-6.2 Astra 已可使用",
     "title": "国内使用 GPT 的渠道汇总",
     "titleAccent": "网页节点 · 官网代充 · Codex · API",
     "subtitle": "直接打开 chatgpt.com 并不总是顺利：网络、海外手机号、信用卡和账号风控，都会把第一步卡住。把目前仍可打开的几条主要渠道放在一起，方便按场景选，而不是到处搜链接。",
@@ -23,7 +23,8 @@
       "choose": "🧭 先看怎么选",
       "codex": "💻 Codex 国内站",
       "api": "🔌 API 聚合"
-    }
+    },
+    "update": "2026 年 11 月 18 日更新：GPT-6.2 Astra 已可使用。官方入口是 ChatGPT Work、Codex 和 API，模型 ID 为 gpt-6.2-astra；普通 Chat 暂未加入。国内 Codex / API 请按控制台当天列表填写该 ID，不要只写旧的 gpt-6-astra。"
   },
   "fable": {
     "badge": "日常推荐",
@@ -98,7 +99,7 @@
       "badge": "渠道四",
       "title": "Codex 国内站（momoAPICodex）",
       "pain": "面向要用 Codex Desktop / CLI 写代码、跑 Agent，或同时用 GPTimage2 出图的人。这不是 OpenAI 官方订阅，而是国内可访问的第三方中转。",
-      "method": "在 momoai.asia 注册，开通按量或包月，创建对应分组的 API Key，再用 CC Switch 把官方客户端指到中转地址。套餐价格和每日额度会变，请以控制台实时规则为准。",
+      "method": "在 momoai.asia 注册，开通按量或包月，创建对应分组的 API Key，再用 CC Switch 把官方客户端指到中转地址。2026 年 11 月 18 日更新：GPT-6.2 Astra 已可使用，模型 ID 为 gpt-6.2-astra；日常任务也可按控制台列表选用 gpt-6.2-sol。套餐价格和每日额度会变，请以控制台实时规则为准。",
       "steps": [
         "Base URL 填中转根地址，例如 https://momoai.asia，不要再指向 https://api.openai.com。",
         "Key 必须来自支持 Codex 的分组（常见是包月 Codex 分组）；选错会出现「模型不受支持」或没额度。",
@@ -170,8 +171,8 @@
     }
   },
   "map": {
-    "title": "🗺️ 渠道地图（2026-11-14 核实）",
-    "intro": "当日用公开 HTTP 访问核对，以下 6 个地址均返回 200，可以打开。旧站、新站都是前端单页应用，HTML 壳子的 title 分别只显示 ChatGPT / gpt，界面形态以文中截图为准。",
+    "title": "🗺️ 渠道地图（2026-11-18 复核）",
+    "intro": "2026 年 11 月 18 日再次用公开 HTTP 访问复核，以下 6 个地址仍返回 200，可以打开。旧站、新站都是前端单页应用，HTML 壳子的 title 分别只显示 ChatGPT / gpt，界面形态以文中 11 月 14 日截图为准。",
     "col": {
       "role": "角色",
       "addr": "核实地址",
@@ -272,7 +273,7 @@
     "markdown": "📄 查看 Markdown 原文"
   },
   "footer": {
-    "copyright": "© 2026 国内使用GPT的渠道汇总。第三方导流说明，非 OpenAI 官方产品。核实日期：2026 年 11 月 14 日（Asia/Shanghai）。",
+    "copyright": "© 2026 国内使用GPT的渠道汇总。第三方导流说明，非 OpenAI 官方产品。更新日期：2026 年 11 月 18 日（Asia/Shanghai）。GPT-6.2 Astra 已可使用。",
     "github": "GitHub",
     "choose": "怎么选",
     "compare": "对照表"

@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "중국에서 쓰는 GPT 경로 모음 · 웹 노드 / 공식 대신 충전 / Codex / API",
-    "description": "중국에서 GPT를 쓰는 경로 모음: 웹 미러 노드, ChatGPT Plus / GPT Pro 공식 대신 충전, 국내 Codex 사이트, API 애그리게이터. 2026년 11월 14일 확인."
+    "description": "중국에서 GPT를 쓰는 경로 모음: 웹 미러 노드, ChatGPT Plus / GPT Pro 공식 대신 충전, 국내 Codex 사이트, API 애그리게이터. 2026년 11월 18일 업데이트: GPT-6.2 Astra를 사용할 수 있습니다."
   },
   "nav": {
     "logo": "GPT 경로 모음",
-    "meta": "2026-11-14 확인"
+    "meta": "2026-11-18 업데이트"
   },
   "hero": {
-    "badge": "✨ 용도에 따라 입구를 고르세요",
+    "badge": "✨ GPT-6.2 Astra 사용 가능",
     "title": "중국에서 쓰는 GPT 경로 모음",
     "titleAccent": "웹 노드 · 공식 대신 충전 · Codex · API",
     "subtitle": "chatgpt.com을 바로 여는 일이 늘 순조롭지는 않습니다. 네트워크, 해외 휴대폰 번호, 신용카드, 계정 위험 심사 때문에 첫 단계에서 막힐 수 있습니다. 지금도 열리는 주요 경로를 한곳에 모아, 링크를 찾아다니기보다 용도에 맞게 고를 수 있게 했습니다.",
@@ -23,7 +23,8 @@
       "choose": "🧭 먼저 고르는 법 보기",
       "codex": "💻 국내 Codex 사이트",
       "api": "🔌 API 애그리게이터"
-    }
+    },
+    "update": "2026년 11월 18일(Asia/Shanghai) 업데이트: GPT-6.2 Astra를 사용할 수 있습니다. 공식 제공 범위는 ChatGPT Work, Codex, API이며 모델 ID는 gpt-6.2-astra입니다. 일반 Chat에는 아직 없습니다. 국내 Codex / API에서는 예전 gpt-6-astra만 적지 말고, 콘솔 당일 목록의 ID를 사용하세요."
   },
   "fable": {
     "badge": "일상 추천",
@@ -98,7 +99,7 @@
       "badge": "경로 4",
       "title": "국내 Codex 사이트(momoAPICodex)",
       "pain": "Codex Desktop / CLI로 코드를 쓰거나 Agent를 실행하고, GPTimage2로 이미지도 만들고 싶은 사람을 위한 경로입니다. OpenAI 공식 구독이 아니라, 중국 국내에서 접속할 수 있는 제3자 중계입니다.",
-      "method": "momoai.asia에서 가입하고, 사용량 또는 월간 요금제를 연 다음, 해당 그룹의 API Key를 만들고 CC Switch로 공식 클라이언트를 중계 주소에 연결하세요. 요금과 일일 한도는 바뀔 수 있으니, 콘솔의 실시간 규칙을 따르세요.",
+      "method": "momoai.asia에서 가입하고, 사용량 또는 월간 요금제를 연 다음, 해당 그룹의 API Key를 만들고 CC Switch로 공식 클라이언트를 중계 주소에 연결하세요. 2026년 11월 18일 업데이트: GPT-6.2 Astra를 사용할 수 있으며 모델 ID는 gpt-6.2-astra입니다. 일상 작업은 콘솔 목록에서 gpt-6.2-sol을 선택할 수도 있습니다. 요금과 일일 한도는 바뀔 수 있으니, 콘솔의 실시간 규칙을 따르세요.",
       "steps": [
         "Base URL에는 중계 루트, 예를 들어 https://momoai.asia 를 넣고, https://api.openai.com 을 가리키지 마세요.",
         "Key는 Codex를 지원하는 그룹(흔히 월간 Codex 그룹)에서 나와야 합니다. 그룹을 잘못 고르면 ‘모델이 지원되지 않음’ 또는 한도 없음이 나타납니다.",
@@ -170,8 +171,8 @@
     }
   },
   "map": {
-    "title": "🗺️ 경로 지도(2026-11-14 확인)",
-    "intro": "당일 공개 HTTP 요청으로 확인한 결과, 아래 주소 6곳은 모두 200을 반환하며 열렸습니다. 이전 사이트와 새 사이트 모두 프론트엔드 싱글 페이지 앱이며, HTML 셸의 title은 각각 ChatGPT / gpt만 표시됩니다. 화면 모습은 본문 스크린샷을 기준으로 하세요.",
+    "title": "🗺️ 경로 지도(2026-11-18 재확인)",
+    "intro": "2026년 11월 18일에 공개 HTTP로 다시 확인한 결과, 아래 6개 주소는 모두 200을 반환하며 열립니다. 구버전과 새 사이트 모두 프론트엔드 싱글 페이지 앱이며, HTML 셸의 title은 ChatGPT / gpt만 표시합니다. 화면 형태는 본문의 11월 14일 스크린샷을 기준으로 하세요.",
     "col": {
       "role": "역할",
       "addr": "확인한 주소",
@@ -272,7 +273,7 @@
     "markdown": "📄 Markdown 원문 보기"
   },
   "footer": {
-    "copyright": "© 2026 중국에서 쓰는 GPT 경로 모음. 제3자 안내이며 OpenAI 공식 제품이 아닙니다. 확인일: 2026년 11월 14일(Asia/Shanghai).",
+    "copyright": "© 2026 중국에서 쓰는 GPT 경로 모음. 제3자 안내이며 OpenAI 공식 제품이 아닙니다. 업데이트일: 2026년 11월 18일(Asia/Shanghai). GPT-6.2 Astra를 사용할 수 있습니다.",
     "github": "GitHub",
     "choose": "고르는 법",
     "compare": "대조표"
