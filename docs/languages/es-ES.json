@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "Canales para usar GPT en China · Nodos web / Recarga oficial / Codex / API",
-    "description": "Resumen de canales para usar GPT en China: nodos espejo web, recarga oficial de ChatGPT Plus / GPT Pro, un sitio Codex de acceso nacional y un agregador de API. Verificado el 14 de noviembre de 2026."
+    "description": "Resumen de canales para usar GPT en China: nodos espejo web, recarga oficial de ChatGPT Plus / GPT Pro, un sitio Codex de acceso nacional y un agregador de API. Actualizado el 18 de noviembre de 2026: GPT-6.2 Astra ya está disponible."
   },
   "nav": {
     "logo": "Canales de GPT",
-    "meta": "Verificado el 2026-11-14"
+    "meta": "Actualizado el 2026-11-18"
   },
   "hero": {
-    "badge": "✨ Elige la entrada según el uso",
+    "badge": "✨ GPT-6.2 Astra ya está disponible",
     "title": "Canales para usar GPT en China",
     "titleAccent": "Nodos web · Recarga oficial · Codex · API",
     "subtitle": "Abrir chatgpt.com no siempre es sencillo: la red, un número de teléfono extranjero, una tarjeta de crédito y los controles de riesgo de la cuenta pueden frenarte en el primer paso. Aquí reunimos los canales principales que siguen abriendo, para que elijas según el uso en lugar de buscar enlaces por todas partes.",
@@ -23,7 +23,8 @@
       "choose": "🧭 Ver primero cómo elegir",
       "codex": "💻 Sitio Codex de acceso nacional",
       "api": "🔌 Agregador de API"
-    }
+    },
+    "update": "Actualización del 18 de noviembre de 2026 (Asia/Shanghai): GPT-6.2 Astra ya está disponible. En la oferta oficial está en ChatGPT Work, Codex y la API, con el ID gpt-6.2-astra; todavía no está en el Chat habitual. En los canales nacionales de Codex / API, usa el ID de la consola del día y no te quedes solo con el antiguo gpt-6-astra."
   },
   "fable": {
     "badge": "Recomendación diaria",
@@ -98,7 +99,7 @@
       "badge": "Canal 4",
       "title": "Sitio Codex de acceso nacional (momoAPICodex)",
       "pain": "Para quienes quieren escribir código o ejecutar agentes con Codex Desktop / CLI, o también generar imágenes con GPTimage2. No es una suscripción oficial de OpenAI, sino un relé de terceros accesible desde China continental.",
-      "method": "Regístrate en momoai.asia, activa un plan por uso o mensual, crea una clave API en el grupo correspondiente y, con CC Switch, apunta el cliente oficial a la dirección del relé. Los precios y las cuotas diarias cambian: sigue las reglas en vivo de la consola.",
+      "method": "Regístrate en momoai.asia, activa un plan por uso o mensual, crea una clave API en el grupo correspondiente y, con CC Switch, apunta el cliente oficial a la dirección del relé. Actualización del 18 de noviembre de 2026: GPT-6.2 Astra ya está disponible; el ID del modelo es gpt-6.2-astra. Para tareas cotidianas también puedes elegir gpt-6.2-sol en la lista de la consola. Los precios y las cuotas diarias cambian: sigue las reglas en vivo de la consola.",
       "steps": [
         "Pon en Base URL la raíz del relé, por ejemplo https://momoai.asia, y no apuntes a https://api.openai.com.",
         "La clave debe salir de un grupo que admita Codex (a menudo un grupo mensual de Codex). Si eliges el grupo equivocado verás “modelo no compatible” o te quedarás sin cuota.",
@@ -170,8 +171,8 @@
     }
   },
   "map": {
-    "title": "🗺️ Mapa de canales (verificado el 2026-11-14)",
-    "intro": "Comprobado el mismo día con solicitudes HTTP públicas: las seis direcciones siguientes devolvieron 200 y se abrieron. Tanto el sitio antiguo como el nuevo son aplicaciones de una sola página; los títulos de la cáscara HTML solo muestran ChatGPT / gpt. Toma las capturas de este artículo como referencia de la interfaz.",
+    "title": "🗺️ Mapa de canales (revisado el 2026-11-18)",
+    "intro": "El 18 de noviembre de 2026 se volvió a comprobar con solicitudes HTTP públicas: las seis direcciones siguientes siguen devolviendo 200 y se pueden abrir. Tanto el sitio clásico como el nuevo son aplicaciones de una sola página; el title de la cáscara HTML solo muestra ChatGPT / gpt. Toma como referencia las capturas del 14 de noviembre que aparecen en este artículo.",
     "col": {
       "role": "Rol",
       "addr": "Dirección verificada",
@@ -272,7 +273,7 @@
     "markdown": "📄 Ver el origen en Markdown"
   },
   "footer": {
-    "copyright": "© 2026 Canales para usar GPT en China. Un directorio de terceros, no un producto oficial de OpenAI. Verificado el 14 de noviembre de 2026 (Asia/Shanghai).",
+    "copyright": "© 2026 Canales para usar GPT en China. Un directorio de terceros, no un producto oficial de OpenAI. Actualizado el 18 de noviembre de 2026 (Asia/Shanghai). GPT-6.2 Astra ya está disponible.",
     "github": "GitHub",
     "choose": "Cómo elegir",
     "compare": "Comparación"

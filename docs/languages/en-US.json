@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "GPT access channels in China · Web nodes / Official top-up / Codex / API",
-    "description": "A roundup of GPT access channels in China: web mirror nodes, official ChatGPT Plus / GPT Pro top-up, a domestic Codex site, and an API aggregator. Verified on 14 November 2026."
+    "description": "A roundup of GPT access channels in China: web mirror nodes, official ChatGPT Plus / GPT Pro top-up, a domestic Codex site, and an API aggregator. Updated 18 November 2026: GPT-6.2 Astra is now available."
   },
   "nav": {
     "logo": "GPT channel roundup",
-    "meta": "Verified 2026-11-14"
+    "meta": "Updated 2026-11-18"
   },
   "hero": {
-    "badge": "✨ Pick an entry by scenario",
+    "badge": "✨ GPT-6.2 Astra is now available",
     "title": "GPT access channels in China",
     "titleAccent": "Web nodes · Official top-up · Codex · API",
     "subtitle": "Opening chatgpt.com is not always straightforward: the network, an overseas phone number, a credit card, and account risk checks can all stall the first step. This page gathers the main channels that still open, so you can pick by scenario instead of hunting for links.",
@@ -23,7 +23,8 @@
       "choose": "🧭 See how to choose first",
       "codex": "💻 Domestic Codex site",
       "api": "🔌 API aggregator"
-    }
+    },
+    "update": "Updated 18 November 2026 (Asia/Shanghai): GPT-6.2 Astra is now available. Officially it is in ChatGPT Work, Codex, and the API as gpt-6.2-astra; it is not in regular Chat. For domestic Codex / API channels, use the ID shown in today’s console rather than the older gpt-6-astra."
   },
   "fable": {
     "badge": "Daily pick",
@@ -98,7 +99,7 @@
       "badge": "Channel 4",
       "title": "Domestic Codex site (momoAPICodex)",
       "pain": "For people who want to write code or run agents with Codex Desktop / CLI, or also generate images with GPTimage2. This is not an official OpenAI subscription, but a third-party relay that can be reached from mainland China.",
-      "method": "Register at momoai.asia, start a usage-based or monthly plan, create an API key in the matching group, then point the official client at the relay address with CC Switch. Plan prices and daily quotas change—follow the live console rules.",
+      "method": "Register at momoai.asia, start a usage-based or monthly plan, create an API key in the matching group, then point the official client at the relay address with CC Switch. Updated 18 November 2026: GPT-6.2 Astra is now available; the model ID is gpt-6.2-astra. For everyday tasks you can also choose gpt-6.2-sol from the live console list. Plan prices and daily quotas change—follow the live console rules.",
       "steps": [
         "Set the Base URL to the relay root, for example https://momoai.asia, not https://api.openai.com.",
         "The key must come from a group that supports Codex (often a monthly Codex group). The wrong group leads to “model not supported” or no quota.",
@@ -170,8 +171,8 @@
     }
   },
   "map": {
-    "title": "🗺️ Channel map (verified 2026-11-14)",
-    "intro": "Checked the same day with public HTTP requests: all six addresses below returned 200 and opened. Both the legacy and new sites are front-end single-page apps; the HTML shell titles only show ChatGPT / gpt. Treat the screenshots in this article as the source of truth for the UI.",
+    "title": "🗺️ Channel map (rechecked 2026-11-18)",
+    "intro": "Rechecked on 18 November 2026 with public HTTP requests: all six addresses below still returned 200 and opened. Both the legacy and new sites are front-end single-page apps; the HTML shell titles only show ChatGPT / gpt. Treat the 14 November screenshots in this article as the source of truth for the UI.",
     "col": {
       "role": "Role",
       "addr": "Verified address",
@@ -272,7 +273,7 @@
     "markdown": "📄 View the Markdown source"
   },
   "footer": {
-    "copyright": "© 2026 GPT access channels in China. A third-party directory, not an official OpenAI product. Verified 14 November 2026 (Asia/Shanghai).",
+    "copyright": "© 2026 GPT access channels in China. A third-party directory, not an official OpenAI product. Updated 18 November 2026 (Asia/Shanghai). GPT-6.2 Astra is now available.",
     "github": "GitHub",
     "choose": "How to choose",
     "compare": "Comparison"
