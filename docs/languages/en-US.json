@@ -8,7 +8,7 @@
     "meta": "Updated 2026-11-18"
   },
   "hero": {
-    "badge": "✨ GPT-6.2 Astra is now available",
+    "badge": "✨ Pick an entry by scenario",
     "title": "GPT access channels in China",
     "titleAccent": "Web nodes · Official top-up · Codex · API",
     "subtitle": "Opening chatgpt.com is not always straightforward: the network, an overseas phone number, a credit card, and account risk checks can all stall the first step. This page gathers the main channels that still open, so you can pick by scenario instead of hunting for links.",
@@ -289,5 +289,9 @@
     "open": "Open QQ chat",
     "toggle": "Contact support",
     "copied": "Copied"
+  },
+  "banner": {
+    "tag": "New",
+    "text": "GPT-6.2 Astra is now available. Model ID: gpt-6.2-astra. Officially in ChatGPT Work, Codex, and the API; not in regular Chat."
   }
 }

@@ -8,7 +8,7 @@
     "meta": "2026-11-18 업데이트"
   },
   "hero": {
-    "badge": "✨ GPT-6.2 Astra 사용 가능",
+    "badge": "✨ 용도에 따라 입구를 고르세요",
     "title": "중국에서 쓰는 GPT 경로 모음",
     "titleAccent": "웹 노드 · 공식 대신 충전 · Codex · API",
     "subtitle": "chatgpt.com을 바로 여는 일이 늘 순조롭지는 않습니다. 네트워크, 해외 휴대폰 번호, 신용카드, 계정 위험 심사 때문에 첫 단계에서 막힐 수 있습니다. 지금도 열리는 주요 경로를 한곳에 모아, 링크를 찾아다니기보다 용도에 맞게 고를 수 있게 했습니다.",
@@ -289,5 +289,9 @@
     "open": "QQ 채팅 열기",
     "toggle": "고객센터 문의",
     "copied": "복사됨"
+  },
+  "banner": {
+    "tag": "새 모델",
+    "text": "GPT-6.2 Astra를 사용할 수 있습니다. 모델 ID: gpt-6.2-astra. 공식 제공 범위는 ChatGPT Work / Codex / API이며, 일반 Chat에는 아직 없습니다."
   }
 }

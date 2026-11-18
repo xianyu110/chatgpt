@@ -8,7 +8,7 @@
     "meta": "Actualizado el 2026-11-18"
   },
   "hero": {
-    "badge": "✨ GPT-6.2 Astra ya está disponible",
+    "badge": "✨ Elige la entrada según el uso",
     "title": "Canales para usar GPT en China",
     "titleAccent": "Nodos web · Recarga oficial · Codex · API",
     "subtitle": "Abrir chatgpt.com no siempre es sencillo: la red, un número de teléfono extranjero, una tarjeta de crédito y los controles de riesgo de la cuenta pueden frenarte en el primer paso. Aquí reunimos los canales principales que siguen abriendo, para que elijas según el uso en lugar de buscar enlaces por todas partes.",
@@ -289,5 +289,9 @@
     "open": "Abrir chat de QQ",
     "toggle": "Contactar soporte",
     "copied": "Copiado"
+  },
+  "banner": {
+    "tag": "Nuevo",
+    "text": "GPT-6.2 Astra ya está disponible. ID del modelo: gpt-6.2-astra. En la oferta oficial está en ChatGPT Work, Codex y la API; todavía no está en el Chat habitual."
   }
 }
