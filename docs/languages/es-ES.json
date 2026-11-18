@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Canales para usar GPT en China · Nodos web / Recarga oficial / Codex / API",
-    "description": "Resumen de canales para usar GPT en China: nodos espejo web, recarga oficial de ChatGPT Plus / GPT Pro, un sitio Codex de acceso nacional y un agregador de API. Actualizado el 18 de noviembre de 2026: GPT-6.2 Astra ya está disponible."
+    "title": "Canales para usar GPT en China · Nodos web / Recarga oficial / Codex / API / Trymodel",
+    "description": "Guía de canales para usar GPT desde China: nodos web espejo, recarga oficial de ChatGPT Plus / GPT Pro, un sitio Codex nacional, un agregador de API y el chat web multimodelo Trymodel. Actualizado el 18 nov 2026: GPT-6.2 Astra ya está disponible."
   },
   "nav": {
     "logo": "Canales de GPT",
@@ -10,11 +10,11 @@
   "hero": {
     "badge": "✨ Elige la entrada según el uso",
     "title": "Canales para usar GPT en China",
-    "titleAccent": "Nodos web · Recarga oficial · Codex · API",
+    "titleAccent": "Nodos web · Recarga oficial · Codex · API · Trymodel",
     "subtitle": "Abrir chatgpt.com no siempre es sencillo: la red, un número de teléfono extranjero, una tarjeta de crédito y los controles de riesgo de la cuenta pueden frenarte en el primer paso. Aquí reunimos los canales principales que siguen abriendo, para que elijas según el uso en lugar de buscar enlaces por todas partes.",
     "features": [
       "🧩 Canales de terceros",
-      "🗺️ Seis entradas confirmadas hoy",
+      "🗺️ Siete entradas confirmadas abiertas hoy",
       "📌 Toma como referencia la página del día"
     ],
     "cta": {
@@ -22,7 +22,8 @@
       "recharge": "💳 Recarga oficial",
       "choose": "🧭 Ver primero cómo elegir",
       "codex": "💻 Sitio Codex de acceso nacional",
-      "api": "🔌 Agregador de API"
+      "api": "🔌 Agregador de API",
+      "trymodel": "🪄 Abrir Trymodel"
     },
     "update": "Actualización del 18 de noviembre de 2026 (Asia/Shanghai): GPT-6.2 Astra ya está disponible. En la oferta oficial está en ChatGPT Work, Codex y la API, con el ID gpt-6.2-astra; todavía no está en el Chat habitual. En los canales nacionales de Codex / API, usa el ID de la consola del día y no te quedes solo con el antiguo gpt-6-astra."
   },
@@ -34,7 +35,7 @@
   },
   "choose": {
     "title": "🧭 Cómo elegir: empieza por el uso",
-    "lead": "No hace falta abrir los cuatro. Elige el que encaje con lo que quieres hacer ahora.",
+    "lead": "No hace falta abrir todas. Elige solo la que encaje con lo que quieres hacer ahora.",
     "cards": [
       {
         "title": "💬 Chatear ya en la web",
@@ -51,9 +52,13 @@
       {
         "title": "🔌 Llamar modelos desde tu propio proyecto",
         "text": "Una clave compatible con OpenAI para conectar varios modelos. Entrada: tryallapi.com."
+      },
+      {
+        "title": "🪄 Cambiar de modelo en una sola página",
+        "text": "En Trymodel usas el mismo espacio web para chatear, crear y buscar con ChatGPT, Claude, Gemini y Grok. Entrada: trymodel.chat."
       }
     ],
-    "note": "✅ Primero el vestíbulo clásico; el sitio nuevo también funciona  ✅ La recarga es otra vía, no pasa por la página de chat espejo  ✅ Precios y listas de modelos según la consola del día"
+    "note": "✅ Prioriza la sala clásica; la nueva también abre  ✅ La recarga oficial es otra vía, no una página de chat espejo  ✅ Si quieres varios modelos en una página, usa Trymodel  ✅ Precios y listas de modelos según la consola o la página del día"
   },
   "channel": {
     "entry": "Entrada:",
@@ -126,17 +131,30 @@
       "imgAlt": "Inicio de momoAPIPro / tryallapi.com: agregador de API de IA, con una Base URL de ejemplo https://tryallapi.com/v1",
       "caption": "Sustituye your-api-key por una clave de la consola y cambia el nombre del modelo por un ID que exista realmente en la consola. No pongas claves en un repositorio público ni en el historial de un chat.",
       "disclaimer": "⚠️ https://api.maynorai.asia/ también abrió el día de la comprobación, pero es otra Base URL. Si ya usas tryallapi.com, no hace falta cambiar; a los usuarios nuevos les recomendamos empezar por la dirección tryallapi.com verificada en este artículo."
+    },
+    "trymodel": {
+      "badge": "Canal 6",
+      "title": "Trymodel, chat web multimodelo",
+      "pain": "Si quieres cambiar entre modelos como ChatGPT, Claude, Gemini y Grok en la misma web, en lugar de pulsar tarjetas de nodos espejo según la carga, este camino encaja mejor. El título del sitio es “Habla con ChatGPT, Claude, Gemini y Grok en una plataforma”. Sirve para chatear, crear y buscar; no es una cuenta oficial de ChatGPT.",
+      "method": "La URL raíz redirige a /zh. A la izquierda hay New Chat, Images, Search, Tools, Projects e History; la barra superior cambia de modelo. En la captura del 18 nov 2026 está seleccionado OpenAI GPT-6 Astra, con un cuadro de mensaje y atajos como Help me write, Learn about, Analyze image y Analyze document, y un botón Go Pro arriba a la derecha. La lista de modelos, si se puede probar sin iniciar sesión y los precios del plan se rigen por la página del día.",
+      "redirect": "Redirección de la raíz:",
+      "same": "abre la página en chino /zh",
+      "cta": "🪄 Abrir Trymodel",
+      "imgAlt": "Espacio de trabajo de Trymodel con OpenAI GPT-6 Astra seleccionado y, a la izquierda, entradas de chat, imágenes, búsqueda y proyectos",
+      "caption": "Espacio de trabajo de Trymodel capturado el 18 nov 2026. https://trymodel.chat/ redirige a /zh.",
+      "disclaimer": "⚠️ Trymodel es un chat web multimodelo. No es una cuenta oficial de ChatGPT ni la sala de tarjetas de nodos de momoAI."
     }
   },
   "compare": {
     "title": "📊 Tabla comparativa y recomendaciones",
-    "intro": "Una combinación práctica es: usa momoAI.New para el chat web diario; usa la recarga oficial cuando quieras la experiencia Plus oficial; deja el código en momoai.asia + Codex; y usa TryAllAPI cuando un producto o un script necesite muchos modelos.",
+    "intro": "Una mezcla práctica es: usa momoAI.New para el chat web diario; usa Trymodel si quieres ChatGPT, Claude, Gemini y Grok en una sola página; usa la recarga oficial cuando quieras la experiencia Plus oficial; mantén la programación en momoai.asia + Codex; y usa TryAllAPI cuando un producto o script necesite muchos modelos.",
     "col": {
       "item": "Comparar",
       "web": "Nodos web",
       "recharge": "Recarga oficial",
       "codex": "Sitio Codex de acceso nacional",
-      "api": "Agregador de API"
+      "api": "Agregador de API",
+      "trymodel": "Trymodel"
     },
     "row": {
       "entry": "Entrada típica",
@@ -149,30 +167,34 @@
       "web": "Chatear en un nodo desde el navegador",
       "recharge": "Recargar tu propia cuenta oficial",
       "codex": "Cliente / CLI + clave API",
-      "api": "API compatible con OpenAI"
+      "api": "API compatible con OpenAI",
+      "trymodel": "Chatear y cambiar de modelo en un mismo espacio"
     },
     "who": {
       "web": "Quienes quieren chatear ya y cambiar de nodo",
       "recharge": "Quienes quieren las funciones oficiales completas y una identidad oficial",
       "codex": "Programar, agentes y generación de imágenes con Codex",
-      "api": "Integraciones de desarrollo y llamadas a varios modelos"
+      "api": "Integraciones de desarrollo y llamadas a varios modelos",
+      "trymodel": "Quien quiere varios modelos en una sola página"
     },
     "cost": {
       "web": "Las funciones pueden no coincidir con el sitio oficial",
       "recharge": "Debes entregar credenciales de la cuenta según el proceso del sitio",
       "codex": "Hay que configurar el relé y los grupos",
-      "api": "Tienes que escribir las llamadas o conectar un cliente tú mismo"
+      "api": "Tienes que escribir las llamadas o conectar un cliente tú mismo",
+      "trymodel": "No es una cuenta oficial; las funciones siguen la página del día"
     },
     "not": {
       "web": "Beneficios exclusivos de lo oficial",
       "recharge": "Solo quieres una prueba rápida o no tienes cuenta propia",
       "codex": "Solo quieres una charla informal en la web",
-      "api": "Quienes no quieren tocar una API en absoluto"
+      "api": "Quienes no quieren tocar una API en absoluto",
+      "trymodel": "Quien solo necesita el sitio oficial completo o solo una API"
     }
   },
   "map": {
     "title": "🗺️ Mapa de canales (revisado el 2026-11-18)",
-    "intro": "El 18 de noviembre de 2026 se volvió a comprobar con solicitudes HTTP públicas: las seis direcciones siguientes siguen devolviendo 200 y se pueden abrir. Tanto el sitio clásico como el nuevo son aplicaciones de una sola página; el title de la cáscara HTML solo muestra ChatGPT / gpt. Toma como referencia las capturas del 14 de noviembre que aparecen en este artículo.",
+    "intro": "Revisado de nuevo con peticiones HTTP públicas el 18 nov 2026: las 7 direcciones siguientes seguían devolviendo 200 y se pueden abrir. Las salas clásica y nueva son aplicaciones de una sola página; el title del HTML solo muestra ChatGPT / gpt. Usa las capturas del artículo para ver la interfaz real.",
     "col": {
       "role": "Rol",
       "addr": "Dirección verificada",
@@ -201,6 +223,10 @@
     "api": {
       "role": "Agregador de API",
       "result": "200. La Base URL de demostración es /v1"
+    },
+    "trymodel": {
+      "role": "Trymodel, chat web multimodelo",
+      "result": "200. La raíz redirige a /zh; el título es Trymodel"
     }
   },
   "notes": {
@@ -216,7 +242,7 @@
   },
   "backups": {
     "title": "🔗 Dominios de reserva y entradas extra",
-    "intro": "Las direcciones siguientes se verificaron el mismo día y pueden servir de reserva o complemento; no sustituyen las seis entradas principales de arriba. Cuando necesites la URL más reciente, parte de una dirección de trygpt / momoai / recarga / TryAllAPI que ya hayas confirmado que abre.",
+    "intro": "Estas direcciones se comprobaron el mismo día y sirven como respaldo o complemento, pero no sustituyen las 7 entradas principales de arriba. Si necesitas la URL más reciente, empieza por una dirección de trygpt / momoai / recarga / TryAllAPI / Trymodel que ya hayas confirmado que abre.",
     "col": {
       "addr": "Dirección",
       "result": "Resultado del día",
@@ -233,10 +259,6 @@
     "maynor": {
       "result": "200, redirige al vestíbulo antiguo",
       "note": "Dominio anterior del vestíbulo de nodos antiguo"
-    },
-    "trymodel": {
-      "result": "200, redirige a /zh",
-      "note": "Un chat web multimodelo del mismo ecosistema; no es uno de los cinco canales principales de este artículo"
     },
     "image": {
       "note": "Un sitio independiente de GPT Image; la nueva barra lateral también enlaza aquí"
@@ -262,15 +284,20 @@
     "down": {
       "q": "¿Qué hago si un dominio no abre?",
       "a": "Prueba primero las direcciones de reserva de este artículo y sigue la página del sitio ese día. Tener guardada una entrada ya verificada importa más que ir detrás de otro lote de “espejos nuevos” de origen desconocido."
+    },
+    "trymodel": {
+      "q": "¿Cuál elijo si quiero ChatGPT, Claude, Gemini y Grok en una sola página?",
+      "a": "Usa Trymodel: https://trymodel.chat/ . Se abre en /zh. Es un espacio web multimodelo, no una cuenta oficial ni la sala de tarjetas de nodos."
     }
   },
   "finalCta": {
     "title": "🎯 Guarda primero una entrada que sí abra",
-    "description": "Para chatear en la web, entra al vestíbulo de nodos; para una identidad oficial, usa la recarga oficial; para programar, usa el sitio Codex de acceso nacional; para llamar modelos desde tu aplicación, usa el agregador de API.",
+    "description": "Para chatear en la web, entra a una sala de nodos; para cambiar varios modelos en una página, usa Trymodel; para una identidad oficial, usa la recarga oficial; para programar, usa el sitio Codex nacional; para llamar modelos desde tu propia app, usa el agregador de API.",
     "primary": "✨ Abrir el vestíbulo clásico de nodos",
     "recharge": "💳 Recarga oficial",
     "codex": "💻 Sitio Codex de acceso nacional",
-    "markdown": "📄 Ver el origen en Markdown"
+    "markdown": "📄 Ver el origen en Markdown",
+    "trymodel": "🪄 Abrir Trymodel"
   },
   "footer": {
     "copyright": "© 2026 Canales para usar GPT en China. Un directorio de terceros, no un producto oficial de OpenAI. Actualizado el 18 de noviembre de 2026 (Asia/Shanghai). GPT-6.2 Astra ya está disponible.",

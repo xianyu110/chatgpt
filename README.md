@@ -1,8 +1,8 @@
 # 国内使用GPT的渠道汇总
 
-国内直接打开 [chatgpt.com](https://chatgpt.com/) 并不总是顺利：网络、海外手机号、信用卡和账号风控，都会把「我想用 GPT」卡在第一步。于是市场上出现了几类常见路径——**网页镜像节点**、**给自己官网账号代充**、**Codex / API 中转**，以及 **多模型接口聚合**。
+国内直接打开 [chatgpt.com](https://chatgpt.com/) 并不总是顺利：网络、海外手机号、信用卡和账号风控，都会把「我想用 GPT」卡在第一步。于是市场上出现了几类常见路径——**网页镜像节点**、**给自己官网账号代充**、**Codex / API 中转**，以及 **多模型接口聚合** 和 **Trymodel 多模型网页聊天**。
 
-本文渠道入口先按 2026 年 11 月 14 日（Asia/Shanghai，UTC+8）核实，并在 2026 年 11 月 18 日再次复核，当时 6 个主入口仍返回 200。把目前仍可打开的几条主要渠道放在一起，方便按场景选，而不是到处搜链接。
+本文渠道入口先按 2026 年 11 月 14 日（Asia/Shanghai，UTC+8）核实，并在 2026 年 11 月 18 日再次复核，当时主入口仍返回 200；同日把 Trymodel 升为第六条主渠道后，主入口共 7 个地址。把目前仍可打开的几条主要渠道放在一起，方便按场景选，而不是到处搜链接。
 
 **2026 年 11 月 18 日更新：GPT-6.2 Astra 已可使用。** 官方在 [ChatGPT Work](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)、Codex 和 API 中提供，模型 ID 为 `gpt-6.2-astra`；普通 Chat 暂未加入。它面向更重的编码和专业任务，日常任务也可按控制台列表选用 `gpt-6.2-sol`。国内 Codex / API 请按控制台当天列表填写这些 ID，不要只写旧的 `gpt-6-astra`。
 
@@ -15,6 +15,7 @@
 - [渠道三：ChatGPT Plus / GPT Pro 官网代充](#渠道三chatgpt-plus--gpt-pro-官网代充)
 - [渠道四：Codex 国内站（momoAPICodex）](#渠道四codex-国内站momoapicodex)
 - [渠道五：momoAPIPro / TryAllAPI 接口聚合](#渠道五momoapipro--tryallapi-接口聚合)
+- [渠道六：Trymodel 多模型网页聊天](#渠道六trymodel-多模型网页聊天)
 - [对照表与选用建议](#对照表与选用建议)
 - [相关入口、备用域名与未完全核实的站点](#相关入口备用域名与未完全核实的站点)
 - [使用前请注意](#使用前请注意)
@@ -28,12 +29,13 @@
 | 自己的 ChatGPT / GPT Pro 官方账号，完整官网功能 | 官网代充 | [chongzhi.chatgpt-plus.top](https://chongzhi.chatgpt-plus.top/) |
 | 用 Codex 写代码、跑 Agent、顺便生图 | Codex 国内站（API / 包月） | [momoai.asia](https://momoai.asia/) |
 | 开发调用、一个 Key 接多家模型 | API 聚合 | [tryallapi.com](https://tryallapi.com/) |
+| 同一个网页里切换 ChatGPT / Claude / Gemini / Grok | Trymodel 多模型网页聊天 | [trymodel.chat](https://trymodel.chat/) |
 
-同一套生态里，**trygpt 侧重网页节点大厅，momoai 侧重 API 与包月控制台**，二者不是两家无关的站。代充站则是另一条线：充的是你自己的官方账号，不经过镜像对话页。
+同一套生态里，**trygpt 侧重网页节点大厅，momoai 侧重 API 与包月控制台**，二者不是两家无关的站。代充站则是另一条线：充的是你自己的官方账号，不经过镜像对话页。Trymodel 也是网页聊天，但侧重在同一个工作台里切换多家模型，而不是按负载点镜像节点卡片。
 
 ## 渠道地图（2026-11-18 复核）
 
-2026 年 11 月 18 日再次用公开 HTTP 访问复核，以下 6 个地址仍返回 **200**，可以打开：
+2026 年 11 月 18 日再次用公开 HTTP 访问复核，以下 7 个地址仍返回 **200**，可以打开（含同日升为主渠道的 Trymodel）：
 
 | # | 角色 | 核实地址 | 结果 |
 | --- | --- | --- | --- |
@@ -43,6 +45,7 @@
 | 4 | Codex 国内站 / momoAPICodex | https://momoai.asia/ | 200。标题为「momoAPICodex - AI API Gateway」；`/home` 同样可打开 |
 | 5 | 《Codex国内站》说明文（AI 信息差） | https://doc.momoai.asia/blog/codex-china-gpt-5-6-launch | 200。与配图 4 的页面一致，发布于 2026-07-12 |
 | 6 | momoAPIPro / TryAllAPI 接口聚合 | https://tryallapi.com/ | 200。首页演示 Base URL 为 `https://tryallapi.com/v1` |
+| 7 | Trymodel 多模型网页聊天 | https://trymodel.chat/ | 200。根路径跳转到 `/zh`，标题为「Trymodel - 在一个平台与 ChatGPT、Claude、Gemini 和 Grok 聊天」 |
 
 旧站、新站都是前端单页应用，站点名称和节点文案由接口下发，HTML 壳子的 title 分别只显示 `ChatGPT` / `gpt`。节点大厅的界面形态以文中截图为准。
 
@@ -161,22 +164,38 @@ const completion = await client.chat.completions.create({
 
 另有一个相近站点 `https://api.maynorai.asia/` 当日也可打开，首页同样是 MomoAPI 聚合风格，但示例 Base URL 写的是 `https://api.maynorai.asia/v1`。若你已经在用 tryallapi.com，不必换；新用户建议先走文中核实过、且与配图一致的 tryallapi.com。
 
+
+## 渠道六：Trymodel 多模型网页聊天
+
+- **入口：** https://trymodel.chat/
+- **根路径跳转：** https://trymodel.chat/ → `/zh`
+
+如果你想在同一个网页里切换 ChatGPT、Claude、Gemini、Grok 等主流模型，而不是按负载去点镜像节点卡片，这一条更合适。站点标题是「在一个平台与 ChatGPT、Claude、Gemini 和 Grok 聊天」，定位是聊天、创作和搜索，**不是**官方 ChatGPT 账号，也不等于 momoAI 的节点卡片大厅。
+
+打开后会进入中文页 `/zh`。左侧有新建对话、图片、搜索、工具和项目；顶栏可切换模型。2026 年 11 月 18 日的截图里，当前选中的是 OpenAI GPT-6 Astra，中间是输入框，并有写作、了解、分析图片、分析文档等快捷入口，右上角可见 Go Pro。模型名单、能否免登录试用、以及套餐价格都以当天页面为准。
+
+![Trymodel 网页工作台：顶栏选中 OpenAI GPT-6 Astra，左侧有对话、图片、搜索和项目入口](https://chatgpt-plus.top/images/06-trymodel-home.png)
+
+> 图注：2026 年 11 月 18 日截取的 Trymodel 工作台。https://trymodel.chat/ 会跳转到 /zh。
+
+请优先使用 `https://trymodel.chat/`，不要依赖未加密的 `http://` 入口。
+
 ## 对照表与选用建议
 
-| 对比 | 网页节点（旧站 / 新站） | 官网代充 | Codex 国内站 | API 聚合 |
-| --- | --- | --- | --- | --- |
-| 典型入口 | old.trygpt.asia / trygpt.asia | chongzhi.chatgpt-plus.top | momoai.asia | tryallapi.com |
-| 使用方式 | 浏览器进节点聊天 | 充到自己的官网账号 | 客户端 / CLI + API Key | OpenAI 兼容 API |
-| 账号归属 | 站点提供的节点 | 你自己的官方账号 | 中转站账号 + Key | 聚合站账号 + Key |
-| 适合谁 | 想马上对话、切节点 | 要完整官网能力和官方身份 | 写代码、Agent、Codex 生图 | 开发集成、多模型调用 |
-| 主要代价 | 功能不一定对齐官网 | 需按站点流程提供账号凭证 | 需配置中转与分组 | 需自己写调用或接客户端 |
-| 不适合 | 官方独有权益 | 只想临时试用、没有自有账号 | 只想网页随手聊两句 | 完全不想碰 API 的人 |
+| 对比 | 网页节点（旧站 / 新站） | 官网代充 | Codex 国内站 | API 聚合 | Trymodel |
+| --- | --- | --- | --- | --- | --- |
+| 典型入口 | old.trygpt.asia / trygpt.asia | chongzhi.chatgpt-plus.top | momoai.asia | tryallapi.com | trymodel.chat |
+| 使用方式 | 浏览器进节点聊天 | 充到自己的官网账号 | 客户端 / CLI + API Key | OpenAI 兼容 API | 同一工作台里切多模型聊天 |
+| 账号归属 | 站点提供的节点 | 你自己的官方账号 | 中转站账号 + Key | 聚合站账号 + Key | Trymodel 网页账号（以当天页面为准） |
+| 适合谁 | 想马上对话、切节点 | 要完整官网能力和官方身份 | 写代码、Agent、Codex 生图 | 开发集成、多模型调用 | 想在一个页面里用多家模型 |
+| 主要代价 | 功能不一定对齐官网 | 需按站点流程提供账号凭证 | 需配置中转与分组 | 需自己写调用或接客户端 | 不是官方账号，功能以当天页面为准 |
+| 不适合 | 官方独有权益 | 只想临时试用、没有自有账号 | 只想网页随手聊两句 | 完全不想碰 API 的人 | 只要官网完整能力或只要 API 的人 |
 
-一个很实用的组合是：日常网页对话用 **momoAI.New**；要官方 Plus 体验再走 **代充**；写代码固定用 **momoai.asia + Codex**；产品或脚本里要切很多模型，再用 **TryAllAPI**。不必四个都开。
+一个很实用的组合是：日常网页对话用 **momoAI.New**；想在一个页面里切换 ChatGPT / Claude / Gemini / Grok，再用 **Trymodel**；要官方 Plus 体验再走 **代充**；写代码固定用 **momoai.asia + Codex**；产品或脚本里要切很多模型，再用 **TryAllAPI**。不必全部都开。
 
 ## 相关入口、备用域名与未完全核实的站点
 
-以下地址当日核实过，可作备用或补充，但不是上文 6 个主入口的替代关系：
+以下地址当日核实过，可作备用或补充，但不是上文 7 个主入口的替代关系：
 
 | 地址 | 当日结果 | 说明 |
 | --- | --- | --- |
@@ -185,12 +204,11 @@ const completion = await client.chat.completions.create({
 | https://maynorai.top/ | 200，跳转到 old.trygpt.asia/list/ | 旧版节点厅的旧域名 |
 | https://apipro.maynor1024.live/ 、 https://api.maynor1024.live/ | 200，跳转到 tryallapi.com | API 站历史域名 |
 | https://codex.maynor1024.live/ | 200，品牌升级通知 | 已停用，引导至 momoai.asia |
-| https://trymodel.chat/ | 200，跳转到 `/zh` | 同生态的多模型网页聊天，可作补充，但不是本次配图里的五条主渠道 |
 | https://gptimage2.asia/zh | 200 | 独立的 GPT Image 站点，新版节点侧栏也会链到 |
 | https://api.maynorai.asia/ | 200 | 相近的 MomoAPI 聚合站，需与 tryallapi.com 区分，勿混用 Base URL |
 | https://codexinstall.asia/ | **451 Unavailable For Legal Reasons** | **未能核实为可用入口**，请改用 momoai.asia |
 
-「永久导航」出现在新旧节点大厅的顶栏 / 侧栏中，用于收藏最新入口。本次未单独打开一个独立的永久导航域名（常见猜测域名无法建立 TLS），因此**不把某一个导航站 URL 写进主列表**。需要最新地址时，优先以你已经核实能打开的 trygpt / momoai / 代充 / TryAllAPI 为准。
+「永久导航」出现在新旧节点大厅的顶栏 / 侧栏中，用于收藏最新入口。本次未单独打开一个独立的永久导航域名（常见猜测域名无法建立 TLS），因此**不把某一个导航站 URL 写进主列表**。需要最新地址时，优先以你已经核实能打开的 trygpt / momoai / 代充 / TryAllAPI / Trymodel 为准。
 
 ## 使用前请注意
 
@@ -201,6 +219,6 @@ const completion = await client.chat.completions.create({
 
 ## 写在最后
 
-国内用 GPT，现在大致就这几条路：要网页对话，进节点大厅；要官方身份和完整官网能力，走代充；要写代码，用 Codex 国内站；要在自己的应用里调模型，用 API 聚合。若要用最新的 GPT-6.2 Astra，官方走 ChatGPT Work / Codex / API（模型 ID：`gpt-6.2-astra`），国内中转也请按控制台当天列表填写该 ID。把入口收藏好，比再追一批来路不明的「最新镜像」更重要。
+国内用 GPT，现在大致就这几条路：要网页对话，进节点大厅；要在一个页面里切换多家模型，用 Trymodel；要官方身份和完整官网能力，走代充；要写代码，用 Codex 国内站；要在自己的应用里调模型，用 API 聚合。若要用最新的 GPT-6.2 Astra，官方走 ChatGPT Work / Codex / API（模型 ID：`gpt-6.2-astra`），国内中转也请按控制台当天列表填写该 ID。把入口收藏好，比再追一批来路不明的「最新镜像」更重要。
 
 本文所有配图已上传至图床，链接见各节；模型信息更新日期为 **2026 年 11 月 18 日（Asia/Shanghai）**，渠道入口在 11 月 14 日核实后于 11 月 18 日复核仍可打开。若某个域名打不开，先试文中列出的备用地址，并以站点当时页面为准。

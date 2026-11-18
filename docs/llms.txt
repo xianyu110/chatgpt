@@ -1,6 +1,6 @@
 # GPT 渠道汇总
 
-> 国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站与 API 聚合。
+> 国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站、API 聚合与 Trymodel 多模型网页聊天。
 
 - 站点：https://chatgpt-plus.top/
 - 更新日期：2026-11-18（Asia/Shanghai）
@@ -14,6 +14,7 @@
 - 官网代充：https://chongzhi.chatgpt-plus.top/
 - Codex 国内站：https://momoai.asia/
 - API 聚合：https://tryallapi.com/
+- Trymodel 多模型网页聊天：https://trymodel.chat/
 
 ## 备用地址
 

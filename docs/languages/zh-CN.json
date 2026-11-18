@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "国内使用GPT的渠道汇总 · 网页节点 / 官网代充 / Codex / API",
-    "description": "国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站与 API 聚合。2026 年 11 月 18 日更新：GPT-6.2 Astra 已可使用。"
+    "title": "国内使用GPT的渠道汇总 · 网页节点 / 官网代充 / Codex / API / Trymodel",
+    "description": "国内使用 GPT 的渠道汇总：网页镜像节点、ChatGPT Plus / GPT Pro 官网代充、Codex 国内站、API 聚合，以及 Trymodel 多模型网页聊天。2026 年 11 月 18 日更新：GPT-6.2 Astra 已可使用。"
   },
   "nav": {
     "logo": "GPT 渠道汇总",
@@ -10,11 +10,11 @@
   "hero": {
     "badge": "✨ 按场景选入口",
     "title": "国内使用 GPT 的渠道汇总",
-    "titleAccent": "网页节点 · 官网代充 · Codex · API",
+    "titleAccent": "网页节点 · 官网代充 · Codex · API · Trymodel",
     "subtitle": "直接打开 chatgpt.com 并不总是顺利：网络、海外手机号、信用卡和账号风控，都会把第一步卡住。把目前仍可打开的几条主要渠道放在一起，方便按场景选，而不是到处搜链接。",
     "features": [
       "🧩 第三方渠道",
-      "🗺️ 六条入口当日可打开",
+      "🗺️ 七条入口当日可打开",
       "📌 以当天页面为准"
     ],
     "cta": {
@@ -22,7 +22,8 @@
       "recharge": "💳 官网代充",
       "choose": "🧭 先看怎么选",
       "codex": "💻 Codex 国内站",
-      "api": "🔌 API 聚合"
+      "api": "🔌 API 聚合",
+      "trymodel": "🪄 打开 Trymodel"
     },
     "update": "2026 年 11 月 18 日更新：GPT-6.2 Astra 已可使用。官方入口是 ChatGPT Work、Codex 和 API，模型 ID 为 gpt-6.2-astra；普通 Chat 暂未加入。国内 Codex / API 请按控制台当天列表填写该 ID，不要只写旧的 gpt-6-astra。"
   },
@@ -34,7 +35,7 @@
   },
   "choose": {
     "title": "🧭 怎么选：先看场景",
-    "lead": "不必四个都开。按你现在最想做的那件事选一条就行。",
+    "lead": "不必全部都开。按你现在最想做的那件事选一条就行。",
     "cards": [
       {
         "title": "💬 马上在网页里聊",
@@ -51,9 +52,13 @@
       {
         "title": "🔌 在自己的项目里调模型",
         "text": "一个 OpenAI 兼容 Key，接多家模型。入口：tryallapi.com。"
+      },
+      {
+        "title": "🪄 一个页面里切换多个模型",
+        "text": "在 Trymodel 里用同一个网页工作台和 ChatGPT、Claude、Gemini、Grok 聊天、创作和搜索。入口：trymodel.chat。"
       }
     ],
-    "note": "✅ 旧站优先，新站也可打开　✅ 代充是另一条线，不经过镜像对话页　✅ 价格和模型列表以当天控制台为准"
+    "note": "✅ 旧站优先，新站也可打开　✅ 代充是另一条线，不经过镜像对话页　✅ 想在一个页面里切多模型，走 Trymodel　✅ 价格和模型列表以当天控制台或页面为准"
   },
   "channel": {
     "new": {
@@ -126,17 +131,30 @@
       "caption": "请把 your-api-key 换成控制台密钥，模型名改成控制台里实际存在的 ID。不要把 Key 写进公开仓库或聊天记录。",
       "disclaimer": "⚠️ https://api.maynorai.asia/ 当日也可打开，但是另一套 Base URL。若已在用 tryallapi.com，不必换；新用户建议先走本文核实过的 tryallapi.com。",
       "imgAlt": "momoAPIPro / tryallapi.com 首页：AI 接口聚合，示例 Base URL 为 https://tryallapi.com/v1"
+    },
+    "trymodel": {
+      "badge": "渠道六",
+      "title": "Trymodel 多模型网页聊天",
+      "pain": "如果你想在同一个网页里切换 ChatGPT、Claude、Gemini、Grok 等主流模型，而不是按负载去点镜像节点卡片，这一条更合适。站点标题是「在一个平台与 ChatGPT、Claude、Gemini 和 Grok 聊天」，定位是聊天、创作和搜索，不是官方 ChatGPT 账号。",
+      "method": "打开后根路径会跳转到 /zh。左侧有新建对话、图片、搜索、工具和项目；顶栏可切换模型。2026 年 11 月 18 日的截图里，当前选中的是 OpenAI GPT-6 Astra，中间是输入框，并有写作、了解、分析图片、分析文档等快捷入口，右上角可见 Go Pro。模型名单、能否免登录试用、以及套餐价格都以当天页面为准。",
+      "redirect": "根路径跳转：",
+      "same": "进入中文页 /zh",
+      "cta": "🪄 打开 Trymodel",
+      "imgAlt": "Trymodel 网页工作台：顶栏选中 OpenAI GPT-6 Astra，左侧有对话、图片、搜索和项目入口",
+      "caption": "2026 年 11 月 18 日截取的 Trymodel 工作台。https://trymodel.chat/ 会跳转到 /zh。",
+      "disclaimer": "⚠️ Trymodel 是多模型网页聊天，不是 ChatGPT 官方账号，也不等于 momoAI 的节点卡片大厅。"
     }
   },
   "compare": {
     "title": "📊 对照表与选用建议",
-    "intro": "一个很实用的组合是：日常网页对话用 momoAI.New；要官方 Plus 体验再走代充；写代码固定用 momoai.asia + Codex；产品或脚本里要切很多模型，再用 TryAllAPI。",
+    "intro": "一个很实用的组合是：日常网页对话用 momoAI.New；想在一个页面里切换 ChatGPT / Claude / Gemini / Grok，再用 Trymodel；要官方 Plus 体验再走代充；写代码固定用 momoai.asia + Codex；产品或脚本里要切很多模型，再用 TryAllAPI。",
     "col": {
       "item": "对比",
       "web": "网页节点",
       "recharge": "官网代充",
       "codex": "Codex 国内站",
-      "api": "API 聚合"
+      "api": "API 聚合",
+      "trymodel": "Trymodel"
     },
     "row": {
       "entry": "典型入口",
@@ -149,30 +167,34 @@
       "web": "浏览器进节点聊天",
       "recharge": "充到自己的官网账号",
       "codex": "客户端 / CLI + API Key",
-      "api": "OpenAI 兼容 API"
+      "api": "OpenAI 兼容 API",
+      "trymodel": "同一工作台里切多模型聊天"
     },
     "who": {
       "web": "想马上对话、切节点",
       "recharge": "要完整官网能力和官方身份",
       "codex": "写代码、Agent、Codex 生图",
-      "api": "开发集成、多模型调用"
+      "api": "开发集成、多模型调用",
+      "trymodel": "想在一个页面里用多家模型"
     },
     "cost": {
       "web": "功能不一定对齐官网",
       "recharge": "需按站点流程提供账号凭证",
       "codex": "需配置中转与分组",
-      "api": "需自己写调用或接客户端"
+      "api": "需自己写调用或接客户端",
+      "trymodel": "不是官方账号，功能以当天页面为准"
     },
     "not": {
       "web": "官方独有权益",
       "recharge": "只想临时试用、没有自有账号",
       "codex": "只想网页随手聊两句",
-      "api": "完全不想碰 API 的人"
+      "api": "完全不想碰 API 的人",
+      "trymodel": "只要官网完整能力或只要 API 的人"
     }
   },
   "map": {
     "title": "🗺️ 渠道地图（2026-11-18 复核）",
-    "intro": "2026 年 11 月 18 日再次用公开 HTTP 访问复核，以下 6 个地址仍返回 200，可以打开。旧站、新站都是前端单页应用，HTML 壳子的 title 分别只显示 ChatGPT / gpt，界面形态以文中 11 月 14 日截图为准。",
+    "intro": "2026 年 11 月 18 日再次用公开 HTTP 访问复核，以下 7 个地址仍返回 200，可以打开。旧站、新站都是前端单页应用，HTML 壳子的 title 分别只显示 ChatGPT / gpt，界面形态以文中截图为准。",
     "col": {
       "role": "角色",
       "addr": "核实地址",
@@ -201,6 +223,10 @@
     "api": {
       "role": "API 聚合",
       "result": "200。演示 Base URL 为 /v1"
+    },
+    "trymodel": {
+      "role": "Trymodel 多模型网页聊天",
+      "result": "200。根路径跳转到 /zh，标题为 Trymodel"
     }
   },
   "notes": {
@@ -216,7 +242,7 @@
   },
   "backups": {
     "title": "🔗 备用域名与补充入口",
-    "intro": "以下地址当日核实过，可作备用或补充，但不是上面 6 个主入口的替代关系。需要最新地址时，优先以你已经核实能打开的 trygpt / momoai / 代充 / TryAllAPI 为准。",
+    "intro": "以下地址当日核实过，可作备用或补充，但不是上面 7 个主入口的替代关系。需要最新地址时，优先以你已经核实能打开的 trygpt / momoai / 代充 / TryAllAPI / Trymodel 为准。",
     "col": {
       "addr": "地址",
       "result": "当日结果",
@@ -233,10 +259,6 @@
     "maynor": {
       "result": "200，跳转到旧版大厅",
       "note": "旧版节点厅的旧域名"
-    },
-    "trymodel": {
-      "result": "200，跳转到 /zh",
-      "note": "同生态多模型网页聊天，不是本次五条主渠道"
     },
     "image": {
       "note": "独立 GPT Image 站点，新版侧栏也会链到"
@@ -262,15 +284,20 @@
     "down": {
       "q": "某个域名打不开怎么办？",
       "a": "先试文中列出的备用地址，并以站点当时页面为准。把已核实能打开的入口收藏好，比再追一批来路不明的「最新镜像」更重要。"
+    },
+    "trymodel": {
+      "q": "想在一个页面里换 ChatGPT、Claude、Gemini、Grok，选哪条？",
+      "a": "走 Trymodel：https://trymodel.chat/ 。打开后会进入 /zh。这是多模型网页工作台，不是官网账号，也不是节点卡片大厅。"
     }
   },
   "finalCta": {
     "title": "🎯 先收藏一条能打开的入口",
-    "description": "要网页对话，进节点大厅；要官方身份，走代充；要写代码，用 Codex 国内站；要在自己的应用里调模型，用 API 聚合。",
+    "description": "要网页对话，进节点大厅；要在一个页面里切多家模型，用 Trymodel；要官方身份，走代充；要写代码，用 Codex 国内站；要在自己的应用里调模型，用 API 聚合。",
     "primary": "✨ 打开旧版节点大厅",
     "recharge": "💳 官网代充",
     "codex": "💻 Codex 国内站",
-    "markdown": "📄 查看 Markdown 原文"
+    "markdown": "📄 查看 Markdown 原文",
+    "trymodel": "🪄 打开 Trymodel"
   },
   "footer": {
     "copyright": "© 2026 国内使用GPT的渠道汇总。第三方导流说明，非 OpenAI 官方产品。更新日期：2026 年 11 月 18 日（Asia/Shanghai）。GPT-6.2 Astra 已可使用。",

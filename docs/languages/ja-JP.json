@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "中国国内で使う GPT の経路まとめ · ウェブノード / 公式代行チャージ / Codex / API",
-    "description": "中国国内で GPT を使う経路のまとめ：ウェブミラーノード、ChatGPT Plus / GPT Pro の公式代行チャージ、国内向け Codex サイト、API アグリゲーター。2026年11月18日更新：GPT-6.2 Astra が利用可能になりました。"
+    "title": "中国国内で使う GPT の経路まとめ · ウェブノード / 公式代行チャージ / Codex / API / Trymodel",
+    "description": "中国国内から GPT を使う経路のまとめ：ウェブミラーノード、ChatGPT Plus / GPT Pro の公式代行チャージ、国内 Codex サイト、API 集約、そして Trymodel のマルチモデルウェブチャット。2026年11月18日更新：GPT-6.2 Astra が利用可能。"
   },
   "nav": {
     "logo": "GPT 経路まとめ",
@@ -10,11 +10,11 @@
   "hero": {
     "badge": "✨ 用途から入り口を選ぶ",
     "title": "中国国内で使う GPT の経路まとめ",
-    "titleAccent": "ウェブノード · 公式代行チャージ · Codex · API",
+    "titleAccent": "ウェブノード · 公式代行チャージ · Codex · API · Trymodel",
     "subtitle": "chatgpt.com を直接開いても、いつも順調とは限りません。回線、海外の携帯電話番号、クレジットカード、アカウントのリスク判定が、最初の一歩でつまずくことがあります。いま開いている主な経路をここにまとめました。リンクをあちこち探すより、用途から選んでください。",
     "features": [
       "🧩 第三者の経路",
-      "🗺️ 本日確認できた入り口は 6 件",
+      "🗺️ 本日確認できた入口は 7 件",
       "📌 当日のページ表示を基準に"
     ],
     "cta": {
@@ -22,7 +22,8 @@
       "recharge": "💳 公式代行チャージ",
       "choose": "🧭 まず選び方を見る",
       "codex": "💻 国内向け Codex サイト",
-      "api": "🔌 API アグリゲーター"
+      "api": "🔌 API アグリゲーター",
+      "trymodel": "🪄 Trymodel を開く"
     },
     "update": "2026年11月18日（Asia/Shanghai）更新：GPT-6.2 Astra が利用可能になりました。公式では ChatGPT Work、Codex、API で提供され、モデル ID は gpt-6.2-astra です。通常の Chat にはまだありません。国内の Codex / API では、古い gpt-6-astra だけを書かず、コンソール当日の一覧にある ID を使ってください。"
   },
@@ -34,7 +35,7 @@
   },
   "choose": {
     "title": "🧭 選び方：まず用途を見る",
-    "lead": "四つとも開く必要はありません。いま一番やりたいことに合う道を一つ選べば十分です。",
+    "lead": "全部を開く必要はありません。今やりたいことに合う一本を選べば十分です。",
     "cards": [
       {
         "title": "💬 すぐにウェブで話す",
@@ -51,9 +52,13 @@
       {
         "title": "🔌 自分のプロジェクトからモデルを呼ぶ",
         "text": "OpenAI 互換の Key 一つで、複数のモデルにつながります。入り口：tryallapi.com。"
+      },
+      {
+        "title": "🪄 1つのページで複数モデルを切り替える",
+        "text": "Trymodel では、同じウェブ作業画面で ChatGPT、Claude、Gemini、Grok と会話・創作・検索できます。入口：trymodel.chat。"
       }
     ],
-    "note": "✅ 旧サイトを優先、新サイトも利用可　✅ 代行チャージは別経路で、ミラー会話ページは経由しない　✅ 料金とモデル一覧は当日のコンソールに従う"
+    "note": "✅ 旧ロビーを優先、新ロビーも開けます　✅ 代行チャージは別経路で、ミラー会話ページではありません　✅ 1ページで複数モデルを使うなら Trymodel　✅ 料金とモデル一覧はその日のコンソールまたはページに従う"
   },
   "channel": {
     "entry": "入り口：",
@@ -126,17 +131,30 @@
       "imgAlt": "momoAPIPro / tryallapi.com トップ：AI API 集約。サンプルの Base URL は https://tryallapi.com/v1",
       "caption": "your-api-key をコンソールのキーに替え、モデル名もコンソールに実在する ID に変えてください。Key を公開リポジトリやチャット履歴に書かないでください。",
       "disclaimer": "⚠️ https://api.maynorai.asia/ も確認当日は開けましたが、別の Base URL です。すでに tryallapi.com を使っているなら替える必要はありません。新規の方は、本稿で確認した tryallapi.com から始めることをおすすめします。"
+    },
+    "trymodel": {
+      "badge": "経路六",
+      "title": "Trymodel マルチモデルウェブチャット",
+      "pain": "負荷に応じてミラーノードカードを押すのではなく、同じウェブ画面で ChatGPT、Claude、Gemini、Grok などの主流モデルを切り替えたい場合は、こちらが向いています。サイトタイトルは「1つのプラットフォームで ChatGPT、Claude、Gemini、Grok と話す」で、用途は会話・創作・検索です。公式の ChatGPT アカウントではありません。",
+      "method": "ルート URL は /zh にリダイレクトされます。左に New Chat、Images、Search、Tools、Projects、History があり、上部バーでモデルを切り替えます。2026年11月18日の画面では OpenAI GPT-6 Astra が選ばれ、中央に入力欄、Help me write、Learn about、Analyze image、Analyze document などのショートカット、右上に Go Pro が見えます。モデル一覧、未ログインで試せるか、料金プランは、その日のページに従ってください。",
+      "redirect": "ルートの遷移：",
+      "same": "中国語ページ /zh を開きます",
+      "cta": "🪄 Trymodel を開く",
+      "imgAlt": "Trymodel の作業画面。上部で OpenAI GPT-6 Astra が選ばれ、左に会話・画像・検索・プロジェクトがある",
+      "caption": "2026年11月18日に撮影した Trymodel の作業画面。https://trymodel.chat/ は /zh に遷移します。",
+      "disclaimer": "⚠️ Trymodel はマルチモデルのウェブチャットであり、公式の ChatGPT アカウントでも、momoAI のノードカードロビーでもありません。"
     }
   },
   "compare": {
     "title": "📊 比較表と選び方の目安",
-    "intro": "実用的な組み合わせは、日常のウェブ会話は momoAI.New、公式の Plus 体験が欲しいときだけ代行チャージ、コードは momoai.asia + Codex に固定、製品やスクリプトで多くのモデルを切り替えるときは TryAllAPI です。",
+    "intro": "実用的な組み合わせは、日常のウェブ会話は momoAI.New、1つのページで ChatGPT / Claude / Gemini / Grok を切り替えるなら Trymodel、公式 Plus 体験が必要なら代行チャージ、コーディングは momoai.asia + Codex、製品やスクリプトで多くのモデルを使うなら TryAllAPI です。",
     "col": {
       "item": "比較",
       "web": "ウェブノード",
       "recharge": "公式代行チャージ",
       "codex": "国内向け Codex サイト",
-      "api": "API アグリゲーター"
+      "api": "API アグリゲーター",
+      "trymodel": "Trymodel"
     },
     "row": {
       "entry": "代表的な入り口",
@@ -149,30 +167,34 @@
       "web": "ブラウザでノードに入って会話",
       "recharge": "自分の公式アカウントにチャージ",
       "codex": "クライアント / CLI + API Key",
-      "api": "OpenAI 互換 API"
+      "api": "OpenAI 互換 API",
+      "trymodel": "同じ作業画面でモデルを切り替えて会話"
     },
     "who": {
       "web": "すぐに話して、ノードを切り替えたい人",
       "recharge": "公式の全機能と公式の身分が欲しい人",
       "codex": "コード、Agent、Codex での画像生成",
-      "api": "開発連携と多モデル呼び出し"
+      "api": "開発連携と多モデル呼び出し",
+      "trymodel": "1つのページで複数社のモデルを使いたい人"
     },
     "cost": {
       "web": "機能が公式サイトと揃わないことがある",
       "recharge": "サイトの手順でアカウント証憑を出す必要がある",
       "codex": "中継とグループの設定が必要",
-      "api": "自分で呼び出しを書くか、クライアントをつなぐ必要がある"
+      "api": "自分で呼び出しを書くか、クライアントをつなぐ必要がある",
+      "trymodel": "公式アカウントではなく、機能はその日のページ次第"
     },
     "not": {
       "web": "公式だけの特典",
       "recharge": "ちょっと試したいだけ、自分のアカウントがない",
       "codex": "ウェブで気軽に少し話したいだけ",
-      "api": "API には一切触りたくない人"
+      "api": "API には一切触りたくない人",
+      "trymodel": "公式サイトの全機能だけ、または API だけが必要な人"
     }
   },
   "map": {
     "title": "🗺️ 経路マップ（2026-11-18 再確認）",
-    "intro": "2026年11月18日に公開 HTTP で再確認し、以下の 6 つのアドレスはいずれも 200 を返し、開くことができました。旧サイトも新サイトもフロントエンドのシングルページアプリで、HTML シェルの title は ChatGPT / gpt しか表示しません。画面の見た目は本文中の 11月14日のスクリーンショットを基準にしてください。",
+    "intro": "2026年11月18日に公開 HTTP で再確認し、次の 7 件はいずれも 200 で開けました。旧ロビーと新ロビーはフロントのシングルページアプリで、HTML シェルの title は ChatGPT / gpt のみです。実際の画面は本文のスクリーンショットを参照してください。",
     "col": {
       "role": "役割",
       "addr": "確認したアドレス",
@@ -201,6 +223,10 @@
     "api": {
       "role": "API アグリゲーター",
       "result": "200。デモの Base URL は /v1"
+    },
+    "trymodel": {
+      "role": "Trymodel マルチモデルウェブチャット",
+      "result": "200。ルートは /zh に遷移し、タイトルは Trymodel"
     }
   },
   "notes": {
@@ -216,7 +242,7 @@
   },
   "backups": {
     "title": "🔗 予備ドメインと補足の入り口",
-    "intro": "次のアドレスは当日確認済みで、予備や補足には使えますが、上の 6 つの主入り口の代わりではありません。最新のアドレスが必要なときは、すでに開けたことを確認した trygpt / momoai / 代行チャージ / TryAllAPI を優先してください。",
+    "intro": "以下のアドレスは同日確認済みで、予備や補足には使えますが、上の 7 件の主入口の代わりではありません。最新の URL が必要なときは、すでに開けたことを確認した trygpt / momoai / 代行チャージ / TryAllAPI / Trymodel を優先してください。",
     "col": {
       "addr": "アドレス",
       "result": "当日の結果",
@@ -233,10 +259,6 @@
     "maynor": {
       "result": "200、旧ホールへ転送",
       "note": "旧ノードホールの旧ドメイン"
-    },
-    "trymodel": {
-      "result": "200、/zh へ転送",
-      "note": "同じエコシステムの多モデルウェブチャットであり、今回の 5 つの主経路ではありません"
     },
     "image": {
       "note": "独立した GPT Image サイト。新しいサイドバーからもリンクされています"
@@ -262,15 +284,20 @@
     "down": {
       "q": "あるドメインが開かないときは？",
       "a": "まず本文に挙げた予備アドレスを試し、その時点のサイト表示に従ってください。出所の分からない「最新ミラー」をまた探すより、確認済みで開けた入り口をブックマークしておく方が大切です。"
+    },
+    "trymodel": {
+      "q": "1つのページで ChatGPT、Claude、Gemini、Grok を使いたい場合は？",
+      "a": "Trymodel を使ってください：https://trymodel.chat/ 。開くと /zh に入ります。マルチモデルのウェブ作業画面であり、公式アカウントでもノードカードロビーでもありません。"
     }
   },
   "finalCta": {
     "title": "🎯 まず開ける入り口を一つ保存する",
-    "description": "ウェブで話すならノードホール、公式の身分が必要なら代行チャージ、コードを書くなら国内向け Codex サイト、自分のアプリからモデルを呼ぶなら API アグリゲーターです。",
+    "description": "ウェブで会話するならノードロビー、1つのページで複数モデルを切り替えるなら Trymodel、公式の身分が必要なら代行チャージ、コードを書くなら国内 Codex サイト、自分のアプリからモデルを呼ぶなら API 集約です。",
     "primary": "✨ 旧版ノードホールを開く",
     "recharge": "💳 公式代行チャージ",
     "codex": "💻 国内向け Codex サイト",
-    "markdown": "📄 Markdown 原文を見る"
+    "markdown": "📄 Markdown 原文を見る",
+    "trymodel": "🪄 Trymodel を開く"
   },
   "footer": {
     "copyright": "© 2026 中国国内で使う GPT の経路まとめ。第三者による案内であり、OpenAI 公式製品ではありません。更新日：2026年11月18日（Asia/Shanghai）。GPT-6.2 Astra が利用可能です。",

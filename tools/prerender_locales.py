@@ -21,6 +21,7 @@ FAQ_PAIRS = [
     ("faq.chat.q", "faq.chat.a"),
     ("faq.account.q", "faq.account.a"),
     ("faq.codex.q", "faq.codex.a"),
+    ("faq.trymodel.q", "faq.trymodel.a"),
     ("faq.down.q", "faq.down.a"),
 ]
 
